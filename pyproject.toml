@@ -1,13 +1,25 @@
 [tool.poetry]
-name = "wiktionary-to-vocabulary-card"
+name = "wiktionary-vocab-card"
 version = "0.1.0"
-description = ""
+description = "Generate Obsidian vocabulary cards from Wiktionary pages"
 authors = ["Taiquan Liu <liutaiquan@live.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.11"
+bs4 = "^0.0.2"
+requests = "^2.32.3"
+click = "^8.1.8"
+appdirs = "^1.4.4"
+pyyaml = "^6.0.2"
+html2text = "^2024.2.26"
 
+[tool.poetry.scripts]
+wikt-vocab = "wiktionary_vocab_card.cli:cli"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.5"
+pytest-mock = "^3.14.0"
 
 [build-system]
 requires = ["poetry-core"]
