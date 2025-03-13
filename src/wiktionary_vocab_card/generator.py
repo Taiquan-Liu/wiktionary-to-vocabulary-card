@@ -1,5 +1,6 @@
 class MarkdownGenerator:
-    def __init__(self, content, config):
+    def __init__(self, parser, content, config):
+        self.parser = parser
         self.content = content
         self.config = config
 
@@ -16,14 +17,29 @@ class MarkdownGenerator:
             return ""
 
         if self.config['table_folding']:
-            return f"<details>\n<summary>Conjugation Table</summary>\n\n{self.content['conjugation']}\n</details>\n"
+            # Create folding section without extra newlines
+            return "<details><summary>Conjugation Table</summary>" + self.content['conjugation'] + "</details>"
         return self.content['conjugation']
 
     def generate_card(self):
-        return f"""## {self.content['word']}
-{self.generate_tags()}
-{self.parser.url}
-{self.config['custom_text']}
-{self.generate_table()}```spoiler-block
-{self.content['definition']}
-```"""
+        # Build the card with parts that exist
+        parts = []
+        parts.append(f"## {self.content['word']}")
+
+        tags = self.generate_tags()
+        if tags:
+            parts.append(tags)
+
+        parts.append(f"{self.parser.url}")
+
+        if self.config['custom_text']:
+            parts.append(f"{self.config['custom_text']}")
+
+        table = self.generate_table()
+        if table:
+            parts.append(table)
+
+        parts.append(f"```spoiler-block\n{self.content['definition']}\n```")
+
+        # Join everything with no extra newlines
+        return "".join([part + "\n" for part in parts]).strip()
