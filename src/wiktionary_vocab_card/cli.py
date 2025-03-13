@@ -16,16 +16,12 @@ def generate(url, output):
     """Generate vocabulary card from Wiktionary URL"""
     config = load_config()
     parser = WiktionaryParser(url)
-    parser.fetch_page()
-    parser.find_finnish_section()
-    parser.parse_part_of_speech()
-    parser.parse_kotus_info()
-    parser.parse_definitions()
+    parser.parse()
 
     processor = ContentProcessor(parser, config)
     content = processor.process_content()
 
-    generator = MarkdownGenerator(content, config)
+    generator = MarkdownGenerator(parser, content, config)
     card = generator.generate_card()
 
     if output:
