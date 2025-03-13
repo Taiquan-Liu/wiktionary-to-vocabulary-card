@@ -1,3 +1,5 @@
+import pyperclip
+
 class MarkdownGenerator:
     def __init__(self, parser, content, config):
         self.parser = parser
@@ -42,4 +44,6 @@ class MarkdownGenerator:
         parts.append(f"```spoiler-block\n{self.content['definition']}\n```")
 
         # Join everything with no extra newlines
-        return "".join([part + "\n" for part in parts]).strip()
+        result = "".join([part + "\n" for part in parts]).strip()
+        pyperclip.copy(result)
+        return result
