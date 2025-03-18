@@ -6,32 +6,78 @@ import requests
 
 def html_table_to_markdown(table):
     """Convert a BeautifulSoup table element to Markdown format."""
-    headers = []
-    rows = []
-    # Extract headers from the first row (th elements)
-    header_row = table.find('tr')
-    if not header_row:
+    if not table:
         return ""
-    for th in header_row.find_all(['th', 'td']):
-        headers.append(th.get_text().strip())
 
-    # Extract data rows
-    for row in table.find_all('tr')[1:]:  # Skip header row
-        cells = row.find_all(['td', 'th'])
-        row_data = [cell.get_text().strip() for cell in cells]
-        rows.append(row_data)
+    # First, remove all nested tables completely
+    nested_tables = table.find_all('table', recursive=True)
+    for nested in nested_tables:
+        if nested != table:  # Don't remove the main table
+            nested.decompose()
 
-    # Build Markdown table
-    if not headers and not rows:
+    # Now parse the simplified table
+    rows = table.find_all('tr')
+    if not rows:
         return ""
-    markdown = ""
-    if headers:
-        markdown += "| " + " | ".join(headers) + " |\n"
-        markdown += "| " + " | ".join(["---"] * len(headers)) + " |\n"
+
+    # Analyze table structure
+    max_cols = 0
     for row in rows:
-        markdown += "| " + " | ".join(row) + " |\n"
-    # Remove trailing newline to prevent extra blank line
-    return markdown.rstrip()
+        cells = row.find_all(['th', 'td'])
+        cols_in_row = sum(int(cell.get('colspan', 1)) for cell in cells if cell is not None)
+        max_cols = max(max_cols, cols_in_row)
+
+    markdown_rows = []
+    for row in rows:
+        cells = row.find_all(['th', 'td'])
+        markdown_cells = []
+
+        for cell in cells:
+            if cell is None:
+                continue
+
+            # Extract text, handling line breaks
+            text = cell.get_text().strip()
+            text = re.sub(r'\s+', ' ', text)
+
+            # Handle colspan
+            colspan = int(cell.get('colspan', 1))
+            markdown_cells.append(text)
+
+            # Add empty cells for spanning columns
+            for _ in range(1, colspan):
+                markdown_cells.append('')
+
+        # Pad with empty cells if needed
+        while len(markdown_cells) < max_cols:
+            markdown_cells.append('')
+
+        markdown_rows.append(markdown_cells)
+
+    # Find the maximum non-empty column
+    max_used_cols = 0
+    for row in markdown_rows:
+        for i in range(len(row)-1, -1, -1):
+            if row[i].strip():
+                max_used_cols = max(max_used_cols, i+1)
+                break
+
+    # Trim rows to only include used columns
+    trimmed_rows = [row[:max_used_cols] for row in markdown_rows]
+
+    # Convert to markdown
+    result = []
+    for i, row in enumerate(trimmed_rows):
+        if all(cell == '' for cell in row):
+            continue
+
+        line = "| " + " | ".join(row) + " |"
+        result.append(line)
+
+        if i == 0:
+            result.append("| " + " | ".join(["---"] * len(row)) + " |")
+
+    return "\n".join(result)
 
 
 class WiktionaryParser:
@@ -116,6 +162,46 @@ class WiktionaryParser:
                 # Convert table to markdown for conjugation_table
                 self.conjugation_table = html_table_to_markdown(inflection_table)
 
+    def parse_verb_conjugation(self):
+        # Find conjugation header for verbs
+        current = self.finnish_section
+        conjugation_header = None
+
+        while current:
+            current = current.find_next()
+            if not current:
+                break
+
+            # Look for Conjugation header within a div
+            if current.name == 'div' and 'mw-heading' in current.get('class', []):
+                h4 = current.find('h4')
+                if h4 and 'Conjugation' in h4.get_text():
+                    conjugation_header = h4
+                    break
+
+        if conjugation_header:
+            # Find the inflection table after the conjugation header
+            current = conjugation_header
+            while current:
+                current = current.find_next()
+                if not current and current.name == 'div' and 'mw-heading' in current.get('class', []):
+                    break  # Stop at next header
+
+                if current and current.name == 'table' and 'inflection-table' in current.get('class', []):
+                    # Extract Kotus type from table header text if present
+                    th = current.find('th')
+                    if th:
+                        th_text = th.get_text()
+                        match = re.search(r'Kotus type ([^,\s)]+)', th_text)
+                        if match:
+                            kotus_full = match.group(1)
+                            kotus_parts = kotus_full.split('/')
+                            self.kotus_type = kotus_parts[-1]
+
+                    # Convert table to markdown
+                    self.conjugation_table = html_table_to_markdown(current)
+                    return
+
     def parse_definitions(self):
         # Wait until we've found the part of speech
         if not self.part_of_speech:
@@ -146,5 +232,10 @@ class WiktionaryParser:
         self.find_finnish_section()
         self.parse_part_of_speech()
         self.parse_definitions()
-        self.parse_kotus_info()
+
+        if self.part_of_speech == 'verb':
+            self.parse_verb_conjugation()
+        else:
+            self.parse_kotus_info()  # For nouns, adjectives, etc.
+
         return self
