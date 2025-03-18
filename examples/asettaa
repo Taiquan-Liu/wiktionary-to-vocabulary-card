@@ -1,0 +1,2407 @@
+<!DOCTYPE html>
+<html class="client-nojs vector-feature-language-in-header-enabled vector-feature-language-in-main-page-header-disabled vector-feature-page-tools-pinned-disabled vector-feature-toc-pinned-clientpref-1 vector-feature-main-menu-pinned-disabled vector-feature-limited-width-clientpref-1 vector-feature-limited-width-content-enabled vector-feature-custom-font-size-clientpref-1 vector-feature-appearance-pinned-clientpref-1 vector-feature-night-mode-disabled skin-theme-clientpref-day vector-sticky-header-enabled vector-toc-available" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<title>asettaa - Wiktionary, the free dictionary</title>
+<script>(function(){var className="client-js vector-feature-language-in-header-enabled vector-feature-language-in-main-page-header-disabled vector-feature-page-tools-pinned-disabled vector-feature-toc-pinned-clientpref-1 vector-feature-main-menu-pinned-disabled vector-feature-limited-width-clientpref-1 vector-feature-limited-width-content-enabled vector-feature-custom-font-size-clientpref-1 vector-feature-appearance-pinned-clientpref-1 vector-feature-night-mode-disabled skin-theme-clientpref-day vector-sticky-header-enabled vector-toc-available";var cookie=document.cookie.match(/(?:^|; )enwiktionarymwclientpreferences=([^;]+)/);if(cookie){cookie[1].split('%2C').forEach(function(pref){className=className.replace(new RegExp('(^| )'+pref.replace(/-clientpref-\w+$|[^\w-]+/g,'')+'-clientpref-\\w+( |$)'),'$1'+pref+'$2');});}document.documentElement.className=className;}());RLCONF={"wgBreakFrames":false,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"440a3e07-321a-4fef-9b83-95462865bde7","wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"asettaa","wgTitle":"asettaa","wgCurRevisionId":83301689,"wgRevisionId":83301689,"wgArticleId":289125,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Pages with entries","Pages with 2 entries","Finnish terms inherited from Proto-Finnic","Finnish terms derived from Proto-Finnic","Finnish terms suffixed with -ttaa","Finnish 3-syllable words","Finnish terms with IPA pronunciation","Rhymes:Finnish/ɑsetːɑː","Rhymes:Finnish/ɑsetːɑː/3 syllables","Finnish lemmas","Finnish verbs","Finnish transitive verbs","Finnish terms with collocations","Finnish muistaa-type verbs","Ingrian terms inherited from Proto-Finnic","Ingrian terms derived from Proto-Finnic","Ingrian terms with IPA pronunciation","Rhymes:Ingrian/ɑsetːɑː","Rhymes:Ingrian/ɑsetːɑː/3 syllables","Ingrian lemmas","Ingrian verbs","Ingrian transitive verbs","izh:Agriculture","Ingrian non-lemma forms","Ingrian verb forms"],"wgPageViewLanguage":"en","wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"asettaa","wgRelevantArticleId":289125,"wgIsProbablyEditable":true,"wgRelevantPageIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgNoticeProject":"wiktionary","wgCiteReferencePreviewsActive":true,"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","pageVariantFallbacks":"en"},"wgMFDisplayWikibaseDescriptions":{"search":true,"watchlist":true,"tagline":false,"nearby":true},"wgWMESchemaEditAttemptStepOversample":false,"wgWMEPageLength":3000,"wgEditSubmitButtonLabelPublish":true,"wgULSPosition":"interlanguage","wgULSisCompactLinksEnabled":false,"wgVector2022LanguageInHeader":true,"wgULSisLanguageSelectorEmpty":false,"wgCheckUserClientHintsHeadersJsApi":["brands","architecture","bitness","fullVersionList","mobile","model","platform","platformVersion"]};
+RLSTATE={"ext.gadget.Palette":"ready","ext.gadget.Site":"ready","ext.globalCssJs.user.styles":"ready","site.styles":"ready","user.styles":"ready","ext.globalCssJs.user":"ready","user":"ready","user.options":"loading","skins.vector.search.codex.styles":"ready","skins.vector.styles":"ready","skins.vector.icons":"ready","ext.wikimediamessages.styles":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready"};RLPAGEMODULES=["site","mediawiki.page.ready","mediawiki.toc","skins.vector.js","ext.centralNotice.geoIP","ext.centralNotice.startUp","ext.gadget.LegacyScripts","ext.gadget.LanguagesAndScripts","ext.gadget.DocTabs","ext.gadget.PagePreviews","ext.gadget.Edittools","ext.gadget.defaultVisibilityToggles","ext.gadget.UnsupportedTitles","ext.gadget.WiktGadgetPrefs","ext.urlShortener.toolbar","ext.centralauth.centralautologin","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.echo.centralauth","ext.eventLogging","ext.wikimediaEvents","ext.navigationTiming","ext.uls.interface","ext.checkUser.clientHints"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.impl(function(){return["user.options@12s5i",function($,jQuery,require,module){mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+}];});});</script>
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=ext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cext.wikimediamessages.styles%7Cskins.vector.icons%2Cstyles%7Cskins.vector.search.codex.styles&amp;only=styles&amp;skin=vector-2022">
+<script async="" src="/w/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=vector-2022"></script>
+<meta name="ResourceLoaderDynamicStyles" content="">
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=ext.gadget.Palette%2CSite&amp;only=styles&amp;skin=vector-2022">
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector-2022">
+<meta name="generator" content="MediaWiki 1.44.0-wmf.20">
+<meta name="referrer" content="origin">
+<meta name="referrer" content="origin-when-cross-origin">
+<meta name="robots" content="max-image-preview:standard">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=1120">
+<meta property="og:site_name" content="Wiktionary">
+<meta property="og:title" content="asettaa - Wiktionary, the free dictionary">
+<meta property="og:type" content="website">
+<link rel="alternate" media="only screen and (max-width: 640px)" href="//en.m.wiktionary.org/wiki/asettaa">
+<link rel="alternate" type="application/x-wiki" title="Edit" href="/w/index.php?title=asettaa&amp;action=edit">
+<link rel="apple-touch-icon" href="/static/apple-touch/wiktionary/en.png">
+<link rel="icon" href="/static/favicon/wiktionary/en.ico">
+<link rel="search" type="application/opensearchdescription+xml" href="/w/rest.php/v1/search" title="Wiktionary (en)">
+<link rel="EditURI" type="application/rsd+xml" href="//en.wiktionary.org/w/api.php?action=rsd">
+<link rel="canonical" href="https://en.wiktionary.org/wiki/asettaa">
+<link rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.en">
+<link rel="alternate" type="application/atom+xml" title="Wiktionary Atom feed" href="/w/index.php?title=Special:RecentChanges&amp;feed=atom">
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+<link rel="dns-prefetch" href="login.wikimedia.org">
+</head>
+<body class="skin--responsive skin-vector skin-vector-search-vue mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject mw-editable page-asettaa rootpage-asettaa skin-vector-2022 action-view"><a class="mw-jump-link" href="#bodyContent">Jump to content</a>
+<div class="vector-header-container">
+	<header class="vector-header mw-header">
+		<div class="vector-header-start">
+			<nav class="vector-main-menu-landmark" aria-label="Site">
+				
+<div id="vector-main-menu-dropdown" class="vector-dropdown vector-main-menu-dropdown vector-button-flush-left vector-button-flush-right"  title="Main menu" >
+	<input type="checkbox" id="vector-main-menu-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-main-menu-dropdown" class="vector-dropdown-checkbox "  aria-label="Main menu"  >
+	<label id="vector-main-menu-dropdown-label" for="vector-main-menu-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only " aria-hidden="true"  ><span class="vector-icon mw-ui-icon-menu mw-ui-icon-wikimedia-menu"></span>
+
+<span class="vector-dropdown-label-text">Main menu</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+				<div id="vector-main-menu-unpinned-container" class="vector-unpinned-container">
+		
+<div id="vector-main-menu" class="vector-main-menu vector-pinnable-element">
+	<div
+	class="vector-pinnable-header vector-main-menu-pinnable-header vector-pinnable-header-unpinned"
+	data-feature-name="main-menu-pinned"
+	data-pinnable-element-id="vector-main-menu"
+	data-pinned-container-id="vector-main-menu-pinned-container"
+	data-unpinned-container-id="vector-main-menu-unpinned-container"
+>
+	<div class="vector-pinnable-header-label">Main menu</div>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-main-menu.pin">move to sidebar</button>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-main-menu.unpin">hide</button>
+</div>
+
+	
+<div id="p-navigation" class="vector-menu mw-portlet mw-portlet-navigation"  >
+	<div class="vector-menu-heading">
+		Navigation
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="n-mainpage-text" class="mw-list-item"><a href="/wiki/Wiktionary:Main_Page"><span>Main Page</span></a></li><li id="n-portal" class="mw-list-item"><a href="/wiki/Wiktionary:Community_portal" title="About the project, what you can do, where to find things"><span>Community portal</span></a></li><li id="n-requestedarticles" class="mw-list-item"><a href="/wiki/Wiktionary:Requested_entries"><span>Requested entries</span></a></li><li id="n-recentchanges" class="mw-list-item"><a href="/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r"><span>Recent changes</span></a></li><li id="n-randompage" class="mw-list-item"><a href="/wiki/Special:Random" title="Load a random page [x]" accesskey="x"><span>Random entry</span></a></li><li id="n-help" class="mw-list-item"><a href="https://en.wiktionary.org/wiki/Help:Contents" title="The place to find out"><span>Help</span></a></li><li id="n-Glossary" class="mw-list-item"><a href="/wiki/Appendix:Glossary"><span>Glossary</span></a></li><li id="n-contact" class="mw-list-item"><a href="/wiki/Wiktionary:Contact_us"><span>Contact us</span></a></li><li id="n-specialpages" class="mw-list-item"><a href="/wiki/Special:SpecialPages"><span>Special pages</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+	
+	
+</div>
+
+				</div>
+
+	</div>
+</div>
+
+		</nav>
+			
+<a href="/wiki/Wiktionary:Main_Page" class="mw-logo">
+	<img class="mw-logo-icon" src="/static/images/icons/enwiktionary.svg" alt="" aria-hidden="true" height="50" width="50">
+	<span class="mw-logo-container skin-invert">
+		<img class="mw-logo-wordmark" alt="Wiktionary" src="/static/images/mobile/copyright/wiktionary-wordmark-en.svg" style="width: 6.6875em; height: 1.1875em;">
+		<img class="mw-logo-tagline" alt="The Free Dictionary" src="/static/images/mobile/copyright/wiktionary-tagline-en.svg" width="110" height="15" style="width: 6.875em; height: 0.9375em;">
+	</span>
+</a>
+
+		</div>
+		<div class="vector-header-end">
+			
+<div id="p-search" role="search" class="vector-search-box-vue  vector-search-box-collapses vector-search-box-show-thumbnail vector-search-box-auto-expand-width vector-search-box">
+	<a href="/wiki/Special:Search" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only search-toggle" title="Search Wiktionary [f]" accesskey="f"><span class="vector-icon mw-ui-icon-search mw-ui-icon-wikimedia-search"></span>
+
+<span>Search</span>
+	</a>
+	<div class="vector-typeahead-search-container">
+		<div class="cdx-typeahead-search cdx-typeahead-search--show-thumbnail cdx-typeahead-search--auto-expand-width">
+			<form action="/w/index.php" id="searchform" class="cdx-search-input cdx-search-input--has-end-button">
+				<div id="simpleSearch" class="cdx-search-input__input-wrapper"  data-search-loc="header-moved">
+					<div class="cdx-text-input cdx-text-input--has-start-icon">
+						<input
+							class="cdx-text-input__input"
+							 type="search" name="search" placeholder="Search Wiktionary" aria-label="Search Wiktionary" autocapitalize="none" title="Search Wiktionary [f]" accesskey="f" id="searchInput"
+							>
+						<span class="cdx-text-input__icon cdx-text-input__start-icon"></span>
+					</div>
+					<input type="hidden" name="title" value="Special:Search">
+				</div>
+				<button class="cdx-button cdx-search-input__end-button">Search</button>
+			</form>
+		</div>
+	</div>
+</div>
+
+			<nav class="vector-user-links vector-user-links-wide" aria-label="Personal tools">
+	<div class="vector-user-links-main">
+	
+<div id="p-vector-user-menu-preferences" class="vector-menu mw-portlet emptyPortlet"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			
+		</ul>
+		
+	</div>
+</div>
+
+	
+<div id="p-vector-user-menu-userpage" class="vector-menu mw-portlet emptyPortlet"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			
+		</ul>
+		
+	</div>
+</div>
+
+	<nav class="vector-appearance-landmark" aria-label="Appearance">
+		
+<div id="vector-appearance-dropdown" class="vector-dropdown "  title="Change the appearance of the page&#039;s font size, width, and color" >
+	<input type="checkbox" id="vector-appearance-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-appearance-dropdown" class="vector-dropdown-checkbox "  aria-label="Appearance"  >
+	<label id="vector-appearance-dropdown-label" for="vector-appearance-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only " aria-hidden="true"  ><span class="vector-icon mw-ui-icon-appearance mw-ui-icon-wikimedia-appearance"></span>
+
+<span class="vector-dropdown-label-text">Appearance</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+			<div id="vector-appearance-unpinned-container" class="vector-unpinned-container">
+				
+			</div>
+		
+	</div>
+</div>
+
+	</nav>
+	
+<div id="p-vector-user-menu-notifications" class="vector-menu mw-portlet emptyPortlet"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			
+		</ul>
+		
+	</div>
+</div>
+
+	
+<div id="p-vector-user-menu-overflow" class="vector-menu mw-portlet"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			<li id="pt-sitesupport-2" class="user-links-collapsible-item mw-list-item user-links-collapsible-item"><a data-mw="interface" href="https://donate.wikimedia.org/?wmf_source=donate&amp;wmf_medium=sidebar&amp;wmf_campaign=en.wiktionary.org&amp;uselang=en" class=""><span>Donations</span></a>
+</li>
+<li id="pt-createaccount-2" class="user-links-collapsible-item mw-list-item user-links-collapsible-item"><a data-mw="interface" href="/w/index.php?title=Special:CreateAccount&amp;returnto=asettaa" title="You are encouraged to create an account and log in; however, it is not mandatory" class=""><span>Create account</span></a>
+</li>
+<li id="pt-login-2" class="user-links-collapsible-item mw-list-item user-links-collapsible-item"><a data-mw="interface" href="/w/index.php?title=Special:UserLogin&amp;returnto=asettaa" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o" class=""><span>Log in</span></a>
+</li>
+
+			
+		</ul>
+		
+	</div>
+</div>
+
+	</div>
+	
+<div id="vector-user-links-dropdown" class="vector-dropdown vector-user-menu vector-button-flush-right vector-user-menu-logged-out"  title="More options" >
+	<input type="checkbox" id="vector-user-links-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-user-links-dropdown" class="vector-dropdown-checkbox "  aria-label="Personal tools"  >
+	<label id="vector-user-links-dropdown-label" for="vector-user-links-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only " aria-hidden="true"  ><span class="vector-icon mw-ui-icon-ellipsis mw-ui-icon-wikimedia-ellipsis"></span>
+
+<span class="vector-dropdown-label-text">Personal tools</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+		
+<div id="p-personal" class="vector-menu mw-portlet mw-portlet-personal user-links-collapsible-item"  title="User menu" >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="pt-sitesupport" class="user-links-collapsible-item mw-list-item"><a href="https://donate.wikimedia.org/?wmf_source=donate&amp;wmf_medium=sidebar&amp;wmf_campaign=en.wiktionary.org&amp;uselang=en"><span>Donations</span></a></li><li id="pt-createaccount" class="user-links-collapsible-item mw-list-item"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=asettaa" title="You are encouraged to create an account and log in; however, it is not mandatory"><span class="vector-icon mw-ui-icon-userAdd mw-ui-icon-wikimedia-userAdd"></span> <span>Create account</span></a></li><li id="pt-login" class="user-links-collapsible-item mw-list-item"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=asettaa" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o"><span class="vector-icon mw-ui-icon-logIn mw-ui-icon-wikimedia-logIn"></span> <span>Log in</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+<div id="p-user-menu-anon-editor" class="vector-menu mw-portlet mw-portlet-user-menu-anon-editor"  >
+	<div class="vector-menu-heading">
+		Pages for logged out editors <a href="/wiki/Help:Introduction" aria-label="Learn more about editing"><span>learn more</span></a>
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="pt-anoncontribs" class="mw-list-item"><a href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y"><span>Contributions</span></a></li><li id="pt-anontalk" class="mw-list-item"><a href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n"><span>Talk</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+	
+	</div>
+</div>
+
+</nav>
+
+		</div>
+	</header>
+</div>
+<div class="mw-page-container">
+	<div class="mw-page-container-inner">
+		<div class="vector-sitenotice-container">
+			<div id="siteNotice"><!-- CentralNotice --></div>
+		</div>
+		<div class="vector-column-start">
+			<div class="vector-main-menu-container">
+		<div id="mw-navigation">
+			<nav id="mw-panel" class="vector-main-menu-landmark" aria-label="Site">
+				<div id="vector-main-menu-pinned-container" class="vector-pinned-container">
+				
+				</div>
+		</nav>
+		</div>
+	</div>
+	<div class="vector-sticky-pinned-container">
+				<nav id="mw-panel-toc" aria-label="Contents" data-event-name="ui.sidebar-toc" class="mw-table-of-contents-container vector-toc-landmark">
+					<div id="vector-toc-pinned-container" class="vector-pinned-container">
+					<div id="vector-toc" class="vector-toc vector-pinnable-element">
+	<div
+	class="vector-pinnable-header vector-toc-pinnable-header vector-pinnable-header-pinned"
+	data-feature-name="toc-pinned"
+	data-pinnable-element-id="vector-toc"
+	
+	
+>
+	<h2 class="vector-pinnable-header-label">Contents</h2>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-toc.pin">move to sidebar</button>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-toc.unpin">hide</button>
+</div>
+
+
+	<ul class="vector-toc-contents" id="mw-panel-toc-list">
+		<li id="toc-mw-content-text"
+			class="vector-toc-list-item vector-toc-level-1">
+			<a href="#" class="vector-toc-link">
+				<div class="vector-toc-text">Beginning</div>
+			</a>
+		</li>
+		<li id="toc-Finnish"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#Finnish">
+			<div class="vector-toc-text">
+				<span class="vector-toc-numb">1</span>
+				<span>Finnish</span>
+			</div>
+		</a>
+		
+			<button aria-controls="toc-Finnish-sublist" class="cdx-button cdx-button--weight-quiet cdx-button--icon-only vector-toc-toggle">
+				<span class="vector-icon mw-ui-icon-wikimedia-expand"></span>
+				<span>Toggle Finnish subsection</span>
+			</button>
+		
+		<ul id="toc-Finnish-sublist" class="vector-toc-list">
+			<li id="toc-Etymology"
+			class="vector-toc-list-item vector-toc-level-2">
+			<a class="vector-toc-link" href="#Etymology">
+				<div class="vector-toc-text">
+					<span class="vector-toc-numb">1.1</span>
+					<span>Etymology</span>
+				</div>
+			</a>
+			
+			<ul id="toc-Etymology-sublist" class="vector-toc-list">
+			</ul>
+		</li>
+		<li id="toc-Pronunciation"
+			class="vector-toc-list-item vector-toc-level-2">
+			<a class="vector-toc-link" href="#Pronunciation">
+				<div class="vector-toc-text">
+					<span class="vector-toc-numb">1.2</span>
+					<span>Pronunciation</span>
+				</div>
+			</a>
+			
+			<ul id="toc-Pronunciation-sublist" class="vector-toc-list">
+			</ul>
+		</li>
+		<li id="toc-Verb"
+			class="vector-toc-list-item vector-toc-level-2">
+			<a class="vector-toc-link" href="#Verb">
+				<div class="vector-toc-text">
+					<span class="vector-toc-numb">1.3</span>
+					<span>Verb</span>
+				</div>
+			</a>
+			
+			<ul id="toc-Verb-sublist" class="vector-toc-list">
+				<li id="toc-Conjugation"
+			class="vector-toc-list-item vector-toc-level-3">
+			<a class="vector-toc-link" href="#Conjugation">
+				<div class="vector-toc-text">
+					<span class="vector-toc-numb">1.3.1</span>
+					<span>Conjugation</span>
+				</div>
+			</a>
+			
+			<ul id="toc-Conjugation-sublist" class="vector-toc-list">
+			</ul>
+		</li>
+		<li id="toc-Derived_terms"
+			class="vector-toc-list-item vector-toc-level-3">
+			<a class="vector-toc-link" href="#Derived_terms">
+				<div class="vector-toc-text">
+					<span class="vector-toc-numb">1.3.2</span>
+					<span>Derived terms</span>
+				</div>
+			</a>
+			
+			<ul id="toc-Derived_terms-sublist" class="vector-toc-list">
+			</ul>
+		</li>
+	</ul>
+		</li>
+		<li id="toc-Further_reading"
+			class="vector-toc-list-item vector-toc-level-2">
+			<a class="vector-toc-link" href="#Further_reading">
+				<div class="vector-toc-text">
+					<span class="vector-toc-numb">1.4</span>
+					<span>Further reading</span>
+				</div>
+			</a>
+			
+			<ul id="toc-Further_reading-sublist" class="vector-toc-list">
+			</ul>
+		</li>
+		<li id="toc-Anagrams"
+			class="vector-toc-list-item vector-toc-level-2">
+			<a class="vector-toc-link" href="#Anagrams">
+				<div class="vector-toc-text">
+					<span class="vector-toc-numb">1.5</span>
+					<span>Anagrams</span>
+				</div>
+			</a>
+			
+			<ul id="toc-Anagrams-sublist" class="vector-toc-list">
+			</ul>
+		</li>
+	</ul>
+	</li>
+	<li id="toc-Ingrian"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#Ingrian">
+			<div class="vector-toc-text">
+				<span class="vector-toc-numb">2</span>
+				<span>Ingrian</span>
+			</div>
+		</a>
+		
+			<button aria-controls="toc-Ingrian-sublist" class="cdx-button cdx-button--weight-quiet cdx-button--icon-only vector-toc-toggle">
+				<span class="vector-icon mw-ui-icon-wikimedia-expand"></span>
+				<span>Toggle Ingrian subsection</span>
+			</button>
+		
+		<ul id="toc-Ingrian-sublist" class="vector-toc-list">
+			<li id="toc-Etymology_1"
+			class="vector-toc-list-item vector-toc-level-2">
+			<a class="vector-toc-link" href="#Etymology_1">
+				<div class="vector-toc-text">
+					<span class="vector-toc-numb">2.1</span>
+					<span>Etymology 1</span>
+				</div>
+			</a>
+			
+			<ul id="toc-Etymology_1-sublist" class="vector-toc-list">
+				<li id="toc-Pronunciation_2"
+			class="vector-toc-list-item vector-toc-level-3">
+			<a class="vector-toc-link" href="#Pronunciation_2">
+				<div class="vector-toc-text">
+					<span class="vector-toc-numb">2.1.1</span>
+					<span>Pronunciation</span>
+				</div>
+			</a>
+			
+			<ul id="toc-Pronunciation_2-sublist" class="vector-toc-list">
+			</ul>
+		</li>
+		<li id="toc-Verb_2"
+			class="vector-toc-list-item vector-toc-level-3">
+			<a class="vector-toc-link" href="#Verb_2">
+				<div class="vector-toc-text">
+					<span class="vector-toc-numb">2.1.2</span>
+					<span>Verb</span>
+				</div>
+			</a>
+			
+			<ul id="toc-Verb_2-sublist" class="vector-toc-list">
+				<li id="toc-Conjugation_2"
+			class="vector-toc-list-item vector-toc-level-4">
+			<a class="vector-toc-link" href="#Conjugation_2">
+				<div class="vector-toc-text">
+					<span class="vector-toc-numb">2.1.2.1</span>
+					<span>Conjugation</span>
+				</div>
+			</a>
+			
+			<ul id="toc-Conjugation_2-sublist" class="vector-toc-list">
+			</ul>
+		</li>
+		<li id="toc-Synonyms"
+			class="vector-toc-list-item vector-toc-level-4">
+			<a class="vector-toc-link" href="#Synonyms">
+				<div class="vector-toc-text">
+					<span class="vector-toc-numb">2.1.2.2</span>
+					<span>Synonyms</span>
+				</div>
+			</a>
+			
+			<ul id="toc-Synonyms-sublist" class="vector-toc-list">
+			</ul>
+		</li>
+		<li id="toc-Derived_terms_2"
+			class="vector-toc-list-item vector-toc-level-4">
+			<a class="vector-toc-link" href="#Derived_terms_2">
+				<div class="vector-toc-text">
+					<span class="vector-toc-numb">2.1.2.3</span>
+					<span>Derived terms</span>
+				</div>
+			</a>
+			
+			<ul id="toc-Derived_terms_2-sublist" class="vector-toc-list">
+			</ul>
+		</li>
+	</ul>
+		</li>
+	</ul>
+		</li>
+		<li id="toc-Etymology_2"
+			class="vector-toc-list-item vector-toc-level-2">
+			<a class="vector-toc-link" href="#Etymology_2">
+				<div class="vector-toc-text">
+					<span class="vector-toc-numb">2.2</span>
+					<span>Etymology 2</span>
+				</div>
+			</a>
+			
+			<ul id="toc-Etymology_2-sublist" class="vector-toc-list">
+				<li id="toc-Pronunciation_3"
+			class="vector-toc-list-item vector-toc-level-3">
+			<a class="vector-toc-link" href="#Pronunciation_3">
+				<div class="vector-toc-text">
+					<span class="vector-toc-numb">2.2.1</span>
+					<span>Pronunciation</span>
+				</div>
+			</a>
+			
+			<ul id="toc-Pronunciation_3-sublist" class="vector-toc-list">
+			</ul>
+		</li>
+		<li id="toc-Verb_3"
+			class="vector-toc-list-item vector-toc-level-3">
+			<a class="vector-toc-link" href="#Verb_3">
+				<div class="vector-toc-text">
+					<span class="vector-toc-numb">2.2.2</span>
+					<span>Verb</span>
+				</div>
+			</a>
+			
+			<ul id="toc-Verb_3-sublist" class="vector-toc-list">
+			</ul>
+		</li>
+	</ul>
+		</li>
+		<li id="toc-References"
+			class="vector-toc-list-item vector-toc-level-2">
+			<a class="vector-toc-link" href="#References">
+				<div class="vector-toc-text">
+					<span class="vector-toc-numb">2.3</span>
+					<span>References</span>
+				</div>
+			</a>
+			
+			<ul id="toc-References-sublist" class="vector-toc-list">
+			</ul>
+		</li>
+	</ul>
+	</li>
+</ul>
+</div>
+
+					</div>
+		</nav>
+			</div>
+		</div>
+		<div class="mw-content-container">
+			<main id="content" class="mw-body">
+				<header class="mw-body-header vector-page-titlebar">
+					<nav aria-label="Contents" class="vector-toc-landmark">
+						
+<div id="vector-page-titlebar-toc" class="vector-dropdown vector-page-titlebar-toc vector-button-flush-left"  title="Table of Contents" >
+	<input type="checkbox" id="vector-page-titlebar-toc-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-page-titlebar-toc" class="vector-dropdown-checkbox "  aria-label="Toggle the table of contents"  >
+	<label id="vector-page-titlebar-toc-label" for="vector-page-titlebar-toc-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only " aria-hidden="true"  ><span class="vector-icon mw-ui-icon-listBullet mw-ui-icon-wikimedia-listBullet"></span>
+
+<span class="vector-dropdown-label-text">Toggle the table of contents</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+							<div id="vector-page-titlebar-toc-unpinned-container" class="vector-unpinned-container">
+			</div>
+		
+	</div>
+</div>
+
+					</nav>
+					<h1 id="firstHeading" class="firstHeading mw-first-heading"><span class="mw-page-title-main">asettaa</span></h1>
+							
+<div id="p-lang-btn" class="vector-dropdown mw-portlet mw-portlet-lang"  >
+	<input type="checkbox" id="p-lang-btn-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-p-lang-btn" class="vector-dropdown-checkbox mw-interlanguage-selector" aria-label="Go to an article in another language. Available in 10 languages"   >
+	<label id="p-lang-btn-label" for="p-lang-btn-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--action-progressive mw-portlet-lang-heading-10" aria-hidden="true"  ><span class="vector-icon mw-ui-icon-language-progressive mw-ui-icon-wikimedia-language-progressive"></span>
+
+<span class="vector-dropdown-label-text">10 languages</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+		<div class="vector-menu-content">
+			
+			<ul class="vector-menu-content-list">
+				
+				<li class="interlanguage-link interwiki-et mw-list-item"><a href="https://et.wiktionary.org/wiki/asettaa" title="asettaa – Estonian" lang="et" hreflang="et" data-title="asettaa" data-language-autonym="Eesti" data-language-local-name="Estonian" class="interlanguage-link-target"><span>Eesti</span></a></li><li class="interlanguage-link interwiki-io mw-list-item"><a href="https://io.wiktionary.org/wiki/asettaa" title="asettaa – Ido" lang="io" hreflang="io" data-title="asettaa" data-language-autonym="Ido" data-language-local-name="Ido" class="interlanguage-link-target"><span>Ido</span></a></li><li class="interlanguage-link interwiki-ku mw-list-item"><a href="https://ku.wiktionary.org/wiki/asettaa" title="asettaa – Kurdish" lang="ku" hreflang="ku" data-title="asettaa" data-language-autonym="Kurdî" data-language-local-name="Kurdish" class="interlanguage-link-target"><span>Kurdî</span></a></li><li class="interlanguage-link interwiki-lt mw-list-item"><a href="https://lt.wiktionary.org/wiki/asettaa" title="asettaa – Lithuanian" lang="lt" hreflang="lt" data-title="asettaa" data-language-autonym="Lietuvių" data-language-local-name="Lithuanian" class="interlanguage-link-target"><span>Lietuvių</span></a></li><li class="interlanguage-link interwiki-mg mw-list-item"><a href="https://mg.wiktionary.org/wiki/asettaa" title="asettaa – Malagasy" lang="mg" hreflang="mg" data-title="asettaa" data-language-autonym="Malagasy" data-language-local-name="Malagasy" class="interlanguage-link-target"><span>Malagasy</span></a></li><li class="interlanguage-link interwiki-ru mw-list-item"><a href="https://ru.wiktionary.org/wiki/asettaa" title="asettaa – Russian" lang="ru" hreflang="ru" data-title="asettaa" data-language-autonym="Русский" data-language-local-name="Russian" class="interlanguage-link-target"><span>Русский</span></a></li><li class="interlanguage-link interwiki-fi mw-list-item"><a href="https://fi.wiktionary.org/wiki/asettaa" title="asettaa – Finnish" lang="fi" hreflang="fi" data-title="asettaa" data-language-autonym="Suomi" data-language-local-name="Finnish" class="interlanguage-link-target"><span>Suomi</span></a></li><li class="interlanguage-link interwiki-tl mw-list-item"><a href="https://tl.wiktionary.org/wiki/asettaa" title="asettaa – Tagalog" lang="tl" hreflang="tl" data-title="asettaa" data-language-autonym="Tagalog" data-language-local-name="Tagalog" class="interlanguage-link-target"><span>Tagalog</span></a></li><li class="interlanguage-link interwiki-tr mw-list-item"><a href="https://tr.wiktionary.org/wiki/asettaa" title="asettaa – Turkish" lang="tr" hreflang="tr" data-title="asettaa" data-language-autonym="Türkçe" data-language-local-name="Turkish" class="interlanguage-link-target"><span>Türkçe</span></a></li><li class="interlanguage-link interwiki-zh mw-list-item"><a href="https://zh.wiktionary.org/wiki/asettaa" title="asettaa – Chinese" lang="zh" hreflang="zh" data-title="asettaa" data-language-autonym="中文" data-language-local-name="Chinese" class="interlanguage-link-target"><span>中文</span></a></li>
+			</ul>
+			
+		</div>
+
+	</div>
+</div>
+</header>
+				<div class="vector-page-toolbar">
+					<div class="vector-page-toolbar-container">
+						<div id="left-navigation">
+							<nav aria-label="Namespaces">
+								
+<div id="p-associated-pages" class="vector-menu vector-menu-tabs mw-portlet mw-portlet-associated-pages"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="ca-nstab-main" class="selected vector-tab-noicon mw-list-item"><a href="/wiki/asettaa" title="View the content page [c]" accesskey="c"><span>Entry</span></a></li><li id="ca-talk" class="vector-tab-noicon mw-list-item"><a href="/wiki/Talk:asettaa" rel="discussion" title="Discussion about the content page [t]" accesskey="t"><span>Discussion</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+								
+<div id="vector-variants-dropdown" class="vector-dropdown emptyPortlet"  >
+	<input type="checkbox" id="vector-variants-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-variants-dropdown" class="vector-dropdown-checkbox " aria-label="Change language variant"   >
+	<label id="vector-variants-dropdown-label" for="vector-variants-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet" aria-hidden="true"  ><span class="vector-dropdown-label-text">English</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+					
+<div id="p-variants" class="vector-menu mw-portlet mw-portlet-variants emptyPortlet"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			
+		</ul>
+		
+	</div>
+</div>
+
+				
+	</div>
+</div>
+
+							</nav>
+						</div>
+						<div id="right-navigation" class="vector-collapsible">
+							<nav aria-label="Views">
+								
+<div id="p-views" class="vector-menu vector-menu-tabs mw-portlet mw-portlet-views"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="ca-view" class="selected vector-tab-noicon mw-list-item"><a href="/wiki/asettaa"><span>Read</span></a></li><li id="ca-edit" class="vector-tab-noicon mw-list-item"><a href="/w/index.php?title=asettaa&amp;action=edit" title="Edit this page [e]" accesskey="e"><span>Edit</span></a></li><li id="ca-history" class="vector-tab-noicon mw-list-item"><a href="/w/index.php?title=asettaa&amp;action=history" title="Past revisions of this page [h]" accesskey="h"><span>View history</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+							</nav>
+				
+							<nav class="vector-page-tools-landmark" aria-label="Page tools">
+								
+<div id="vector-page-tools-dropdown" class="vector-dropdown vector-page-tools-dropdown"  >
+	<input type="checkbox" id="vector-page-tools-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-page-tools-dropdown" class="vector-dropdown-checkbox "  aria-label="Tools"  >
+	<label id="vector-page-tools-dropdown-label" for="vector-page-tools-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet" aria-hidden="true"  ><span class="vector-dropdown-label-text">Tools</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+									<div id="vector-page-tools-unpinned-container" class="vector-unpinned-container">
+						
+<div id="vector-page-tools" class="vector-page-tools vector-pinnable-element">
+	<div
+	class="vector-pinnable-header vector-page-tools-pinnable-header vector-pinnable-header-unpinned"
+	data-feature-name="page-tools-pinned"
+	data-pinnable-element-id="vector-page-tools"
+	data-pinned-container-id="vector-page-tools-pinned-container"
+	data-unpinned-container-id="vector-page-tools-unpinned-container"
+>
+	<div class="vector-pinnable-header-label">Tools</div>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-page-tools.pin">move to sidebar</button>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-page-tools.unpin">hide</button>
+</div>
+
+	
+<div id="p-cactions" class="vector-menu mw-portlet mw-portlet-cactions emptyPortlet vector-has-collapsible-items"  title="More options" >
+	<div class="vector-menu-heading">
+		Actions
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="ca-more-view" class="selected vector-more-collapsible-item mw-list-item"><a href="/wiki/asettaa"><span>Read</span></a></li><li id="ca-more-edit" class="vector-more-collapsible-item mw-list-item"><a href="/w/index.php?title=asettaa&amp;action=edit" title="Edit this page [e]" accesskey="e"><span>Edit</span></a></li><li id="ca-more-history" class="vector-more-collapsible-item mw-list-item"><a href="/w/index.php?title=asettaa&amp;action=history"><span>View history</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+<div id="p-tb" class="vector-menu mw-portlet mw-portlet-tb"  >
+	<div class="vector-menu-heading">
+		General
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="t-whatlinkshere" class="mw-list-item"><a href="/wiki/Special:WhatLinksHere/asettaa" title="A list of all wiki pages that link here [j]" accesskey="j"><span>What links here</span></a></li><li id="t-recentchangeslinked" class="mw-list-item"><a href="/wiki/Special:RecentChangesLinked/asettaa" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k"><span>Related changes</span></a></li><li id="t-upload" class="mw-list-item"><a href="//commons.wikimedia.org/wiki/Special:UploadWizard?uselang=en" title="Upload files [u]" accesskey="u"><span>Upload file</span></a></li><li id="t-permalink" class="mw-list-item"><a href="/w/index.php?title=asettaa&amp;oldid=83301689" title="Permanent link to this revision of this page"><span>Permanent link</span></a></li><li id="t-info" class="mw-list-item"><a href="/w/index.php?title=asettaa&amp;action=info" title="More information about this page"><span>Page information</span></a></li><li id="t-cite" class="mw-list-item"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=asettaa&amp;id=83301689&amp;wpFormIdentifier=titleform" title="Information on how to cite this page"><span>Cite this page</span></a></li><li id="t-urlshortener" class="mw-list-item"><a href="/w/index.php?title=Special:UrlShortener&amp;url=https%3A%2F%2Fen.wiktionary.org%2Fwiki%2Fasettaa"><span>Get shortened URL</span></a></li><li id="t-urlshortener-qrcode" class="mw-list-item"><a href="/w/index.php?title=Special:QrCode&amp;url=https%3A%2F%2Fen.wiktionary.org%2Fwiki%2Fasettaa"><span>Download QR code</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+<div id="p-coll-print_export" class="vector-menu mw-portlet mw-portlet-coll-print_export"  >
+	<div class="vector-menu-heading">
+		Print/export
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="coll-create_a_book" class="mw-list-item"><a href="/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=asettaa"><span>Create a book</span></a></li><li id="coll-download-as-rl" class="mw-list-item"><a href="/w/index.php?title=Special:DownloadAsPdf&amp;page=asettaa&amp;action=show-download-screen"><span>Download as PDF</span></a></li><li id="t-print" class="mw-list-item"><a href="/w/index.php?title=asettaa&amp;printable=yes" title="Printable version of this page [p]" accesskey="p"><span>Printable version</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+<div id="p-wikibase-otherprojects" class="vector-menu mw-portlet mw-portlet-wikibase-otherprojects emptyPortlet"  >
+	<div class="vector-menu-heading">
+		In other projects
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			
+		</ul>
+		
+	</div>
+</div>
+
+</div>
+
+									</div>
+				
+	</div>
+</div>
+
+							</nav>
+						</div>
+					</div>
+				</div>
+				<div class="vector-column-end">
+					<div class="vector-sticky-pinned-container">
+						<nav class="vector-page-tools-landmark" aria-label="Page tools">
+							<div id="vector-page-tools-pinned-container" class="vector-pinned-container">
+				
+							</div>
+		</nav>
+						<nav class="vector-appearance-landmark" aria-label="Appearance">
+							<div id="vector-appearance-pinned-container" class="vector-pinned-container">
+				<div id="vector-appearance" class="vector-appearance vector-pinnable-element">
+	<div
+	class="vector-pinnable-header vector-appearance-pinnable-header vector-pinnable-header-pinned"
+	data-feature-name="appearance-pinned"
+	data-pinnable-element-id="vector-appearance"
+	data-pinned-container-id="vector-appearance-pinned-container"
+	data-unpinned-container-id="vector-appearance-unpinned-container"
+>
+	<div class="vector-pinnable-header-label">Appearance</div>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-appearance.pin">move to sidebar</button>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-appearance.unpin">hide</button>
+</div>
+
+
+</div>
+
+							</div>
+		</nav>
+					</div>
+				</div>
+				<div id="bodyContent" class="vector-body" aria-labelledby="firstHeading" data-mw-ve-target-container>
+					<div class="vector-body-before-content">
+							<div class="mw-indicators">
+		</div>
+
+						<div id="siteSub" class="noprint">From Wiktionary, the free dictionary</div>
+					</div>
+					<div id="contentSub"><div id="mw-content-subtitle"></div></div>
+					
+					
+					<div id="mw-content-text" class="mw-body-content"><div class="mw-content-ltr mw-parser-output" lang="en" dir="ltr"><meta property="mw:PageProp/toc" />
+<div class="mw-heading mw-heading2"><h2 id="Finnish">Finnish</h2><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=asettaa&amp;action=edit&amp;section=1" title="Edit section: Finnish"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<div class="mw-heading mw-heading3"><h3 id="Etymology">Etymology</h3><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=asettaa&amp;action=edit&amp;section=2" title="Edit section: Etymology"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<p>From <span class="etyl"><a href="https://en.wikipedia.org/wiki/Proto-Finnic_language" class="extiw" title="w:Proto-Finnic language">Proto-Finnic</a></span> <i class="Latn mention" lang="urj-fin-pro"><a href="/wiki/Reconstruction:Proto-Finnic/as%C3%ABttadak" title="Reconstruction:Proto-Finnic/asëttadak">&#42;asëttadak</a></i>. Equivalent to <i class="Latn mention" lang="fi"><a href="/wiki/asea#Finnish" title="asea">asea</a></i> +&#8206; <i class="Latn mention" lang="fi"><a href="/wiki/-ttaa#Finnish" title="-ttaa">-ttaa</a></i>.
+</p>
+<div class="mw-heading mw-heading3"><h3 id="Pronunciation">Pronunciation</h3><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=asettaa&amp;action=edit&amp;section=3" title="Edit section: Pronunciation"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<ul><li><a href="/wiki/Wiktionary:International_Phonetic_Alphabet" title="Wiktionary:International Phonetic Alphabet">IPA</a><sup>(<a href="/wiki/Appendix:Finnish_pronunciation" title="Appendix:Finnish pronunciation">key</a>)</sup>:&#32;<span class="IPA">/ˈɑsetːɑːˣ/</span>, <span class="IPA">[ˈɑ̝s̠e̞t̪ːɑ̝ː(ʔ)]</span></li>
+<li>Rhymes: <a href="/w/index.php?title=Rhymes:Finnish/%C9%91set%CB%90%C9%91%CB%90&amp;action=edit&amp;redlink=1" class="new" title="Rhymes:Finnish/ɑsetːɑː (page does not exist)"><span class="IPA">-ɑsetːɑː</span></a></li>
+<li>Hyphenation<sup>(<a href="/wiki/Appendix:Finnish_hyphenation" title="Appendix:Finnish hyphenation">key</a>)</sup>: <span class="Latn" lang="fi">aset‧taa</span></li></ul>
+<div class="mw-heading mw-heading3"><h3 id="Verb">Verb</h3><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=asettaa&amp;action=edit&amp;section=4" title="Edit section: Verb"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<p><span class="headword-line"><strong class="Latn headword" lang="fi">asettaa</strong></span>
+</p>
+<ol><li><span class="usage-label-sense"><span class="ib-brac label-brac">(</span><span class="ib-content label-content"><a href="/wiki/Appendix:Glossary#transitive" title="Appendix:Glossary">transitive</a></span><span class="ib-brac label-brac">)</span></span> to <a href="/wiki/put" title="put">put</a>, <a href="/wiki/place" title="place">place</a>, <a href="/wiki/set" title="set">set</a>, (<a href="/wiki/move" title="move">move</a> into) <a href="/wiki/position" title="position">position</a>, <a href="/wiki/locate" title="locate">locate</a> <style data-mw-deduplicate="TemplateStyles:r80655919">.mw-parser-output .object-usage-tag{font-style:italic}.mw-parser-output .deprecated{color:olivedrab}</style>[<i>with</i> <span class="object-usage-tag"><a href="https://en.wikipedia.org/wiki/illative_case" class="extiw" title="w:illative case">illative</a></span> <i>or</i> <span class="object-usage-tag"><a href="/wiki/allative_case" title="allative case">allative</a></span> <small>‘in/on’</small>]
+<dl><dd><span class="nyms synonym"><span class="defdate">Synonyms:</span> <span class="Latn" lang="fi"><a href="/wiki/panna#Finnish" title="panna">panna</a></span>, <span class="Latn" lang="fi"><a href="/wiki/laittaa#Finnish" title="laittaa">laittaa</a></span></span></dd>
+<dd><span class="h-usage-example collocation"><i class="Latn mention e-example" lang="fi"><b>asettaa</b> ehdoksi</i> ― <span class="e-translation">to <a href="/wiki/stipulate" title="stipulate">stipulate</a>, make it a <a href="/wiki/condition" title="condition">condition</a> (that)</span></span></dd>
+<dd><span class="h-usage-example collocation"><i class="Latn mention e-example" lang="fi"><b>asettaa</b> etusijalle</i> ― <span class="e-translation">to <a href="/wiki/prefer" title="prefer">prefer</a>, give <a href="/wiki/precedence" title="precedence">precedence</a> to</span></span></dd>
+<dd><span class="h-usage-example collocation"><i class="Latn mention e-example" lang="fi"><b>asettaa</b> kyseenalaiseksi</i> ― <span class="e-translation">to <a href="/wiki/question" title="question">question</a>, place under question</span></span></dd>
+<dd><span class="h-usage-example collocation"><i class="Latn mention e-example" lang="fi"><b>asettaa</b> näytteille</i> ― <span class="e-translation">to put on <a href="/wiki/display" title="display">display</a></span></span></dd></dl></li>
+<li><span class="usage-label-sense"><span class="ib-brac label-brac">(</span><span class="ib-content label-content"><a href="/wiki/Appendix:Glossary#transitive" title="Appendix:Glossary">transitive</a></span><span class="ib-brac label-brac">)</span></span> to <a href="/wiki/set_up" title="set up">set up</a>, <a href="/wiki/found" title="found">found</a>, <a href="/wiki/institute" title="institute">institute</a> <span class="gloss-brac">(</span><span class="gloss-content"><span class="Latn" lang="en">usually as an administrative order</span></span><span class="gloss-brac">)</span>
+<dl><dd><span class="nyms synonym"><span class="defdate">Synonym:</span> <span class="Latn" lang="fi"><a href="/wiki/perustaa#Finnish" title="perustaa">perustaa</a></span></span></dd>
+<dd><span class="h-usage-example collocation"><i class="Latn mention e-example" lang="fi"><b>asettaa</b> syytteeseen</i> ― <span class="e-translation">to <a href="/wiki/sue" title="sue">sue</a>, <a href="/wiki/file" title="file">file</a> a (law)suit (against), <a href="/wiki/prosecute" title="prosecute">prosecute</a></span></span></dd>
+<dd><span class="h-usage-example collocation"><i class="Latn mention e-example" lang="fi"><b>asettaa</b> virkaan</i> ― <span class="e-translation">to <a href="/wiki/install" title="install">install</a>, <a href="/wiki/put" title="put">put</a> into office, <a href="/wiki/inaugurate" title="inaugurate">inaugurate</a></span></span></dd></dl></li>
+<li><span class="usage-label-sense"><span class="ib-brac label-brac">(</span><span class="ib-content label-content"><a href="/wiki/Appendix:Glossary#transitive" title="Appendix:Glossary">transitive</a></span><span class="ib-brac label-brac">)</span></span> to <a href="/wiki/arrange" title="arrange">arrange</a>, <a href="/wiki/compose" title="compose">compose</a>, <a href="/wiki/organise" title="organise">organise</a>/<a href="/wiki/organize" title="organize">organize</a>, <a href="/wiki/coordinate" title="coordinate">coordinate</a>
+<dl><dd><span class="nyms synonym"><span class="defdate">Synonym:</span> <span class="Latn" lang="fi"><a href="/wiki/j%C3%A4rjest%C3%A4%C3%A4#Finnish" title="järjestää">järjestää</a></span></span></dd>
+<dd><span class="h-usage-example collocation"><i class="Latn mention e-example" lang="fi"><b>asettaa</b> päällekkäin</i> ― <span class="e-translation">to put on top of another, <a href="/wiki/superimpose" title="superimpose">superimpose</a></span></span></dd>
+<dd><span class="h-usage-example collocation"><i class="Latn mention e-example" lang="fi"><b>asettaa</b> rinnakkain</i> ― <span class="e-translation">to put next to another, <a href="/wiki/juxtapose" title="juxtapose">juxtapose</a></span></span></dd></dl></li>
+<li><span class="usage-label-sense"><span class="ib-brac label-brac">(</span><span class="ib-content label-content"><a href="/wiki/Appendix:Glossary#transitive" title="Appendix:Glossary">transitive</a></span><span class="ib-brac label-brac">)</span></span> to <a href="/wiki/pacify" title="pacify">pacify</a>, <a href="/wiki/appease" title="appease">appease</a>, <a href="/wiki/calm" title="calm">calm</a>, <a href="/wiki/quiet" title="quiet">quiet</a> <a href="/wiki/quiet_down" title="quiet down">(down)</a>, <a href="/wiki/soothe" title="soothe">soothe</a>, <a href="/wiki/placate" title="placate">placate</a>
+<dl><dd><span class="nyms synonym"><span class="defdate">Synonym:</span> <span class="Latn" lang="fi"><a href="/wiki/saada#Finnish" title="saada">saada</a> <a href="/wiki/asettua#Finnish" title="asettua">asettumaan</a></span></span></dd></dl></li></ol>
+<div class="mw-heading mw-heading4"><h4 id="Conjugation">Conjugation</h4><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=asettaa&amp;action=edit&amp;section=5" title="Edit section: Conjugation"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<div class="noresize">
+<table class="inflection-table vsSwitcher fi-conj" data-toggle-category="conjugation">
+
+<tbody><tr>
+<th class="vsToggleElement" colspan="7"><a href="/wiki/Appendix:Finnish_verb_forms" title="Appendix:Finnish verb forms">Inflection</a> of <i class="Latn mention" lang="fi">asettaa</i> (<a href="/wiki/Kotus" title="Kotus">Kotus</a> type 53*C/<span lang="fi" class="Latn"><a href="/wiki/Appendix:Finnish_conjugation/muistaa" title="Appendix:Finnish conjugation/muistaa">muistaa</a></span>, <i>tt</i>-<i>t</i> gradation)
+</th></tr>
+<tr class="vsHide">
+<th colspan="7"><a href="/wiki/indicative_mood" title="indicative mood">indicative&#160;mood</a>
+</th></tr>
+<tr class="vsHide">
+<th colspan="4"><a href="/wiki/present_tense" title="present tense">present&#160;tense</a>
+</th>
+<th colspan="3">perfect
+</th></tr>
+<tr class="vsHide">
+<th class="fi-conj-header-person" colspan="2">person
+</th>
+<th class="fi-conj-header-posneg thsub">positive
+</th>
+<th class="fi-conj-header-posneg thsub">negative
+</th>
+<th class="fi-conj-header-person">person
+</th>
+<th class="fi-conj-header-posneg thsub">positive
+</th>
+<th class="fi-conj-header-posneg thsub">negative
+</th></tr>
+<tr class="vsHide">
+<th colspan="2"><span title="first-person singular">1st&#160;sing.</span>
+</th>
+<td data-accel-col="1"><span class="Latn form-of lang-fi 1&#124;s&#124;pres&#124;indc-form-of" lang="fi"><a href="/wiki/asetan#Finnish" title="asetan">asetan</a></span>
+</td>
+<td data-accel-col="2"><span class="Latn form-of lang-fi pres&#124;actv&#124;indc&#124;conn-form-of" lang="fi">en <a href="/wiki/aseta#Finnish" title="aseta">aseta</a></span>
+</td>
+<th><span title="first-person singular">1st&#160;sing.</span>
+</th>
+<td data-accel-col="3"><span class="Latn" lang="fi">olen <a href="/wiki/asettanut" title="asettanut">asettanut</a></span>
+</td>
+<td data-accel-col="4"><span class="Latn" lang="fi">en ole <a href="/wiki/asettanut" title="asettanut">asettanut</a></span>
+</td></tr>
+<tr class="vsHide">
+<th colspan="2"><span title="second-person singular">2nd&#160;sing.</span>
+</th>
+<td data-accel-col="1"><span class="Latn form-of lang-fi 2&#124;s&#124;pres&#124;indc-form-of" lang="fi"><a href="/wiki/asetat#Finnish" title="asetat">asetat</a></span>
+</td>
+<td data-accel-col="2"><span class="Latn form-of lang-fi pres&#124;actv&#124;indc&#124;conn-form-of" lang="fi">et <a href="/wiki/aseta#Finnish" title="aseta">aseta</a></span>
+</td>
+<th><span title="second-person singular">2nd&#160;sing.</span>
+</th>
+<td data-accel-col="3"><span class="Latn" lang="fi">olet <a href="/wiki/asettanut" title="asettanut">asettanut</a></span>
+</td>
+<td data-accel-col="4"><span class="Latn" lang="fi">et ole <a href="/wiki/asettanut" title="asettanut">asettanut</a></span>
+</td></tr>
+<tr class="vsHide">
+<th colspan="2"><span title="third-person singular">3rd&#160;sing.</span>
+</th>
+<td data-accel-col="1"><span class="Latn" lang="fi"><strong class="selflink">asettaa</strong></span>
+</td>
+<td data-accel-col="2"><span class="Latn form-of lang-fi pres&#124;actv&#124;indc&#124;conn-form-of" lang="fi">ei <a href="/wiki/aseta#Finnish" title="aseta">aseta</a></span>
+</td>
+<th><span title="third-person singular">3rd&#160;sing.</span>
+</th>
+<td data-accel-col="3"><span class="Latn" lang="fi">on <a href="/wiki/asettanut" title="asettanut">asettanut</a></span>
+</td>
+<td data-accel-col="4"><span class="Latn" lang="fi">ei ole <a href="/wiki/asettanut" title="asettanut">asettanut</a></span>
+</td></tr>
+<tr class="vsHide">
+<th colspan="2"><span title="first-person plural">1st&#160;plur.</span>
+</th>
+<td data-accel-col="1"><span class="Latn form-of lang-fi 1&#124;p&#124;pres&#124;indc-form-of" lang="fi"><a href="/w/index.php?title=asetamme&amp;action=edit&amp;redlink=1" class="new" title="asetamme (page does not exist)">asetamme</a></span>
+</td>
+<td data-accel-col="2"><span class="Latn form-of lang-fi pres&#124;actv&#124;indc&#124;conn-form-of" lang="fi">emme <a href="/wiki/aseta#Finnish" title="aseta">aseta</a></span>
+</td>
+<th><span title="first-person plural">1st&#160;plur.</span>
+</th>
+<td data-accel-col="3"><span class="Latn" lang="fi">olemme <a href="/w/index.php?title=asettaneet&amp;action=edit&amp;redlink=1" class="new" title="asettaneet (page does not exist)">asettaneet</a></span>
+</td>
+<td data-accel-col="4"><span class="Latn" lang="fi">emme ole <a href="/w/index.php?title=asettaneet&amp;action=edit&amp;redlink=1" class="new" title="asettaneet (page does not exist)">asettaneet</a></span>
+</td></tr>
+<tr class="vsHide">
+<th colspan="2"><span title="second-person plural">2nd&#160;plur.</span>
+</th>
+<td data-accel-col="1"><span class="Latn form-of lang-fi 2&#124;p&#124;pres&#124;indc-form-of" lang="fi"><a href="/w/index.php?title=asetatte&amp;action=edit&amp;redlink=1" class="new" title="asetatte (page does not exist)">asetatte</a></span>
+</td>
+<td data-accel-col="2"><span class="Latn form-of lang-fi pres&#124;actv&#124;indc&#124;conn-form-of" lang="fi">ette <a href="/wiki/aseta#Finnish" title="aseta">aseta</a></span>
+</td>
+<th><span title="second-person plural">2nd&#160;plur.</span>
+</th>
+<td data-accel-col="3"><span class="Latn" lang="fi">olette <a href="/w/index.php?title=asettaneet&amp;action=edit&amp;redlink=1" class="new" title="asettaneet (page does not exist)">asettaneet</a></span>
+</td>
+<td data-accel-col="4"><span class="Latn" lang="fi">ette ole <a href="/w/index.php?title=asettaneet&amp;action=edit&amp;redlink=1" class="new" title="asettaneet (page does not exist)">asettaneet</a></span>
+</td></tr>
+<tr class="vsHide">
+<th colspan="2"><span title="third-person plural">3rd&#160;plur.</span>
+</th>
+<td data-accel-col="1"><span class="Latn form-of lang-fi 3&#124;p&#124;pres&#124;indc-form-of" lang="fi"><a href="/wiki/asettavat#Finnish" title="asettavat">asettavat</a></span>
+</td>
+<td data-accel-col="2"><span class="Latn form-of lang-fi pres&#124;actv&#124;indc&#124;conn-form-of" lang="fi">eivät <a href="/wiki/aseta#Finnish" title="aseta">aseta</a></span>
+</td>
+<th><span title="third-person plural">3rd&#160;plur.</span>
+</th>
+<td data-accel-col="3"><span class="Latn" lang="fi">ovat <a href="/w/index.php?title=asettaneet&amp;action=edit&amp;redlink=1" class="new" title="asettaneet (page does not exist)">asettaneet</a></span>
+</td>
+<td data-accel-col="4"><span class="Latn" lang="fi">eivät ole <a href="/w/index.php?title=asettaneet&amp;action=edit&amp;redlink=1" class="new" title="asettaneet (page does not exist)">asettaneet</a></span>
+</td></tr>
+<tr class="vsHide">
+<th colspan="2"><span title="passive/impersonal">passive</span>
+</th>
+<td data-accel-col="1"><span class="Latn form-of lang-fi pasv&#124;pres&#124;indc-form-of" lang="fi"><a href="/wiki/asetetaan#Finnish" title="asetetaan">asetetaan</a></span>
+</td>
+<td data-accel-col="2"><span class="Latn form-of lang-fi pres&#124;pasv&#124;indc&#124;conn-form-of" lang="fi">ei <a href="/w/index.php?title=aseteta&amp;action=edit&amp;redlink=1" class="new" title="aseteta (page does not exist)">aseteta</a></span>
+</td>
+<th><span title="passive/impersonal">passive</span>
+</th>
+<td data-accel-col="3"><span class="Latn" lang="fi">on <a href="/wiki/asetettu" title="asetettu">asetettu</a></span>
+</td>
+<td data-accel-col="4"><span class="Latn" lang="fi">ei ole <a href="/wiki/asetettu" title="asetettu">asetettu</a></span>
+</td></tr>
+<tr class="vsHide">
+<th colspan="4"><a href="/wiki/past_tense" title="past tense">past&#160;tense</a>
+</th>
+<th colspan="3">pluperfect
+</th></tr>
+<tr class="vsHide">
+<th class="fi-conj-header-person" colspan="2">person
+</th>
+<th class="fi-conj-header-posneg thsub">positive
+</th>
+<th class="fi-conj-header-posneg thsub">negative
+</th>
+<th class="fi-conj-header-person">person
+</th>
+<th class="fi-conj-header-posneg thsub">positive
+</th>
+<th class="fi-conj-header-posneg thsub">negative
+</th></tr>
+<tr class="vsHide">
+<th colspan="2"><span title="first-person singular">1st&#160;sing.</span>
+</th>
+<td data-accel-col="1"><span class="Latn form-of lang-fi 1&#124;s&#124;past&#124;indc-form-of" lang="fi"><a href="/wiki/asetin#Finnish" title="asetin">asetin</a></span>
+</td>
+<td data-accel-col="2"><span class="Latn form-of lang-fi past&#124;actv&#124;indc&#124;conn-form-of" lang="fi">en <a href="/wiki/asettanut#Finnish" title="asettanut">asettanut</a></span>
+</td>
+<th><span title="first-person singular">1st&#160;sing.</span>
+</th>
+<td data-accel-col="3"><span class="Latn" lang="fi">olin <a href="/wiki/asettanut" title="asettanut">asettanut</a></span>
+</td>
+<td data-accel-col="4"><span class="Latn" lang="fi">en ollut <a href="/wiki/asettanut" title="asettanut">asettanut</a></span>
+</td></tr>
+<tr class="vsHide">
+<th colspan="2"><span title="second-person singular">2nd&#160;sing.</span>
+</th>
+<td data-accel-col="1"><span class="Latn form-of lang-fi 2&#124;s&#124;past&#124;indc-form-of" lang="fi"><a href="/wiki/asetit#Finnish" title="asetit">asetit</a></span>
+</td>
+<td data-accel-col="2"><span class="Latn form-of lang-fi past&#124;actv&#124;indc&#124;conn-form-of" lang="fi">et <a href="/wiki/asettanut#Finnish" title="asettanut">asettanut</a></span>
+</td>
+<th><span title="second-person singular">2nd&#160;sing.</span>
+</th>
+<td data-accel-col="3"><span class="Latn" lang="fi">olit <a href="/wiki/asettanut" title="asettanut">asettanut</a></span>
+</td>
+<td data-accel-col="4"><span class="Latn" lang="fi">et ollut <a href="/wiki/asettanut" title="asettanut">asettanut</a></span>
+</td></tr>
+<tr class="vsHide">
+<th colspan="2"><span title="third-person singular">3rd&#160;sing.</span>
+</th>
+<td data-accel-col="1"><span class="Latn form-of lang-fi 3&#124;s&#124;past&#124;indc-form-of" lang="fi"><a href="/wiki/asetti#Finnish" title="asetti">asetti</a></span>
+</td>
+<td data-accel-col="2"><span class="Latn form-of lang-fi past&#124;actv&#124;indc&#124;conn-form-of" lang="fi">ei <a href="/wiki/asettanut#Finnish" title="asettanut">asettanut</a></span>
+</td>
+<th><span title="third-person singular">3rd&#160;sing.</span>
+</th>
+<td data-accel-col="3"><span class="Latn" lang="fi">oli <a href="/wiki/asettanut" title="asettanut">asettanut</a></span>
+</td>
+<td data-accel-col="4"><span class="Latn" lang="fi">ei ollut <a href="/wiki/asettanut" title="asettanut">asettanut</a></span>
+</td></tr>
+<tr class="vsHide">
+<th colspan="2"><span title="first-person plural">1st&#160;plur.</span>
+</th>
+<td data-accel-col="1"><span class="Latn form-of lang-fi 1&#124;p&#124;past&#124;indc-form-of" lang="fi"><a href="/w/index.php?title=asetimme&amp;action=edit&amp;redlink=1" class="new" title="asetimme (page does not exist)">asetimme</a></span>
+</td>
+<td data-accel-col="2"><span class="Latn form-of lang-fi past&#124;actv&#124;indc&#124;conn-form-of" lang="fi">emme <a href="/w/index.php?title=asettaneet&amp;action=edit&amp;redlink=1" class="new" title="asettaneet (page does not exist)">asettaneet</a></span>
+</td>
+<th><span title="first-person plural">1st&#160;plur.</span>
+</th>
+<td data-accel-col="3"><span class="Latn" lang="fi">olimme <a href="/w/index.php?title=asettaneet&amp;action=edit&amp;redlink=1" class="new" title="asettaneet (page does not exist)">asettaneet</a></span>
+</td>
+<td data-accel-col="4"><span class="Latn" lang="fi">emme olleet <a href="/w/index.php?title=asettaneet&amp;action=edit&amp;redlink=1" class="new" title="asettaneet (page does not exist)">asettaneet</a></span>
+</td></tr>
+<tr class="vsHide">
+<th colspan="2"><span title="second-person plural">2nd&#160;plur.</span>
+</th>
+<td data-accel-col="1"><span class="Latn form-of lang-fi 2&#124;p&#124;past&#124;indc-form-of" lang="fi"><a href="/w/index.php?title=asetitte&amp;action=edit&amp;redlink=1" class="new" title="asetitte (page does not exist)">asetitte</a></span>
+</td>
+<td data-accel-col="2"><span class="Latn form-of lang-fi past&#124;actv&#124;indc&#124;conn-form-of" lang="fi">ette <a href="/w/index.php?title=asettaneet&amp;action=edit&amp;redlink=1" class="new" title="asettaneet (page does not exist)">asettaneet</a></span>
+</td>
+<th><span title="second-person plural">2nd&#160;plur.</span>
+</th>
+<td data-accel-col="3"><span class="Latn" lang="fi">olitte <a href="/w/index.php?title=asettaneet&amp;action=edit&amp;redlink=1" class="new" title="asettaneet (page does not exist)">asettaneet</a></span>
+</td>
+<td data-accel-col="4"><span class="Latn" lang="fi">ette olleet <a href="/w/index.php?title=asettaneet&amp;action=edit&amp;redlink=1" class="new" title="asettaneet (page does not exist)">asettaneet</a></span>
+</td></tr>
+<tr class="vsHide">
+<th colspan="2"><span title="third-person plural">3rd&#160;plur.</span>
+</th>
+<td data-accel-col="1"><span class="Latn form-of lang-fi 3&#124;p&#124;past&#124;indc-form-of" lang="fi"><a href="/w/index.php?title=asettivat&amp;action=edit&amp;redlink=1" class="new" title="asettivat (page does not exist)">asettivat</a></span>
+</td>
+<td data-accel-col="2"><span class="Latn form-of lang-fi past&#124;actv&#124;indc&#124;conn-form-of" lang="fi">eivät <a href="/w/index.php?title=asettaneet&amp;action=edit&amp;redlink=1" class="new" title="asettaneet (page does not exist)">asettaneet</a></span>
+</td>
+<th><span title="third-person plural">3rd&#160;plur.</span>
+</th>
+<td data-accel-col="3"><span class="Latn" lang="fi">olivat <a href="/w/index.php?title=asettaneet&amp;action=edit&amp;redlink=1" class="new" title="asettaneet (page does not exist)">asettaneet</a></span>
+</td>
+<td data-accel-col="4"><span class="Latn" lang="fi">eivät olleet <a href="/w/index.php?title=asettaneet&amp;action=edit&amp;redlink=1" class="new" title="asettaneet (page does not exist)">asettaneet</a></span>
+</td></tr>
+<tr class="vsHide">
+<th colspan="2"><span title="passive/impersonal">passive</span>
+</th>
+<td data-accel-col="1"><span class="Latn form-of lang-fi pasv&#124;past&#124;indc-form-of" lang="fi"><a href="/w/index.php?title=asetettiin&amp;action=edit&amp;redlink=1" class="new" title="asetettiin (page does not exist)">asetettiin</a></span>
+</td>
+<td data-accel-col="2"><span class="Latn form-of lang-fi past&#124;pasv&#124;indc&#124;conn-form-of" lang="fi">ei <a href="/wiki/asetettu#Finnish" title="asetettu">asetettu</a></span>
+</td>
+<th><span title="passive/impersonal">passive</span>
+</th>
+<td data-accel-col="3"><span class="Latn" lang="fi">oli <a href="/wiki/asetettu" title="asetettu">asetettu</a></span>
+</td>
+<td data-accel-col="4"><span class="Latn" lang="fi">ei ollut <a href="/wiki/asetettu" title="asetettu">asetettu</a></span>
+</td></tr>
+<tr class="vsHide">
+<th colspan="7"><a href="/wiki/conditional_mood" title="conditional mood">conditional&#160;mood</a>
+</th></tr>
+<tr class="vsHide">
+<th colspan="4">present
+</th>
+<th colspan="3">perfect
+</th></tr>
+<tr class="vsHide">
+<th class="fi-conj-header-person" colspan="2">person
+</th>
+<th class="fi-conj-header-posneg thsub">positive
+</th>
+<th class="fi-conj-header-posneg thsub">negative
+</th>
+<th class="fi-conj-header-person">person
+</th>
+<th class="fi-conj-header-posneg thsub">positive
+</th>
+<th class="fi-conj-header-posneg thsub">negative
+</th></tr>
+<tr class="vsHide">
+<th colspan="2"><span title="first-person singular">1st&#160;sing.</span>
+</th>
+<td data-accel-col="1"><span class="Latn form-of lang-fi 1&#124;s&#124;cond-form-of" lang="fi"><a href="/w/index.php?title=asettaisin&amp;action=edit&amp;redlink=1" class="new" title="asettaisin (page does not exist)">asettaisin</a></span>
+</td>
+<td data-accel-col="2"><span class="Latn form-of lang-fi actv&#124;cond&#124;conn-form-of" lang="fi">en <a href="/w/index.php?title=asettaisi&amp;action=edit&amp;redlink=1" class="new" title="asettaisi (page does not exist)">asettaisi</a></span>
+</td>
+<th><span title="first-person singular">1st&#160;sing.</span>
+</th>
+<td data-accel-col="3"><span class="Latn" lang="fi">olisin <a href="/wiki/asettanut" title="asettanut">asettanut</a></span>
+</td>
+<td data-accel-col="4"><span class="Latn" lang="fi">en olisi <a href="/wiki/asettanut" title="asettanut">asettanut</a></span>
+</td></tr>
+<tr class="vsHide">
+<th colspan="2"><span title="second-person singular">2nd&#160;sing.</span>
+</th>
+<td data-accel-col="1"><span class="Latn form-of lang-fi 2&#124;s&#124;cond-form-of" lang="fi"><a href="/w/index.php?title=asettaisit&amp;action=edit&amp;redlink=1" class="new" title="asettaisit (page does not exist)">asettaisit</a></span>
+</td>
+<td data-accel-col="2"><span class="Latn form-of lang-fi actv&#124;cond&#124;conn-form-of" lang="fi">et <a href="/w/index.php?title=asettaisi&amp;action=edit&amp;redlink=1" class="new" title="asettaisi (page does not exist)">asettaisi</a></span>
+</td>
+<th><span title="second-person singular">2nd&#160;sing.</span>
+</th>
+<td data-accel-col="3"><span class="Latn" lang="fi">olisit <a href="/wiki/asettanut" title="asettanut">asettanut</a></span>
+</td>
+<td data-accel-col="4"><span class="Latn" lang="fi">et olisi <a href="/wiki/asettanut" title="asettanut">asettanut</a></span>
+</td></tr>
+<tr class="vsHide">
+<th colspan="2"><span title="third-person singular">3rd&#160;sing.</span>
+</th>
+<td data-accel-col="1"><span class="Latn form-of lang-fi 3&#124;s&#124;cond-form-of" lang="fi"><a href="/w/index.php?title=asettaisi&amp;action=edit&amp;redlink=1" class="new" title="asettaisi (page does not exist)">asettaisi</a></span>
+</td>
+<td data-accel-col="2"><span class="Latn form-of lang-fi actv&#124;cond&#124;conn-form-of" lang="fi">ei <a href="/w/index.php?title=asettaisi&amp;action=edit&amp;redlink=1" class="new" title="asettaisi (page does not exist)">asettaisi</a></span>
+</td>
+<th><span title="third-person singular">3rd&#160;sing.</span>
+</th>
+<td data-accel-col="3"><span class="Latn" lang="fi">olisi <a href="/wiki/asettanut" title="asettanut">asettanut</a></span>
+</td>
+<td data-accel-col="4"><span class="Latn" lang="fi">ei olisi <a href="/wiki/asettanut" title="asettanut">asettanut</a></span>
+</td></tr>
+<tr class="vsHide">
+<th colspan="2"><span title="first-person plural">1st&#160;plur.</span>
+</th>
+<td data-accel-col="1"><span class="Latn form-of lang-fi 1&#124;p&#124;cond-form-of" lang="fi"><a href="/w/index.php?title=asettaisimme&amp;action=edit&amp;redlink=1" class="new" title="asettaisimme (page does not exist)">asettaisimme</a></span>
+</td>
+<td data-accel-col="2"><span class="Latn form-of lang-fi actv&#124;cond&#124;conn-form-of" lang="fi">emme <a href="/w/index.php?title=asettaisi&amp;action=edit&amp;redlink=1" class="new" title="asettaisi (page does not exist)">asettaisi</a></span>
+</td>
+<th><span title="first-person plural">1st&#160;plur.</span>
+</th>
+<td data-accel-col="3"><span class="Latn" lang="fi">olisimme <a href="/w/index.php?title=asettaneet&amp;action=edit&amp;redlink=1" class="new" title="asettaneet (page does not exist)">asettaneet</a></span>
+</td>
+<td data-accel-col="4"><span class="Latn" lang="fi">emme olisi <a href="/w/index.php?title=asettaneet&amp;action=edit&amp;redlink=1" class="new" title="asettaneet (page does not exist)">asettaneet</a></span>
+</td></tr>
+<tr class="vsHide">
+<th colspan="2"><span title="second-person plural">2nd&#160;plur.</span>
+</th>
+<td data-accel-col="1"><span class="Latn form-of lang-fi 2&#124;p&#124;cond-form-of" lang="fi"><a href="/w/index.php?title=asettaisitte&amp;action=edit&amp;redlink=1" class="new" title="asettaisitte (page does not exist)">asettaisitte</a></span>
+</td>
+<td data-accel-col="2"><span class="Latn form-of lang-fi actv&#124;cond&#124;conn-form-of" lang="fi">ette <a href="/w/index.php?title=asettaisi&amp;action=edit&amp;redlink=1" class="new" title="asettaisi (page does not exist)">asettaisi</a></span>
+</td>
+<th><span title="second-person plural">2nd&#160;plur.</span>
+</th>
+<td data-accel-col="3"><span class="Latn" lang="fi">olisitte <a href="/w/index.php?title=asettaneet&amp;action=edit&amp;redlink=1" class="new" title="asettaneet (page does not exist)">asettaneet</a></span>
+</td>
+<td data-accel-col="4"><span class="Latn" lang="fi">ette olisi <a href="/w/index.php?title=asettaneet&amp;action=edit&amp;redlink=1" class="new" title="asettaneet (page does not exist)">asettaneet</a></span>
+</td></tr>
+<tr class="vsHide">
+<th colspan="2"><span title="third-person plural">3rd&#160;plur.</span>
+</th>
+<td data-accel-col="1"><span class="Latn form-of lang-fi 3&#124;p&#124;cond-form-of" lang="fi"><a href="/w/index.php?title=asettaisivat&amp;action=edit&amp;redlink=1" class="new" title="asettaisivat (page does not exist)">asettaisivat</a></span>
+</td>
+<td data-accel-col="2"><span class="Latn form-of lang-fi actv&#124;cond&#124;conn-form-of" lang="fi">eivät <a href="/w/index.php?title=asettaisi&amp;action=edit&amp;redlink=1" class="new" title="asettaisi (page does not exist)">asettaisi</a></span>
+</td>
+<th><span title="third-person plural">3rd&#160;plur.</span>
+</th>
+<td data-accel-col="3"><span class="Latn" lang="fi">olisivat <a href="/w/index.php?title=asettaneet&amp;action=edit&amp;redlink=1" class="new" title="asettaneet (page does not exist)">asettaneet</a></span>
+</td>
+<td data-accel-col="4"><span class="Latn" lang="fi">eivät olisi <a href="/w/index.php?title=asettaneet&amp;action=edit&amp;redlink=1" class="new" title="asettaneet (page does not exist)">asettaneet</a></span>
+</td></tr>
+<tr class="vsHide">
+<th colspan="2"><span title="passive/impersonal">passive</span>
+</th>
+<td data-accel-col="1"><span class="Latn form-of lang-fi pasv&#124;cond-form-of" lang="fi"><a href="/w/index.php?title=asetettaisiin&amp;action=edit&amp;redlink=1" class="new" title="asetettaisiin (page does not exist)">asetettaisiin</a></span>
+</td>
+<td data-accel-col="2"><span class="Latn form-of lang-fi pasv&#124;cond&#124;conn-form-of" lang="fi">ei <a href="/w/index.php?title=asetettaisi&amp;action=edit&amp;redlink=1" class="new" title="asetettaisi (page does not exist)">asetettaisi</a></span>
+</td>
+<th><span title="passive/impersonal">passive</span>
+</th>
+<td data-accel-col="3"><span class="Latn" lang="fi">olisi <a href="/wiki/asetettu" title="asetettu">asetettu</a></span>
+</td>
+<td data-accel-col="4"><span class="Latn" lang="fi">ei olisi <a href="/wiki/asetettu" title="asetettu">asetettu</a></span>
+</td></tr>
+<tr class="vsHide">
+<th colspan="7"><a href="/wiki/imperative_mood" title="imperative mood">imperative&#160;mood</a>
+</th></tr>
+<tr class="vsHide">
+<th colspan="4">present
+</th>
+<th colspan="3">perfect
+</th></tr>
+<tr class="vsHide">
+<th class="fi-conj-header-person" colspan="2">person
+</th>
+<th class="fi-conj-header-posneg thsub">positive
+</th>
+<th class="fi-conj-header-posneg thsub">negative
+</th>
+<th class="fi-conj-header-person">person
+</th>
+<th class="fi-conj-header-posneg thsub">positive
+</th>
+<th class="fi-conj-header-posneg thsub">negative
+</th></tr>
+<tr class="vsHide">
+<th colspan="2"><span title="first-person singular">1st&#160;sing.</span>
+</th>
+<td>&#8212;
+</td>
+<td>&#8212;
+</td>
+<th><span title="first-person singular">1st&#160;sing.</span>
+</th>
+<td>&#8212;
+</td>
+<td>&#8212;
+</td></tr>
+<tr class="vsHide">
+<th colspan="2"><span title="second-person singular">2nd&#160;sing.</span>
+</th>
+<td data-accel-col="1"><span class="Latn form-of lang-fi 2&#124;s&#124;impr-form-of" lang="fi"><a href="/wiki/aseta#Finnish" title="aseta">aseta</a></span>
+</td>
+<td data-accel-col="2"><span class="Latn form-of lang-fi 2&#124;s&#124;impr&#124;conn-form-of" lang="fi">älä <a href="/wiki/aseta#Finnish" title="aseta">aseta</a></span>
+</td>
+<th><span title="second-person singular">2nd&#160;sing.</span>
+</th>
+<td data-accel-col="3">&#8212;
+</td>
+<td data-accel-col="4">&#8212;
+</td></tr>
+<tr class="vsHide">
+<th colspan="2"><span title="third-person singular">3rd&#160;sing.</span>
+</th>
+<td data-accel-col="1"><span class="Latn form-of lang-fi 3&#124;s&#124;impr-form-of" lang="fi"><a href="/w/index.php?title=asettakoon&amp;action=edit&amp;redlink=1" class="new" title="asettakoon (page does not exist)">asettakoon</a></span>
+</td>
+<td data-accel-col="2"><span class="Latn form-of lang-fi 3&#124;or&#124;p&#124;impr&#124;conn-form-of" lang="fi">älköön <a href="/w/index.php?title=asettako&amp;action=edit&amp;redlink=1" class="new" title="asettako (page does not exist)">asettako</a></span>
+</td>
+<th><span title="third-person singular">3rd&#160;sing.</span>
+</th>
+<td data-accel-col="3"><span class="Latn" lang="fi">olkoon <a href="/wiki/asettanut" title="asettanut">asettanut</a></span>
+</td>
+<td data-accel-col="4"><span class="Latn" lang="fi">älköön olko <a href="/wiki/asettanut" title="asettanut">asettanut</a></span>
+</td></tr>
+<tr class="vsHide">
+<th colspan="2"><span title="first-person plural">1st&#160;plur.</span>
+</th>
+<td data-accel-col="1"><span class="Latn form-of lang-fi 1&#124;p&#124;impr-form-of" lang="fi"><a href="/w/index.php?title=asettakaamme&amp;action=edit&amp;redlink=1" class="new" title="asettakaamme (page does not exist)">asettakaamme</a></span>
+</td>
+<td data-accel-col="2"><span class="Latn form-of lang-fi 3&#124;or&#124;p&#124;impr&#124;conn-form-of" lang="fi">älkäämme <a href="/w/index.php?title=asettako&amp;action=edit&amp;redlink=1" class="new" title="asettako (page does not exist)">asettako</a></span>
+</td>
+<th><span title="first-person plural">1st&#160;plur.</span>
+</th>
+<td data-accel-col="3">&#8212;
+</td>
+<td data-accel-col="4">&#8212;
+</td></tr>
+<tr class="vsHide">
+<th colspan="2"><span title="second-person plural">2nd&#160;plur.</span>
+</th>
+<td data-accel-col="1"><span class="Latn form-of lang-fi 2&#124;p&#124;impr-form-of" lang="fi"><a href="/w/index.php?title=asettakaa&amp;action=edit&amp;redlink=1" class="new" title="asettakaa (page does not exist)">asettakaa</a></span>
+</td>
+<td data-accel-col="2"><span class="Latn form-of lang-fi 3&#124;or&#124;p&#124;impr&#124;conn-form-of" lang="fi">älkää <a href="/w/index.php?title=asettako&amp;action=edit&amp;redlink=1" class="new" title="asettako (page does not exist)">asettako</a></span>
+</td>
+<th><span title="second-person plural">2nd&#160;plur.</span>
+</th>
+<td data-accel-col="3">&#8212;
+</td>
+<td data-accel-col="4">&#8212;
+</td></tr>
+<tr class="vsHide">
+<th colspan="2"><span title="third-person plural">3rd&#160;plur.</span>
+</th>
+<td data-accel-col="1"><span class="Latn form-of lang-fi 3&#124;p&#124;impr-form-of" lang="fi"><a href="/w/index.php?title=asettakoot&amp;action=edit&amp;redlink=1" class="new" title="asettakoot (page does not exist)">asettakoot</a></span>
+</td>
+<td data-accel-col="2"><span class="Latn form-of lang-fi 3&#124;or&#124;p&#124;impr&#124;conn-form-of" lang="fi">älkööt <a href="/w/index.php?title=asettako&amp;action=edit&amp;redlink=1" class="new" title="asettako (page does not exist)">asettako</a></span>
+</td>
+<th><span title="third-person plural">3rd&#160;plur.</span>
+</th>
+<td data-accel-col="3"><span class="Latn" lang="fi">olkoot <a href="/w/index.php?title=asettaneet&amp;action=edit&amp;redlink=1" class="new" title="asettaneet (page does not exist)">asettaneet</a></span>
+</td>
+<td data-accel-col="4"><span class="Latn" lang="fi">älkööt olko <a href="/w/index.php?title=asettaneet&amp;action=edit&amp;redlink=1" class="new" title="asettaneet (page does not exist)">asettaneet</a></span>
+</td></tr>
+<tr class="vsHide">
+<th colspan="2"><span title="passive/impersonal">passive</span>
+</th>
+<td data-accel-col="1"><span class="Latn form-of lang-fi pasv&#124;impr-form-of" lang="fi"><a href="/w/index.php?title=asetettakoon&amp;action=edit&amp;redlink=1" class="new" title="asetettakoon (page does not exist)">asetettakoon</a></span>
+</td>
+<td data-accel-col="2"><span class="Latn form-of lang-fi pasv&#124;impr&#124;conn-form-of" lang="fi">älköön <a href="/w/index.php?title=asetettako&amp;action=edit&amp;redlink=1" class="new" title="asetettako (page does not exist)">asetettako</a></span>
+</td>
+<th><span title="passive/impersonal">passive</span>
+</th>
+<td data-accel-col="3"><span class="Latn" lang="fi">olkoon <a href="/wiki/asetettu" title="asetettu">asetettu</a></span>
+</td>
+<td data-accel-col="4"><span class="Latn" lang="fi">älköön olko <a href="/wiki/asetettu" title="asetettu">asetettu</a></span>
+</td></tr>
+<tr class="vsHide">
+<th colspan="7"><a href="/wiki/potential_mood" title="potential mood">potential&#160;mood</a>
+</th></tr>
+<tr class="vsHide">
+<th colspan="4">present
+</th>
+<th colspan="3">perfect
+</th></tr>
+<tr class="vsHide">
+<th class="fi-conj-header-person" colspan="2">person
+</th>
+<th class="fi-conj-header-posneg thsub">positive
+</th>
+<th class="fi-conj-header-posneg thsub">negative
+</th>
+<th class="fi-conj-header-person">person
+</th>
+<th class="fi-conj-header-posneg thsub">positive
+</th>
+<th class="fi-conj-header-posneg thsub">negative
+</th></tr>
+<tr class="vsHide">
+<th colspan="2"><span title="first-person singular">1st&#160;sing.</span>
+</th>
+<td data-accel-col="1"><span class="Latn form-of lang-fi 1&#124;s&#124;potn-form-of" lang="fi"><a href="/w/index.php?title=asettanen&amp;action=edit&amp;redlink=1" class="new" title="asettanen (page does not exist)">asettanen</a></span>
+</td>
+<td data-accel-col="2"><span class="Latn form-of lang-fi actv&#124;potn&#124;conn-form-of" lang="fi">en <a href="/w/index.php?title=asettane&amp;action=edit&amp;redlink=1" class="new" title="asettane (page does not exist)">asettane</a></span>
+</td>
+<th><span title="first-person singular">1st&#160;sing.</span>
+</th>
+<td data-accel-col="3"><span class="Latn" lang="fi">lienen <a href="/wiki/asettanut" title="asettanut">asettanut</a></span>
+</td>
+<td data-accel-col="4"><span class="Latn" lang="fi">en liene <a href="/wiki/asettanut" title="asettanut">asettanut</a></span>
+</td></tr>
+<tr class="vsHide">
+<th colspan="2"><span title="second-person singular">2nd&#160;sing.</span>
+</th>
+<td data-accel-col="1"><span class="Latn form-of lang-fi 2&#124;s&#124;potn-form-of" lang="fi"><a href="/w/index.php?title=asettanet&amp;action=edit&amp;redlink=1" class="new" title="asettanet (page does not exist)">asettanet</a></span>
+</td>
+<td data-accel-col="2"><span class="Latn form-of lang-fi actv&#124;potn&#124;conn-form-of" lang="fi">et <a href="/w/index.php?title=asettane&amp;action=edit&amp;redlink=1" class="new" title="asettane (page does not exist)">asettane</a></span>
+</td>
+<th><span title="second-person singular">2nd&#160;sing.</span>
+</th>
+<td data-accel-col="3"><span class="Latn" lang="fi">lienet <a href="/wiki/asettanut" title="asettanut">asettanut</a></span>
+</td>
+<td data-accel-col="4"><span class="Latn" lang="fi">et liene <a href="/wiki/asettanut" title="asettanut">asettanut</a></span>
+</td></tr>
+<tr class="vsHide">
+<th colspan="2"><span title="third-person singular">3rd&#160;sing.</span>
+</th>
+<td data-accel-col="1"><span class="Latn form-of lang-fi 3&#124;s&#124;potn-form-of" lang="fi"><a href="/w/index.php?title=asettanee&amp;action=edit&amp;redlink=1" class="new" title="asettanee (page does not exist)">asettanee</a></span>
+</td>
+<td data-accel-col="2"><span class="Latn form-of lang-fi actv&#124;potn&#124;conn-form-of" lang="fi">ei <a href="/w/index.php?title=asettane&amp;action=edit&amp;redlink=1" class="new" title="asettane (page does not exist)">asettane</a></span>
+</td>
+<th><span title="third-person singular">3rd&#160;sing.</span>
+</th>
+<td data-accel-col="3"><span class="Latn" lang="fi">lienee <a href="/wiki/asettanut" title="asettanut">asettanut</a></span>
+</td>
+<td data-accel-col="4"><span class="Latn" lang="fi">ei liene <a href="/wiki/asettanut" title="asettanut">asettanut</a></span>
+</td></tr>
+<tr class="vsHide">
+<th colspan="2"><span title="first-person plural">1st&#160;plur.</span>
+</th>
+<td data-accel-col="1"><span class="Latn form-of lang-fi 1&#124;p&#124;potn-form-of" lang="fi"><a href="/w/index.php?title=asettanemme&amp;action=edit&amp;redlink=1" class="new" title="asettanemme (page does not exist)">asettanemme</a></span>
+</td>
+<td data-accel-col="2"><span class="Latn form-of lang-fi actv&#124;potn&#124;conn-form-of" lang="fi">emme <a href="/w/index.php?title=asettane&amp;action=edit&amp;redlink=1" class="new" title="asettane (page does not exist)">asettane</a></span>
+</td>
+<th><span title="first-person plural">1st&#160;plur.</span>
+</th>
+<td data-accel-col="3"><span class="Latn" lang="fi">lienemme <a href="/w/index.php?title=asettaneet&amp;action=edit&amp;redlink=1" class="new" title="asettaneet (page does not exist)">asettaneet</a></span>
+</td>
+<td data-accel-col="4"><span class="Latn" lang="fi">emme liene <a href="/w/index.php?title=asettaneet&amp;action=edit&amp;redlink=1" class="new" title="asettaneet (page does not exist)">asettaneet</a></span>
+</td></tr>
+<tr class="vsHide">
+<th colspan="2"><span title="second-person plural">2nd&#160;plur.</span>
+</th>
+<td data-accel-col="1"><span class="Latn form-of lang-fi 2&#124;p&#124;potn-form-of" lang="fi"><a href="/w/index.php?title=asettanette&amp;action=edit&amp;redlink=1" class="new" title="asettanette (page does not exist)">asettanette</a></span>
+</td>
+<td data-accel-col="2"><span class="Latn form-of lang-fi actv&#124;potn&#124;conn-form-of" lang="fi">ette <a href="/w/index.php?title=asettane&amp;action=edit&amp;redlink=1" class="new" title="asettane (page does not exist)">asettane</a></span>
+</td>
+<th><span title="second-person plural">2nd&#160;plur.</span>
+</th>
+<td data-accel-col="3"><span class="Latn" lang="fi">lienette <a href="/w/index.php?title=asettaneet&amp;action=edit&amp;redlink=1" class="new" title="asettaneet (page does not exist)">asettaneet</a></span>
+</td>
+<td data-accel-col="4"><span class="Latn" lang="fi">ette liene <a href="/w/index.php?title=asettaneet&amp;action=edit&amp;redlink=1" class="new" title="asettaneet (page does not exist)">asettaneet</a></span>
+</td></tr>
+<tr class="vsHide">
+<th colspan="2"><span title="third-person plural">3rd&#160;plur.</span>
+</th>
+<td data-accel-col="1"><span class="Latn form-of lang-fi 3&#124;p&#124;potn-form-of" lang="fi"><a href="/w/index.php?title=asettanevat&amp;action=edit&amp;redlink=1" class="new" title="asettanevat (page does not exist)">asettanevat</a></span>
+</td>
+<td data-accel-col="2"><span class="Latn form-of lang-fi actv&#124;potn&#124;conn-form-of" lang="fi">eivät <a href="/w/index.php?title=asettane&amp;action=edit&amp;redlink=1" class="new" title="asettane (page does not exist)">asettane</a></span>
+</td>
+<th><span title="third-person plural">3rd&#160;plur.</span>
+</th>
+<td data-accel-col="3"><span class="Latn" lang="fi">lienevät <a href="/w/index.php?title=asettaneet&amp;action=edit&amp;redlink=1" class="new" title="asettaneet (page does not exist)">asettaneet</a></span>
+</td>
+<td data-accel-col="4"><span class="Latn" lang="fi">eivät liene <a href="/w/index.php?title=asettaneet&amp;action=edit&amp;redlink=1" class="new" title="asettaneet (page does not exist)">asettaneet</a></span>
+</td></tr>
+<tr class="vsHide">
+<th colspan="2"><span title="passive/impersonal">passive</span>
+</th>
+<td data-accel-col="1"><span class="Latn form-of lang-fi pasv&#124;potn-form-of" lang="fi"><a href="/w/index.php?title=asetettaneen&amp;action=edit&amp;redlink=1" class="new" title="asetettaneen (page does not exist)">asetettaneen</a></span>
+</td>
+<td data-accel-col="2"><span class="Latn form-of lang-fi pasv&#124;potn&#124;conn-form-of" lang="fi">ei <a href="/w/index.php?title=asetettane&amp;action=edit&amp;redlink=1" class="new" title="asetettane (page does not exist)">asetettane</a></span>
+</td>
+<th><span title="passive/impersonal">passive</span>
+</th>
+<td data-accel-col="3"><span class="Latn" lang="fi">lienee <a href="/wiki/asetettu" title="asetettu">asetettu</a></span>
+</td>
+<td data-accel-col="4"><span class="Latn" lang="fi">ei liene <a href="/wiki/asetettu" title="asetettu">asetettu</a></span>
+</td></tr>
+<tr class="vsHide">
+<th colspan="7">Nominal forms
+</th></tr>
+<tr class="vsHide">
+<th colspan="4"><a href="/wiki/infinitive" title="infinitive">infinitives</a>
+</th>
+<th colspan="3"><a href="/wiki/participle" title="participle">participles</a>
+</th></tr>
+<tr class="vsHide">
+<th colspan="2">
+</th>
+<th class="thsub">active
+</th>
+<th class="thsub">passive
+</th>
+<th>
+</th>
+<th class="thsub">active
+</th>
+<th class="thsub">passive
+</th></tr>
+<tr class="vsHide">
+<th colspan="2">1st
+</th>
+<td data-accel-col="1" colspan="2"><span class="Latn" lang="fi"><strong class="selflink">asettaa</strong></span>
+</td>
+<th>present
+</th>
+<td data-accel-col="1"><span class="Latn form-of lang-fi participle-pres&#124;actv&#124;part-form-of" lang="fi"><a href="/w/index.php?title=asettava&amp;action=edit&amp;redlink=1" class="new" title="asettava (page does not exist)">asettava</a></span>
+</td>
+<td data-accel-col="1"><span class="Latn form-of lang-fi participle-pres&#124;pasv&#124;part-form-of" lang="fi"><a href="/w/index.php?title=asetettava&amp;action=edit&amp;redlink=1" class="new" title="asetettava (page does not exist)">asetettava</a></span>
+</td></tr>
+<tr class="vsHide">
+<th colspan="2">long 1st<sup>1</sup>
+</th>
+<td data-accel-col="1" colspan="2">
+<table class="inflection-table vsSwitcher fi-conj-poss" data-toggle-category="possessive inflection">
+
+<tbody><tr class="fi-conj-poss-header">
+<th class="vsToggleElement fi-conj-poss-toggle" colspan="3">Possessive forms
+</th></tr>
+<tr class="vsHide">
+<th>Person
+</th>
+<th>sing.
+</th>
+<th>plur.
+</th></tr>
+<tr class="vsHide">
+<th>1st
+</th>
+<td><span class="Latn form-of lang-fi 1&#124;s&#124;form&#124;of&#124;long&#124;first&#124;inf-form-of" lang="fi"><a href="/w/index.php?title=asettaakseni&amp;action=edit&amp;redlink=1" class="new" title="asettaakseni (page does not exist)">asettaakseni</a></span>
+</td>
+<td><span class="Latn form-of lang-fi 1&#124;p&#124;form&#124;of&#124;long&#124;first&#124;inf-form-of" lang="fi"><a href="/w/index.php?title=asettaaksemme&amp;action=edit&amp;redlink=1" class="new" title="asettaaksemme (page does not exist)">asettaaksemme</a></span>
+</td></tr>
+<tr class="vsHide">
+<th>2nd
+</th>
+<td><span class="Latn form-of lang-fi 2&#124;s&#124;form&#124;of&#124;long&#124;first&#124;inf-form-of" lang="fi"><a href="/w/index.php?title=asettaaksesi&amp;action=edit&amp;redlink=1" class="new" title="asettaaksesi (page does not exist)">asettaaksesi</a></span>
+</td>
+<td><span class="Latn form-of lang-fi 2&#124;p&#124;form&#124;of&#124;long&#124;first&#124;inf-form-of" lang="fi"><a href="/w/index.php?title=asettaaksenne&amp;action=edit&amp;redlink=1" class="new" title="asettaaksenne (page does not exist)">asettaaksenne</a></span>
+</td></tr>
+<tr class="vsHide">
+<th>3rd
+</th>
+<td colspan="2"><span class="Latn form-of lang-fi 3&#124;form&#124;of&#124;long&#124;first&#124;inf-form-of" lang="fi"><a href="/w/index.php?title=asettaakseen&amp;action=edit&amp;redlink=1" class="new" title="asettaakseen (page does not exist)">asettaakseen</a></span><br /><span class="Latn form-of lang-fi 3&#124;form&#124;of&#124;long&#124;first&#124;inf-form-of" lang="fi"><a href="/w/index.php?title=asettaaksensa&amp;action=edit&amp;redlink=1" class="new" title="asettaaksensa (page does not exist)">asettaaksensa</a></span>
+</td></tr></tbody></table>
+</td>
+<th>past
+</th>
+<td data-accel-col="1"><span class="Latn form-of lang-fi participle-past&#124;actv&#124;part-form-of" lang="fi"><a href="/wiki/asettanut#Finnish" title="asettanut">asettanut</a></span>
+</td>
+<td data-accel-col="1"><span class="Latn form-of lang-fi participle-past&#124;pasv&#124;part-form-of" lang="fi"><a href="/wiki/asetettu#Finnish" title="asetettu">asetettu</a></span>
+</td></tr>
+<tr class="vsHide">
+<th rowspan="3">2nd
+</th>
+<th class="thsub" rowspan="2">inessive<sup>2</sup>
+</th>
+<td data-accel-col="1"><span class="Latn form-of lang-fi ine&#124;of&#124;second&#124;actv&#124;inf-form-of" lang="fi"><a href="/w/index.php?title=asettaessa&amp;action=edit&amp;redlink=1" class="new" title="asettaessa (page does not exist)">asettaessa</a></span>
+</td>
+<td data-accel-col="1"><span class="Latn form-of lang-fi ine&#124;of&#124;second&#124;pasv&#124;inf-form-of" lang="fi"><a href="/w/index.php?title=asetettaessa&amp;action=edit&amp;redlink=1" class="new" title="asetettaessa (page does not exist)">asetettaessa</a></span>
+</td>
+<th>agent<sup>4</sup>
+</th>
+<td data-accel-col="1" colspan="2"><span class="Latn form-of lang-fi participle-agentpart-form-of" lang="fi"><a href="/w/index.php?title=asettama&amp;action=edit&amp;redlink=1" class="new" title="asettama (page does not exist)">asettama</a></span>
+</td></tr>
+<tr class="vsHide">
+<td data-accel-col="1" colspan="2">
+<table class="inflection-table vsSwitcher fi-conj-poss" data-toggle-category="possessive inflection">
+
+<tbody><tr class="fi-conj-poss-header">
+<th class="vsToggleElement fi-conj-poss-toggle" colspan="3">Possessive forms
+</th></tr>
+<tr class="vsHide">
+<th>Person
+</th>
+<th>sing.
+</th>
+<th>plur.
+</th></tr>
+<tr class="vsHide">
+<th>1st
+</th>
+<td><span class="Latn form-of lang-fi 1&#124;s&#124;form&#124;of&#124;ine&#124;of&#124;second&#124;actv&#124;inf-form-of" lang="fi"><a href="/w/index.php?title=asettaessani&amp;action=edit&amp;redlink=1" class="new" title="asettaessani (page does not exist)">asettaessani</a></span>
+</td>
+<td><span class="Latn form-of lang-fi 1&#124;p&#124;form&#124;of&#124;ine&#124;of&#124;second&#124;actv&#124;inf-form-of" lang="fi"><a href="/w/index.php?title=asettaessamme&amp;action=edit&amp;redlink=1" class="new" title="asettaessamme (page does not exist)">asettaessamme</a></span>
+</td></tr>
+<tr class="vsHide">
+<th>2nd
+</th>
+<td><span class="Latn form-of lang-fi 2&#124;s&#124;form&#124;of&#124;ine&#124;of&#124;second&#124;actv&#124;inf-form-of" lang="fi"><a href="/w/index.php?title=asettaessasi&amp;action=edit&amp;redlink=1" class="new" title="asettaessasi (page does not exist)">asettaessasi</a></span>
+</td>
+<td><span class="Latn form-of lang-fi 2&#124;p&#124;form&#124;of&#124;ine&#124;of&#124;second&#124;actv&#124;inf-form-of" lang="fi"><a href="/w/index.php?title=asettaessanne&amp;action=edit&amp;redlink=1" class="new" title="asettaessanne (page does not exist)">asettaessanne</a></span>
+</td></tr>
+<tr class="vsHide">
+<th>3rd
+</th>
+<td colspan="2"><span class="Latn form-of lang-fi 3&#124;form&#124;of&#124;ine&#124;of&#124;second&#124;actv&#124;inf-form-of" lang="fi"><a href="/w/index.php?title=asettaessaan&amp;action=edit&amp;redlink=1" class="new" title="asettaessaan (page does not exist)">asettaessaan</a></span><br /><span class="Latn form-of lang-fi 3&#124;form&#124;of&#124;ine&#124;of&#124;second&#124;actv&#124;inf-form-of" lang="fi"><a href="/w/index.php?title=asettaessansa&amp;action=edit&amp;redlink=1" class="new" title="asettaessansa (page does not exist)">asettaessansa</a></span>
+</td></tr></tbody></table>
+</td>
+<th>negative
+</th>
+<td data-accel-col="1" colspan="2"><span class="Latn form-of lang-fi participle-neg&#124;part-form-of" lang="fi"><a href="/w/index.php?title=asettamaton&amp;action=edit&amp;redlink=1" class="new" title="asettamaton (page does not exist)">asettamaton</a></span>
+</td></tr>
+<tr class="vsHide">
+<th class="thsub">instructive
+</th>
+<td data-accel-col="1"><span class="Latn form-of lang-fi ist&#124;of&#124;second&#124;actv&#124;inf-form-of" lang="fi"><a href="/w/index.php?title=asettaen&amp;action=edit&amp;redlink=1" class="new" title="asettaen (page does not exist)">asettaen</a></span>
+</td>
+<td>&#8212;
+</td>
+<td colspan="3" rowspan="10" class="fi-conj-notes"><div style="white-space:normal;min-width:100%;max-width:min-content;"><sup>1)</sup> Used only with a possessive suffix.<br />
+<p><sup>2)</sup> Usually with a possessive suffix (active only).<br />
+<sup>3)</sup> Some uses of the verbal noun are called the 'fourth infinitive' by certain sources (<a href="/wiki/Appendix:Finnish_verb_forms#Fourth_infinitive" title="Appendix:Finnish verb forms">more details</a>).<br />
+<sup>4)</sup> Usually with a possessive suffix. May not be used with all verbs, especially intransitive ones (<a href="/wiki/Appendix:Finnish_participles#Agent_participles" title="Appendix:Finnish participles">more details</a>). Distinct from nouns with the <i class="Latn mention" lang="fi">-ma</i> suffix and third infinitive forms.<br />
+</p>
+&#42; The third-person singular indicative form <i class="Latn mention" lang="fi">asettaa</i> does not exhibit <a href="/wiki/Appendix:Finnish_pronunciation#Final_gemination" title="Appendix:Finnish pronunciation">final gemination</a>, <br />unlike the first infinitive (the lemma form), even though they are spelled identically.</div>
+</td></tr>
+<tr class="vsHide">
+<th rowspan="6">3rd
+</th>
+<th class="thsub">inessive
+</th>
+<td data-accel-col="1"><span class="Latn form-of lang-fi ine&#124;of&#124;third&#124;actv&#124;inf-form-of" lang="fi"><a href="/w/index.php?title=asettamassa&amp;action=edit&amp;redlink=1" class="new" title="asettamassa (page does not exist)">asettamassa</a></span>
+</td>
+<td>&#8212;
+</td></tr>
+<tr class="vsHide">
+<th class="thsub">elative
+</th>
+<td data-accel-col="1"><span class="Latn form-of lang-fi ela&#124;of&#124;third&#124;actv&#124;inf-form-of" lang="fi"><a href="/w/index.php?title=asettamasta&amp;action=edit&amp;redlink=1" class="new" title="asettamasta (page does not exist)">asettamasta</a></span>
+</td>
+<td>&#8212;
+</td></tr>
+<tr class="vsHide">
+<th class="thsub">illative
+</th>
+<td data-accel-col="1"><span class="Latn form-of lang-fi ill&#124;of&#124;third&#124;actv&#124;inf-form-of" lang="fi"><a href="/wiki/asettamaan#Finnish" title="asettamaan">asettamaan</a></span>
+</td>
+<td>&#8212;
+</td></tr>
+<tr class="vsHide thsub">
+<th class="thsub">adessive
+</th>
+<td data-accel-col="1"><span class="Latn form-of lang-fi ade&#124;of&#124;third&#124;actv&#124;inf-form-of" lang="fi"><a href="/w/index.php?title=asettamalla&amp;action=edit&amp;redlink=1" class="new" title="asettamalla (page does not exist)">asettamalla</a></span>
+</td>
+<td>&#8212;
+</td></tr>
+<tr class="vsHide thsub">
+<th class="thsub">abessive
+</th>
+<td data-accel-col="1"><span class="Latn form-of lang-fi abe&#124;of&#124;third&#124;actv&#124;inf-form-of" lang="fi"><a href="/w/index.php?title=asettamatta&amp;action=edit&amp;redlink=1" class="new" title="asettamatta (page does not exist)">asettamatta</a></span>
+</td>
+<td>&#8212;
+</td></tr>
+<tr class="vsHide thsub">
+<th class="thsub">instructive
+</th>
+<td data-accel-col="1"><span class="Latn form-of lang-fi ist&#124;of&#124;third&#124;actv&#124;inf-form-of" lang="fi"><a href="/w/index.php?title=asettaman&amp;action=edit&amp;redlink=1" class="new" title="asettaman (page does not exist)">asettaman</a></span>
+</td>
+<td data-accel-col="1"><span class="Latn form-of lang-fi ist&#124;of&#124;third&#124;pasv&#124;inf-form-of" lang="fi"><a href="/w/index.php?title=asetettaman&amp;action=edit&amp;redlink=1" class="new" title="asetettaman (page does not exist)">asetettaman</a></span>
+</td></tr>
+<tr class="vsHide thsub">
+<th>4th<sup>3</sup>
+</th>
+<th class="thsub">verbal noun
+</th>
+<td colspan="2" data-accel-col="1"><span class="Latn form-of lang-fi vnoun-a-form-of" lang="fi"><a href="/wiki/asettaminen#Finnish" title="asettaminen">asettaminen</a></span>
+</td></tr>
+<tr class="vsHide thsub">
+<th colspan="2">5th<sup>1</sup>
+</th>
+<td colspan="2" data-accel-col="1">
+<table class="inflection-table vsSwitcher fi-conj-poss" data-toggle-category="possessive inflection">
+
+<tbody><tr class="fi-conj-poss-header">
+<th class="vsToggleElement fi-conj-poss-toggle" colspan="3">Possessive forms
+</th></tr>
+<tr class="vsHide">
+<th>Person
+</th>
+<th>sing.
+</th>
+<th>plur.
+</th></tr>
+<tr class="vsHide">
+<th>1st
+</th>
+<td><span class="Latn form-of lang-fi 1&#124;s&#124;form&#124;of&#124;fifth&#124;inf-form-of" lang="fi"><a href="/w/index.php?title=asettamaisillani&amp;action=edit&amp;redlink=1" class="new" title="asettamaisillani (page does not exist)">asettamaisillani</a></span>
+</td>
+<td><span class="Latn form-of lang-fi 1&#124;p&#124;form&#124;of&#124;fifth&#124;inf-form-of" lang="fi"><a href="/w/index.php?title=asettamaisillamme&amp;action=edit&amp;redlink=1" class="new" title="asettamaisillamme (page does not exist)">asettamaisillamme</a></span>
+</td></tr>
+<tr class="vsHide">
+<th>2nd
+</th>
+<td><span class="Latn form-of lang-fi 2&#124;s&#124;form&#124;of&#124;fifth&#124;inf-form-of" lang="fi"><a href="/w/index.php?title=asettamaisillasi&amp;action=edit&amp;redlink=1" class="new" title="asettamaisillasi (page does not exist)">asettamaisillasi</a></span>
+</td>
+<td><span class="Latn form-of lang-fi 2&#124;p&#124;form&#124;of&#124;fifth&#124;inf-form-of" lang="fi"><a href="/w/index.php?title=asettamaisillanne&amp;action=edit&amp;redlink=1" class="new" title="asettamaisillanne (page does not exist)">asettamaisillanne</a></span>
+</td></tr>
+<tr class="vsHide">
+<th>3rd
+</th>
+<td colspan="2"><span class="Latn form-of lang-fi 3&#124;form&#124;of&#124;fifth&#124;inf-form-of" lang="fi"><a href="/w/index.php?title=asettamaisillaan&amp;action=edit&amp;redlink=1" class="new" title="asettamaisillaan (page does not exist)">asettamaisillaan</a></span><br /><span class="Latn form-of lang-fi 3&#124;form&#124;of&#124;fifth&#124;inf-form-of" lang="fi"><a href="/w/index.php?title=asettamaisillansa&amp;action=edit&amp;redlink=1" class="new" title="asettamaisillansa (page does not exist)">asettamaisillansa</a></span>
+</td></tr></tbody></table>
+</td></tr></tbody></table>
+</div><style data-mw-deduplicate="TemplateStyles:r83370086">.mw-parser-output table.fi-conj{text-align:left;border-spacing:0;border-collapse:collapse}.mw-parser-output .fi-conj th,.mw-parser-output .fi-conj td{padding:2px}.mw-parser-output table.fi-conj-poss{text-align:left;border-spacing:0;border-collapse:collapse}.mw-parser-output .fi-conj-poss th,.mw-parser-output .fi-conj-poss td{text-align:center;padding:1px}.mw-parser-output .fi-conj-poss th.fi-conj-poss-toggle{text-align:left}.mw-parser-output table.fi-conj-old{width:100%;margin-bottom:0.5em}.mw-parser-output th.fi-conj-header-person{min-width:10em}.mw-parser-output th.fi-conj-header-posneg{min-width:13em}.mw-parser-output .fi-conj td.nobreak{white-space:pre}.mw-parser-output .fi-conj-notes{text-align:left;vertical-align:top;font-size:smaller}.mw-parser-output .fi-conj-poss-toggle{min-width:28em}.mw-parser-output table.fi-conj{border-style:solid;border-width:1px}.mw-parser-output div.NavHead.fi-conj-header-row,.mw-parser-output div.NavHead.fi-conj-header-row:hover,.mw-parser-output div.NavHead.fi-conj-header-row:active{background-image:none}.mw-parser-output table.fi-conj{border:1px solid var(--wikt-palette-blue-2,#CCCCFF)}.mw-parser-output div.NavHead.fi-conj-header-row,.mw-parser-output div.NavHead.fi-conj-header-row:hover,.mw-parser-output div.NavHead.fi-conj-header-row:active,.mw-parser-output .fi-conj th{background-color:var(--wikt-palette-blue-2,#CCCCFF);border:2px solid var(--wikt-palette-blue-0,#F2F2FF)}.mw-parser-output .fi-conj th.thsub,.mw-parser-output .fi-conj-poss-header,.mw-parser-output .fi-conj-poss th{background-color:var(--wikt-palette-blue-1,#E6E6FF)}.mw-parser-output .fi-conj td{background-color:var(--wikt-palette-blue-0,#F2F2FF);border:2px solid var(--wikt-palette-blue-1,#E6E6FF)}.mw-parser-output .fi-conj-list .marker{color:var(--wikt-palette-grey-9,#777)}</style>
+<div class="mw-heading mw-heading4"><h4 id="Derived_terms">Derived terms</h4><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=asettaa&amp;action=edit&amp;section=6" title="Edit section: Derived terms"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<div class="list-switcher-wrapper"><div class="list-switcher-header">nouns</div><div class="list-switcher" data-toggle-category="derived terms"><div class="term-list columns-bg ul-column-count" data-column-count="2"><ul><li><span class="Latn" lang="fi"><a href="/wiki/asetanta#Finnish" title="asetanta">asetanta</a></span></li><li><span class="Latn" lang="fi"><a href="/wiki/asete#Finnish" title="asete">asete</a></span></li><li><span class="Latn" lang="fi"><a href="/wiki/asetin#Finnish" title="asetin">asetin</a></span></li><li><span class="Latn" lang="fi"><a href="/wiki/asettaja#Finnish" title="asettaja">asettaja</a></span></li><li><span class="Latn" lang="fi"><a href="/wiki/asettaminen#Finnish" title="asettaminen">asettaminen</a></span></li><li><span class="Latn" lang="fi"><a href="/wiki/asetus#Finnish" title="asetus">asetus</a></span></li></ul></div></div></div>
+<div class="list-switcher-wrapper"><div class="list-switcher-header">verbs</div><div class="term-list columns-bg"><ul><li><span class="Latn" lang="fi"><a href="/wiki/asetella#Finnish" title="asetella">asetella</a></span></li><li><span class="Latn" lang="fi"><a href="/wiki/asettautua#Finnish" title="asettautua">asettautua</a></span></li><li><span class="Latn" lang="fi"><a href="/wiki/asettua#Finnish" title="asettua">asettua</a></span></li><li><span class="Latn" lang="fi"><a href="/wiki/asetuttaa#Finnish" title="asetuttaa">asetuttaa</a></span></li></ul></div></div>
+<div class="list-switcher-wrapper"><div class="list-switcher-header">compounds</div><div class="term-list columns-bg"><ul><li><span class="Latn" lang="fi"><a href="/wiki/virkaanasettajaiset#Finnish" title="virkaanasettajaiset">virkaanasettajaiset</a></span></li></ul></div></div>
+<div class="mw-heading mw-heading3"><h3 id="Further_reading">Further reading</h3><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=asettaa&amp;action=edit&amp;section=7" title="Edit section: Further reading"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<ul><li><span class="citation-whole"><span class="cited-source">“<a rel="nofollow" class="external text" href="http://www.kielitoimistonsanakirja.fi/#/asettaa"><span class="Latn" lang="fi">asettaa</span></a>”, in <cite><a href="https://en.wikipedia.org/wiki/Dictionary_of_Contemporary_Finnish" class="extiw" title="w:Dictionary of Contemporary Finnish">Kielitoimiston sanakirja</a></cite> &#91;<cite><span class="e-translation">Dictionary of Contemporary Finnish</span></cite>&#93;&#8206;<sup><a rel="nofollow" class="external autonumber" href="http://www.kielitoimistonsanakirja.fi">[1]</a></sup> (in Finnish) (online dictionary, continuously updated), Kotimaisten kielten keskuksen verkkojulkaisuja 35, Helsinki&#58; <a href="https://en.wikipedia.org/wiki/Institute_for_the_Languages_of_Finland" class="extiw" title="w:Institute for the Languages of Finland">Kotimaisten kielten tutkimuskeskus</a> (Institute for the Languages of Finland), <span class="None" lang="und">2004&#8211;</span>, retrieved <span class="mw-formatted-date" title="2023-07-02">2023-07-02</span></span></span></li></ul>
+<div class="mw-heading mw-heading3"><h3 id="Anagrams">Anagrams</h3><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=asettaa&amp;action=edit&amp;section=8" title="Edit section: Anagrams"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<ul><li><span class="Latn" lang="fi"><a href="/wiki/attasea#Finnish" title="attasea">attasea</a></span></li></ul>
+<div class="mw-heading mw-heading2"><h2 id="Ingrian">Ingrian</h2><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=asettaa&amp;action=edit&amp;section=9" title="Edit section: Ingrian"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<div class="mw-heading mw-heading3"><h3 id="Etymology_1">Etymology 1</h3><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=asettaa&amp;action=edit&amp;section=10" title="Edit section: Etymology 1"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<p>From <span class="etyl"><a href="https://en.wikipedia.org/wiki/Proto-Finnic_language" class="extiw" title="w:Proto-Finnic language">Proto-Finnic</a></span> <i class="Latn mention" lang="urj-fin-pro"><a href="/wiki/Reconstruction:Proto-Finnic/as%C3%ABttadak" title="Reconstruction:Proto-Finnic/asëttadak">&#42;asëttadak</a></i>. Cognates include <span class="etyl"><a href="https://en.wikipedia.org/wiki/Finnish_language" class="extiw" title="w:Finnish language">Finnish</a></span> <i class="Latn mention" lang="fi"><a class="mw-selflink-fragment" href="#Finnish">asettaa</a></i> and <span class="etyl"><a href="https://en.wikipedia.org/wiki/Veps_language" class="extiw" title="w:Veps language">Veps</a></span> <i class="Latn mention" lang="vep"><a href="/wiki/azetada#Veps" title="azetada">azetada</a></i>.
+</p>
+<div class="mw-heading mw-heading4"><h4 id="Pronunciation_2">Pronunciation</h4><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=asettaa&amp;action=edit&amp;section=11" title="Edit section: Pronunciation"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<ul><li class="mw-empty-elt"></li>
+<li><span class="usage-label-accent"><span class="ib-brac label-brac">(</span><span class="ib-content label-content"><a href="https://en.wikipedia.org/wiki/Ingrian_phonology#Ala-Laukaa_dialect" class="extiw" title="w:Ingrian phonology">Ala-Laukaa</a></span><span class="ib-brac label-brac">)</span></span> <a href="/wiki/Wiktionary:International_Phonetic_Alphabet" title="Wiktionary:International Phonetic Alphabet">IPA</a><sup>(<a href="https://en.wikipedia.org/wiki/Ingrian_phonology" class="extiw" title="wikipedia:Ingrian phonology">key</a>)</sup>:&#32;<span class="IPA">/ˈɑsetːɑː/</span>, <span class="IPA">[ˈɑs̠e̞tːɑ]</span></li>
+<li><span class="usage-label-accent"><span class="ib-brac label-brac">(</span><span class="ib-content label-content"><a href="https://en.wikipedia.org/wiki/Ingrian_phonology#Soikkola_dialect" class="extiw" title="w:Ingrian phonology">Soikkola</a></span><span class="ib-brac label-brac">)</span></span> <a href="/wiki/Wiktionary:International_Phonetic_Alphabet" title="Wiktionary:International Phonetic Alphabet">IPA</a><sup>(<a href="https://en.wikipedia.org/wiki/Ingrian_phonology" class="extiw" title="wikipedia:Ingrian phonology">key</a>)</sup>:&#32;<span class="IPA">/ˈɑsetːɑː/</span>, <span class="IPA">[ˈɑʒ̥e̞tːɑː]</span></li>
+<li><span class="usage-label-accent"><span class="ib-brac label-brac">(</span><span class="ib-content label-content"><a href="https://en.wikipedia.org/wiki/Ingrian_language#Dialects" class="extiw" title="w:Ingrian language">Hevaha</a></span><span class="ib-brac label-brac">)</span></span> <a href="/wiki/Wiktionary:International_Phonetic_Alphabet" title="Wiktionary:International Phonetic Alphabet">IPA</a><sup>(<a href="https://en.wikipedia.org/wiki/Ingrian_phonology" class="extiw" title="wikipedia:Ingrian phonology">key</a>)</sup>:&#32;<span class="IPA">/ˈɑsetːɑk/</span>, <span class="IPA">[ˈɑʒ̥e̞tːɑɡ̊]</span></li>
+<li>Rhymes: <a href="/w/index.php?title=Rhymes:Ingrian/%C9%91set%CB%90%C9%91%CB%90&amp;action=edit&amp;redlink=1" class="new" title="Rhymes:Ingrian/ɑsetːɑː (page does not exist)"><span class="IPA">-ɑsetːɑː</span></a></li>
+<li>Hyphenation: <span class="Latn" lang="izh">a‧set‧taa</span></li></ul>
+<div class="mw-heading mw-heading4"><h4 id="Verb_2">Verb</h4><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=asettaa&amp;action=edit&amp;section=12" title="Edit section: Verb"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<p><span class="headword-line"><strong class="Latn headword" lang="izh">asettaa</strong></span>
+</p>
+<ol><li><span class="usage-label-sense"><span class="ib-brac label-brac">(</span><span class="ib-content label-content"><a href="/wiki/Appendix:Glossary#transitive" title="Appendix:Glossary">transitive</a></span><span class="ib-brac label-brac">)</span></span> to <a href="/wiki/put" title="put">put</a>, to <a href="/wiki/place" title="place">place</a></li>
+<li><span class="usage-label-sense"><span class="ib-brac label-brac">(</span><span class="ib-content label-content"><a href="/wiki/Appendix:Glossary#transitive" title="Appendix:Glossary">transitive</a></span><span class="ib-brac label-brac">)</span></span> to <a href="/wiki/stop" title="stop">stop</a>, to <a href="/wiki/halt" title="halt">halt</a></li>
+<li><span class="usage-label-sense"><span class="ib-brac label-brac">(</span><span class="ib-content label-content"><a href="/wiki/Appendix:Glossary#transitive" title="Appendix:Glossary">transitive</a><span class="ib-comma label-comma">,</span>&#32;<a href="/wiki/agriculture" title="agriculture">agriculture</a></span><span class="ib-brac label-brac">)</span></span> to <a href="/wiki/cover" title="cover">cover</a> <span class="gloss-brac">(</span><span class="gloss-content"><span class="Latn" lang="en">seeds with a harrow</span></span><span class="gloss-brac">)</span></li></ol>
+<div class="mw-heading mw-heading5"><h5 id="Conjugation_2">Conjugation</h5><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=asettaa&amp;action=edit&amp;section=13" title="Edit section: Conjugation"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<table class="inflection-table vsSwitcher izh-conj" data-toggle-category="conjugation">
+
+<tbody><tr>
+<th colspan="6" class="vsToggleElement izh-conj-header-toggle">Conjugation of <b>asettaa</b> (<span class="izh-conj-type">type 2/<i class="Latn mention" lang="izh"><a href="/wiki/kirjuttaa#Ingrian" title="kirjuttaa">kirjuttaa</a></i>, tt-t gradation</span>)
+</th></tr>
+<tr class="vsHide">
+<th colspan="6" class="izh-conj-header-tense"><a href="/wiki/indicative_mood" title="indicative mood">Indikativa</a>
+</th></tr>
+<tr class="vsHide">
+<th colspan="3" class="izh-conj-header-tense"><a href="/wiki/present_tense" title="present tense">Preesens</a>
+</th>
+<th colspan="3" class="izh-conj-header-tense"><a href="/wiki/perfect" title="perfect">Perfekta</a>
+</th></tr>
+<tr class="vsHide">
+<th class="izh-conj-header-tense">
+</th>
+<th class="izh-conj-header-posneg thsub">positive
+</th>
+<th class="izh-conj-header-posneg thsub">negative
+</th>
+<th class="izh-conj-header-tense">
+</th>
+<th class="izh-conj-header-posneg thsub">positive
+</th>
+<th class="izh-conj-header-posneg thsub">negative
+</th></tr>
+<tr class="vsHide">
+<th class="izh-conj-header-person">1st singular
+</th>
+<td><span class="Latn" lang="izh"><a href="/wiki/asetan#Ingrian" title="asetan">asetan</a></span>
+</td>
+<td><span class="Latn" lang="izh">en <a href="/wiki/aseta#Ingrian" title="aseta">aseta</a></span>
+</td>
+<th class="izh-conj-header-person">1st singular
+</th>
+<td><span class="Latn" lang="izh">oon <a href="/w/index.php?title=asettant&amp;action=edit&amp;redlink=1" class="new" title="asettant (page does not exist)">asettant</a></span>, <span class="Latn" lang="izh">oon <a href="/wiki/asettanut#Ingrian" title="asettanut">asettanut</a></span>
+</td>
+<td><span class="Latn" lang="izh">en oo <a href="/w/index.php?title=asettant&amp;action=edit&amp;redlink=1" class="new" title="asettant (page does not exist)">asettant</a></span>, <span class="Latn" lang="izh">en oo <a href="/wiki/asettanut#Ingrian" title="asettanut">asettanut</a></span>
+</td></tr>
+<tr class="vsHide">
+<th class="izh-conj-header-person">2nd singular
+</th>
+<td><span class="Latn" lang="izh"><a href="/wiki/asetat#Ingrian" title="asetat">asetat</a></span>
+</td>
+<td><span class="Latn" lang="izh">et <a href="/wiki/aseta#Ingrian" title="aseta">aseta</a></span>
+</td>
+<th class="izh-conj-header-person">2nd singular
+</th>
+<td><span class="Latn" lang="izh">oot <a href="/w/index.php?title=asettant&amp;action=edit&amp;redlink=1" class="new" title="asettant (page does not exist)">asettant</a></span>, <span class="Latn" lang="izh">oot <a href="/wiki/asettanut#Ingrian" title="asettanut">asettanut</a></span>
+</td>
+<td><span class="Latn" lang="izh">et oo <a href="/w/index.php?title=asettant&amp;action=edit&amp;redlink=1" class="new" title="asettant (page does not exist)">asettant</a></span>, <span class="Latn" lang="izh">et oo <a href="/wiki/asettanut#Ingrian" title="asettanut">asettanut</a></span>
+</td></tr>
+<tr class="vsHide">
+<th class="izh-conj-header-person">3rd singular
+</th>
+<td><span class="Latn" lang="izh"><strong class="selflink">asettaa</strong></span>
+</td>
+<td><span class="Latn" lang="izh">ei <a href="/wiki/aseta#Ingrian" title="aseta">aseta</a></span>
+</td>
+<th class="izh-conj-header-person">3rd singular
+</th>
+<td><span class="Latn" lang="izh">ono <a href="/w/index.php?title=asettant&amp;action=edit&amp;redlink=1" class="new" title="asettant (page does not exist)">asettant</a></span>, <span class="Latn" lang="izh">ono <a href="/wiki/asettanut#Ingrian" title="asettanut">asettanut</a></span>
+</td>
+<td><span class="Latn" lang="izh">ei oo <a href="/w/index.php?title=asettant&amp;action=edit&amp;redlink=1" class="new" title="asettant (page does not exist)">asettant</a></span>, <span class="Latn" lang="izh">ei oo <a href="/wiki/asettanut#Ingrian" title="asettanut">asettanut</a></span>
+</td></tr>
+<tr class="vsHide">
+<th class="izh-conj-header-person">1st plural
+</th>
+<td><span class="Latn" lang="izh"><a href="/w/index.php?title=asetamma&amp;action=edit&amp;redlink=1" class="new" title="asetamma (page does not exist)">asetamma</a></span>
+</td>
+<td><span class="Latn" lang="izh">emmä <a href="/wiki/aseta#Ingrian" title="aseta">aseta</a></span>
+</td>
+<th class="izh-conj-header-person">1st plural
+</th>
+<td><span class="Latn" lang="izh">oomma <a href="/w/index.php?title=asettanneet&amp;action=edit&amp;redlink=1" class="new" title="asettanneet (page does not exist)">asettanneet</a></span>
+</td>
+<td><span class="Latn" lang="izh">emmä oo <a href="/w/index.php?title=asettanneet&amp;action=edit&amp;redlink=1" class="new" title="asettanneet (page does not exist)">asettanneet</a></span>
+</td></tr>
+<tr class="vsHide">
+<th class="izh-conj-header-person">2nd plural
+</th>
+<td><span class="Latn" lang="izh"><a href="/w/index.php?title=asetatta&amp;action=edit&amp;redlink=1" class="new" title="asetatta (page does not exist)">asetatta</a></span>
+</td>
+<td><span class="Latn" lang="izh">että <a href="/wiki/aseta#Ingrian" title="aseta">aseta</a></span>
+</td>
+<th class="izh-conj-header-person">2nd plural
+</th>
+<td><span class="Latn" lang="izh">ootta <a href="/w/index.php?title=asettanneet&amp;action=edit&amp;redlink=1" class="new" title="asettanneet (page does not exist)">asettanneet</a></span>
+</td>
+<td><span class="Latn" lang="izh">että oo <a href="/w/index.php?title=asettanneet&amp;action=edit&amp;redlink=1" class="new" title="asettanneet (page does not exist)">asettanneet</a></span>
+</td></tr>
+<tr class="vsHide">
+<th class="izh-conj-header-person">3rd plural
+</th>
+<td><span class="Latn" lang="izh"><a href="/w/index.php?title=asettaat&amp;action=edit&amp;redlink=1" class="new" title="asettaat (page does not exist)">asettaat</a></span><sup>1)</sup>, <span class="Latn" lang="izh"><a href="/wiki/asettavat#Ingrian" title="asettavat">asettavat</a></span><sup>2)</sup>, <span class="Latn" lang="izh"><a href="/w/index.php?title=asetettaa&amp;action=edit&amp;redlink=1" class="new" title="asetettaa (page does not exist)">asetettaa</a></span>
+</td>
+<td><span class="Latn" lang="izh">evät <a href="/wiki/aseta#Ingrian" title="aseta">aseta</a></span>, <span class="Latn" lang="izh">ei <a href="/w/index.php?title=aseteta&amp;action=edit&amp;redlink=1" class="new" title="aseteta (page does not exist)">aseteta</a></span>
+</td>
+<th class="izh-conj-header-person">3rd plural
+</th>
+<td><span class="Latn" lang="izh">ovat <a href="/w/index.php?title=asettanneet&amp;action=edit&amp;redlink=1" class="new" title="asettanneet (page does not exist)">asettanneet</a></span>
+</td>
+<td><span class="Latn" lang="izh">evät oo <a href="/w/index.php?title=asettanneet&amp;action=edit&amp;redlink=1" class="new" title="asettanneet (page does not exist)">asettanneet</a></span>, <span class="Latn" lang="izh">ei oo <a href="/wiki/asetettu#Ingrian" title="asetettu">asetettu</a></span>
+</td></tr>
+<tr class="vsHide">
+<th class="izh-conj-header-person">impersonal
+</th>
+<td><span class="Latn" lang="izh"><a href="/w/index.php?title=asetettaa&amp;action=edit&amp;redlink=1" class="new" title="asetettaa (page does not exist)">asetettaa</a></span>
+</td>
+<td><span class="Latn" lang="izh">ei <a href="/w/index.php?title=aseteta&amp;action=edit&amp;redlink=1" class="new" title="aseteta (page does not exist)">aseteta</a></span>
+</td>
+<th class="izh-conj-header-person">impersonal
+</th>
+<td><span class="Latn" lang="izh">ono <a href="/wiki/asetettu#Ingrian" title="asetettu">asetettu</a></span>
+</td>
+<td><span class="Latn" lang="izh">ei oo <a href="/wiki/asetettu#Ingrian" title="asetettu">asetettu</a></span>
+</td></tr>
+<tr class="vsHide">
+<th colspan="3" class="izh-conj-header-person"><a href="/wiki/past_tense" title="past tense">Imperfekta</a>
+</th>
+<th colspan="3" class="izh-conj-header-person"><a href="/wiki/pluperfect" title="pluperfect">Pluskvamperfekta</a>
+</th></tr>
+<tr class="vsHide">
+<th class="izh-conj-header-person">
+</th>
+<th class="izh-conj-header-person thsub">positive
+</th>
+<th class="izh-conj-header-person thsub">negative
+</th>
+<th class="izh-conj-header-person">
+</th>
+<th class="izh-conj-header-person thsub">positive
+</th>
+<th class="izh-conj-header-person thsub">negative
+</th></tr>
+<tr class="vsHide">
+<th class="izh-conj-header-person">1st singular
+</th>
+<td><span class="Latn" lang="izh"><a href="/wiki/asetin#Ingrian" title="asetin">asetin</a></span>
+</td>
+<td><span class="Latn" lang="izh">en <a href="/w/index.php?title=asettant&amp;action=edit&amp;redlink=1" class="new" title="asettant (page does not exist)">asettant</a></span>, <span class="Latn" lang="izh">en <a href="/wiki/asettanut#Ingrian" title="asettanut">asettanut</a></span>
+</td>
+<th class="izh-conj-header-person">1st singular
+</th>
+<td><span class="Latn" lang="izh">olin <a href="/w/index.php?title=asettant&amp;action=edit&amp;redlink=1" class="new" title="asettant (page does not exist)">asettant</a></span>, <span class="Latn" lang="izh">olin <a href="/wiki/asettanut#Ingrian" title="asettanut">asettanut</a></span>
+</td>
+<td><span class="Latn" lang="izh">en olt <a href="/w/index.php?title=asettant&amp;action=edit&amp;redlink=1" class="new" title="asettant (page does not exist)">asettant</a></span>, <span class="Latn" lang="izh">en olt <a href="/wiki/asettanut#Ingrian" title="asettanut">asettanut</a></span>
+</td></tr>
+<tr class="vsHide">
+<th class="izh-conj-header-person">2nd singular
+</th>
+<td><span class="Latn" lang="izh"><a href="/wiki/asetit#Ingrian" title="asetit">asetit</a></span>
+</td>
+<td><span class="Latn" lang="izh">et <a href="/w/index.php?title=asettant&amp;action=edit&amp;redlink=1" class="new" title="asettant (page does not exist)">asettant</a></span>, <span class="Latn" lang="izh">et <a href="/wiki/asettanut#Ingrian" title="asettanut">asettanut</a></span>
+</td>
+<th class="izh-conj-header-person">2nd singular
+</th>
+<td><span class="Latn" lang="izh">olit <a href="/w/index.php?title=asettant&amp;action=edit&amp;redlink=1" class="new" title="asettant (page does not exist)">asettant</a></span>, <span class="Latn" lang="izh">olit <a href="/wiki/asettanut#Ingrian" title="asettanut">asettanut</a></span>
+</td>
+<td><span class="Latn" lang="izh">et olt <a href="/w/index.php?title=asettant&amp;action=edit&amp;redlink=1" class="new" title="asettant (page does not exist)">asettant</a></span>, <span class="Latn" lang="izh">et olt <a href="/wiki/asettanut#Ingrian" title="asettanut">asettanut</a></span>
+</td></tr>
+<tr class="vsHide">
+<th class="izh-conj-header-person">3rd singular
+</th>
+<td><span class="Latn" lang="izh"><a href="/wiki/asetti#Ingrian" title="asetti">asetti</a></span>
+</td>
+<td><span class="Latn" lang="izh">ei <a href="/w/index.php?title=asettant&amp;action=edit&amp;redlink=1" class="new" title="asettant (page does not exist)">asettant</a></span>, <span class="Latn" lang="izh">ei <a href="/wiki/asettanut#Ingrian" title="asettanut">asettanut</a></span>
+</td>
+<th class="izh-conj-header-person">3rd singular
+</th>
+<td><span class="Latn" lang="izh">oli <a href="/w/index.php?title=asettant&amp;action=edit&amp;redlink=1" class="new" title="asettant (page does not exist)">asettant</a></span>, <span class="Latn" lang="izh">oli <a href="/wiki/asettanut#Ingrian" title="asettanut">asettanut</a></span>
+</td>
+<td><span class="Latn" lang="izh">ei olt <a href="/w/index.php?title=asettant&amp;action=edit&amp;redlink=1" class="new" title="asettant (page does not exist)">asettant</a></span>, <span class="Latn" lang="izh">ei olt <a href="/wiki/asettanut#Ingrian" title="asettanut">asettanut</a></span>
+</td></tr>
+<tr class="vsHide">
+<th class="izh-conj-header-person">1st plural
+</th>
+<td><span class="Latn" lang="izh"><a href="/w/index.php?title=asetimma&amp;action=edit&amp;redlink=1" class="new" title="asetimma (page does not exist)">asetimma</a></span>
+</td>
+<td><span class="Latn" lang="izh">emmä <a href="/w/index.php?title=asettanneet&amp;action=edit&amp;redlink=1" class="new" title="asettanneet (page does not exist)">asettanneet</a></span>
+</td>
+<th class="izh-conj-header-person">1st plural
+</th>
+<td><span class="Latn" lang="izh">olimma <a href="/w/index.php?title=asettanneet&amp;action=edit&amp;redlink=1" class="new" title="asettanneet (page does not exist)">asettanneet</a></span>
+</td>
+<td><span class="Latn" lang="izh">emmä olleet <a href="/w/index.php?title=asettanneet&amp;action=edit&amp;redlink=1" class="new" title="asettanneet (page does not exist)">asettanneet</a></span>
+</td></tr>
+<tr class="vsHide">
+<th class="izh-conj-header-person">2nd plural
+</th>
+<td><span class="Latn" lang="izh"><a href="/w/index.php?title=asetitta&amp;action=edit&amp;redlink=1" class="new" title="asetitta (page does not exist)">asetitta</a></span>
+</td>
+<td><span class="Latn" lang="izh">että <a href="/w/index.php?title=asettanneet&amp;action=edit&amp;redlink=1" class="new" title="asettanneet (page does not exist)">asettanneet</a></span>
+</td>
+<th class="izh-conj-header-person">2nd plural
+</th>
+<td><span class="Latn" lang="izh">olitta <a href="/w/index.php?title=asettanneet&amp;action=edit&amp;redlink=1" class="new" title="asettanneet (page does not exist)">asettanneet</a></span>
+</td>
+<td><span class="Latn" lang="izh">että olleet <a href="/w/index.php?title=asettanneet&amp;action=edit&amp;redlink=1" class="new" title="asettanneet (page does not exist)">asettanneet</a></span>
+</td></tr>
+<tr class="vsHide">
+<th class="izh-conj-header-person">3rd plural
+</th>
+<td><span class="Latn" lang="izh"><a href="/w/index.php?title=asettiit&amp;action=edit&amp;redlink=1" class="new" title="asettiit (page does not exist)">asettiit</a></span><sup>1)</sup>, <span class="Latn" lang="izh"><a href="/w/index.php?title=asettivat&amp;action=edit&amp;redlink=1" class="new" title="asettivat (page does not exist)">asettivat</a></span><sup>2)</sup>, <span class="Latn" lang="izh"><a href="/w/index.php?title=asetettii&amp;action=edit&amp;redlink=1" class="new" title="asetettii (page does not exist)">asetettii</a></span>
+</td>
+<td><span class="Latn" lang="izh">evät <a href="/w/index.php?title=asettanneet&amp;action=edit&amp;redlink=1" class="new" title="asettanneet (page does not exist)">asettanneet</a></span>, <span class="Latn" lang="izh">ei <a href="/wiki/asetettu#Ingrian" title="asetettu">asetettu</a></span>
+</td>
+<th class="izh-conj-header-person">3rd plural
+</th>
+<td><span class="Latn" lang="izh">olivat <a href="/w/index.php?title=asettanneet&amp;action=edit&amp;redlink=1" class="new" title="asettanneet (page does not exist)">asettanneet</a></span>
+</td>
+<td><span class="Latn" lang="izh">evät olleet <a href="/w/index.php?title=asettanneet&amp;action=edit&amp;redlink=1" class="new" title="asettanneet (page does not exist)">asettanneet</a></span>, <span class="Latn" lang="izh">ei olt <a href="/wiki/asetettu#Ingrian" title="asetettu">asetettu</a></span>
+</td></tr>
+<tr class="vsHide">
+<th class="izh-conj-header-person">impersonal
+</th>
+<td><span class="Latn" lang="izh"><a href="/w/index.php?title=asetettii&amp;action=edit&amp;redlink=1" class="new" title="asetettii (page does not exist)">asetettii</a></span>
+</td>
+<td><span class="Latn" lang="izh">ei <a href="/wiki/asetettu#Ingrian" title="asetettu">asetettu</a></span>
+</td>
+<th class="izh-conj-header-person">impersonal
+</th>
+<td><span class="Latn" lang="izh">oli <a href="/wiki/asetettu#Ingrian" title="asetettu">asetettu</a></span>
+</td>
+<td><span class="Latn" lang="izh">ei olt <a href="/wiki/asetettu#Ingrian" title="asetettu">asetettu</a></span>
+</td></tr>
+<tr class="vsHide">
+<th colspan="6" class="izh-conj-header-person"><a href="/wiki/conditional_mood" title="conditional mood">Konditsionala</a>
+</th></tr>
+<tr class="vsHide">
+<th colspan="3" class="izh-conj-header-person"><a href="/wiki/present_tense" title="present tense">Preesens</a>
+</th>
+<th colspan="3" class="izh-conj-header-person"><a href="/wiki/perfect" title="perfect">Perfekta</a>
+</th></tr>
+<tr class="vsHide">
+<th class="izh-conj-header-person">
+</th>
+<th class="izh-conj-header-person thsub">positive
+</th>
+<th class="izh-conj-header-person thsub">negative
+</th>
+<th class="izh-conj-header-person">
+</th>
+<th class="izh-conj-header-person thsub">positive
+</th>
+<th class="izh-conj-header-person thsub">negative
+</th></tr>
+<tr class="vsHide">
+<th class="izh-conj-header-person">1st singular
+</th>
+<td><span class="Latn" lang="izh"><a href="/w/index.php?title=asettaisin&amp;action=edit&amp;redlink=1" class="new" title="asettaisin (page does not exist)">asettaisin</a></span>
+</td>
+<td><span class="Latn" lang="izh">en <a href="/w/index.php?title=asettais&amp;action=edit&amp;redlink=1" class="new" title="asettais (page does not exist)">asettais</a></span>
+</td>
+<th class="izh-conj-header-person">1st singular
+</th>
+<td><span class="Latn" lang="izh">olisin <a href="/w/index.php?title=asettant&amp;action=edit&amp;redlink=1" class="new" title="asettant (page does not exist)">asettant</a></span>, <span class="Latn" lang="izh">olisin <a href="/wiki/asettanut#Ingrian" title="asettanut">asettanut</a></span>
+</td>
+<td><span class="Latn" lang="izh">en olis <a href="/w/index.php?title=asettant&amp;action=edit&amp;redlink=1" class="new" title="asettant (page does not exist)">asettant</a></span>, <span class="Latn" lang="izh">en olis <a href="/wiki/asettanut#Ingrian" title="asettanut">asettanut</a></span>
+</td></tr>
+<tr class="vsHide">
+<th class="izh-conj-header-person">2nd singular
+</th>
+<td><span class="Latn" lang="izh"><a href="/w/index.php?title=asettaisit&amp;action=edit&amp;redlink=1" class="new" title="asettaisit (page does not exist)">asettaisit</a></span>, <span class="Latn" lang="izh"><a href="/w/index.php?title=asettaist&amp;action=edit&amp;redlink=1" class="new" title="asettaist (page does not exist)">asettaist</a></span><sup>1)</sup>
+</td>
+<td><span class="Latn" lang="izh">et <a href="/w/index.php?title=asettais&amp;action=edit&amp;redlink=1" class="new" title="asettais (page does not exist)">asettais</a></span>
+</td>
+<th class="izh-conj-header-person">2nd singular
+</th>
+<td><span class="Latn" lang="izh">olisit <a href="/w/index.php?title=asettant&amp;action=edit&amp;redlink=1" class="new" title="asettant (page does not exist)">asettant</a></span>, <span class="Latn" lang="izh">olisit <a href="/wiki/asettanut#Ingrian" title="asettanut">asettanut</a></span>
+</td>
+<td><span class="Latn" lang="izh">et olis <a href="/w/index.php?title=asettant&amp;action=edit&amp;redlink=1" class="new" title="asettant (page does not exist)">asettant</a></span>, <span class="Latn" lang="izh">et olis <a href="/wiki/asettanut#Ingrian" title="asettanut">asettanut</a></span>
+</td></tr>
+<tr class="vsHide">
+<th class="izh-conj-header-person">3rd singular
+</th>
+<td><span class="Latn" lang="izh"><a href="/w/index.php?title=asettais&amp;action=edit&amp;redlink=1" class="new" title="asettais (page does not exist)">asettais</a></span>
+</td>
+<td><span class="Latn" lang="izh">ei <a href="/w/index.php?title=asettais&amp;action=edit&amp;redlink=1" class="new" title="asettais (page does not exist)">asettais</a></span>
+</td>
+<th class="izh-conj-header-person">3rd singular
+</th>
+<td><span class="Latn" lang="izh">olis <a href="/w/index.php?title=asettant&amp;action=edit&amp;redlink=1" class="new" title="asettant (page does not exist)">asettant</a></span>, <span class="Latn" lang="izh">olis <a href="/wiki/asettanut#Ingrian" title="asettanut">asettanut</a></span>
+</td>
+<td><span class="Latn" lang="izh">ei olis <a href="/w/index.php?title=asettant&amp;action=edit&amp;redlink=1" class="new" title="asettant (page does not exist)">asettant</a></span>, <span class="Latn" lang="izh">ei olis <a href="/wiki/asettanut#Ingrian" title="asettanut">asettanut</a></span>
+</td></tr>
+<tr class="vsHide">
+<th class="izh-conj-header-person">1st plural
+</th>
+<td><span class="Latn" lang="izh"><a href="/w/index.php?title=asettaisimma&amp;action=edit&amp;redlink=1" class="new" title="asettaisimma (page does not exist)">asettaisimma</a></span>
+</td>
+<td><span class="Latn" lang="izh">emmä <a href="/w/index.php?title=asettais&amp;action=edit&amp;redlink=1" class="new" title="asettais (page does not exist)">asettais</a></span>
+</td>
+<th class="izh-conj-header-person">1st plural
+</th>
+<td><span class="Latn" lang="izh">olisimma <a href="/w/index.php?title=asettanneet&amp;action=edit&amp;redlink=1" class="new" title="asettanneet (page does not exist)">asettanneet</a></span>
+</td>
+<td><span class="Latn" lang="izh">emmä olis <a href="/w/index.php?title=asettanneet&amp;action=edit&amp;redlink=1" class="new" title="asettanneet (page does not exist)">asettanneet</a></span>
+</td></tr>
+<tr class="vsHide">
+<th class="izh-conj-header-person">2nd plural
+</th>
+<td><span class="Latn" lang="izh"><a href="/w/index.php?title=asettaisitta&amp;action=edit&amp;redlink=1" class="new" title="asettaisitta (page does not exist)">asettaisitta</a></span>
+</td>
+<td><span class="Latn" lang="izh">että <a href="/w/index.php?title=asettais&amp;action=edit&amp;redlink=1" class="new" title="asettais (page does not exist)">asettais</a></span>
+</td>
+<th class="izh-conj-header-person">2nd plural
+</th>
+<td><span class="Latn" lang="izh">olisitta <a href="/w/index.php?title=asettanneet&amp;action=edit&amp;redlink=1" class="new" title="asettanneet (page does not exist)">asettanneet</a></span>
+</td>
+<td><span class="Latn" lang="izh">että olis <a href="/w/index.php?title=asettanneet&amp;action=edit&amp;redlink=1" class="new" title="asettanneet (page does not exist)">asettanneet</a></span>
+</td></tr>
+<tr class="vsHide">
+<th class="izh-conj-header-person">3rd plural
+</th>
+<td><span class="Latn" lang="izh"><a href="/w/index.php?title=asettaisiit&amp;action=edit&amp;redlink=1" class="new" title="asettaisiit (page does not exist)">asettaisiit</a></span><sup>1)</sup>, <span class="Latn" lang="izh"><a href="/w/index.php?title=asettaisivat&amp;action=edit&amp;redlink=1" class="new" title="asettaisivat (page does not exist)">asettaisivat</a></span><sup>2)</sup>, <span class="Latn" lang="izh"><a href="/w/index.php?title=asetettais&amp;action=edit&amp;redlink=1" class="new" title="asetettais (page does not exist)">asetettais</a></span>
+</td>
+<td><span class="Latn" lang="izh">evät <a href="/w/index.php?title=asettais&amp;action=edit&amp;redlink=1" class="new" title="asettais (page does not exist)">asettais</a></span>, <span class="Latn" lang="izh">ei <a href="/w/index.php?title=asetettais&amp;action=edit&amp;redlink=1" class="new" title="asetettais (page does not exist)">asetettais</a></span>
+</td>
+<th class="izh-conj-header-person">3rd plural
+</th>
+<td><span class="Latn" lang="izh">olisivat <a href="/w/index.php?title=asettanneet&amp;action=edit&amp;redlink=1" class="new" title="asettanneet (page does not exist)">asettanneet</a></span>
+</td>
+<td><span class="Latn" lang="izh">evät olis <a href="/w/index.php?title=asettanneet&amp;action=edit&amp;redlink=1" class="new" title="asettanneet (page does not exist)">asettanneet</a></span>, <span class="Latn" lang="izh">ei olis <a href="/wiki/asetettu#Ingrian" title="asetettu">asetettu</a></span>
+</td></tr>
+<tr class="vsHide">
+<th class="izh-conj-header-person">impersonal
+</th>
+<td><span class="Latn" lang="izh"><a href="/w/index.php?title=asetettais&amp;action=edit&amp;redlink=1" class="new" title="asetettais (page does not exist)">asetettais</a></span>
+</td>
+<td><span class="Latn" lang="izh">ei <a href="/w/index.php?title=asetettais&amp;action=edit&amp;redlink=1" class="new" title="asetettais (page does not exist)">asetettais</a></span>
+</td>
+<th class="izh-conj-header-person">impersonal
+</th>
+<td><span class="Latn" lang="izh">olis <a href="/wiki/asetettu#Ingrian" title="asetettu">asetettu</a></span>
+</td>
+<td><span class="Latn" lang="izh">ei olis <a href="/wiki/asetettu#Ingrian" title="asetettu">asetettu</a></span>
+</td></tr>
+<tr class="vsHide">
+<th colspan="6" class="izh-conj-header-person"><a href="/wiki/imperative_mood" title="imperative mood">Imperativa</a>
+</th></tr>
+<tr class="vsHide">
+<th colspan="3" class="izh-conj-header-person"><a href="/wiki/present_tense" title="present tense">Preesens</a>
+</th>
+<th colspan="3" class="izh-conj-header-person"><a href="/wiki/perfect" title="perfect">Perfekta</a>
+</th></tr>
+<tr class="vsHide">
+<th class="izh-conj-header-person">
+</th>
+<th class="izh-conj-header-person thsub">positive
+</th>
+<th class="izh-conj-header-person thsub">negative
+</th>
+<th class="izh-conj-header-person">
+</th>
+<th class="izh-conj-header-person thsub">positive
+</th>
+<th class="izh-conj-header-person thsub">negative
+</th></tr>
+<tr class="vsHide">
+<th class="izh-conj-header-person">1st singular
+</th>
+<td>—
+</td>
+<td>—
+</td>
+<th class="izh-conj-header-person">1st singular
+</th>
+<td>—
+</td>
+<td>—
+</td></tr>
+<tr class="vsHide">
+<th class="izh-conj-header-person">2nd singular
+</th>
+<td><span class="Latn" lang="izh"><a href="/wiki/aseta#Ingrian" title="aseta">aseta</a></span>
+</td>
+<td><span class="Latn" lang="izh">elä <a href="/wiki/aseta#Ingrian" title="aseta">aseta</a></span>
+</td>
+<th class="izh-conj-header-person">2nd singular
+</th>
+<td><span class="Latn" lang="izh">oo <a href="/w/index.php?title=asettant&amp;action=edit&amp;redlink=1" class="new" title="asettant (page does not exist)">asettant</a></span>, <span class="Latn" lang="izh">oo <a href="/wiki/asettanut#Ingrian" title="asettanut">asettanut</a></span>
+</td>
+<td><span class="Latn" lang="izh">elä oo <a href="/w/index.php?title=asettant&amp;action=edit&amp;redlink=1" class="new" title="asettant (page does not exist)">asettant</a></span>, <span class="Latn" lang="izh">elä oo <a href="/wiki/asettanut#Ingrian" title="asettanut">asettanut</a></span>
+</td></tr>
+<tr class="vsHide">
+<th class="izh-conj-header-person">3rd singular
+</th>
+<td><span class="Latn" lang="izh"><a href="/w/index.php?title=asettakkoo&amp;action=edit&amp;redlink=1" class="new" title="asettakkoo (page does not exist)">asettakkoo</a></span>
+</td>
+<td><span class="Latn" lang="izh">elköö <a href="/w/index.php?title=asettako&amp;action=edit&amp;redlink=1" class="new" title="asettako (page does not exist)">asettako</a></span>
+</td>
+<th class="izh-conj-header-person">3rd singular
+</th>
+<td><span class="Latn" lang="izh">olkoo <a href="/w/index.php?title=asettant&amp;action=edit&amp;redlink=1" class="new" title="asettant (page does not exist)">asettant</a></span>, <span class="Latn" lang="izh">olkoo <a href="/wiki/asettanut#Ingrian" title="asettanut">asettanut</a></span>
+</td>
+<td><span class="Latn" lang="izh">elköö olko <a href="/w/index.php?title=asettant&amp;action=edit&amp;redlink=1" class="new" title="asettant (page does not exist)">asettant</a></span>, <span class="Latn" lang="izh">elköö olko <a href="/wiki/asettanut#Ingrian" title="asettanut">asettanut</a></span>
+</td></tr>
+<tr class="vsHide">
+<th class="izh-conj-header-person">1st plural
+</th>
+<td>—
+</td>
+<td>—
+</td>
+<th class="izh-conj-header-person">1st plural
+</th>
+<td>—
+</td>
+<td>—
+</td></tr>
+<tr class="vsHide">
+<th class="izh-conj-header-person">2nd plural
+</th>
+<td><span class="Latn" lang="izh"><a href="/w/index.php?title=asettakkaa&amp;action=edit&amp;redlink=1" class="new" title="asettakkaa (page does not exist)">asettakkaa</a></span>
+</td>
+<td><span class="Latn" lang="izh">elkää <a href="/w/index.php?title=asettako&amp;action=edit&amp;redlink=1" class="new" title="asettako (page does not exist)">asettako</a></span>
+</td>
+<th class="izh-conj-header-person">2nd plural
+</th>
+<td><span class="Latn" lang="izh">olkaa <a href="/w/index.php?title=asettanneet&amp;action=edit&amp;redlink=1" class="new" title="asettanneet (page does not exist)">asettanneet</a></span>
+</td>
+<td><span class="Latn" lang="izh">elkää olko <a href="/w/index.php?title=asettanneet&amp;action=edit&amp;redlink=1" class="new" title="asettanneet (page does not exist)">asettanneet</a></span>
+</td></tr>
+<tr class="vsHide">
+<th class="izh-conj-header-person">3rd plural
+</th>
+<td><span class="Latn" lang="izh"><a href="/w/index.php?title=asettakkoot&amp;action=edit&amp;redlink=1" class="new" title="asettakkoot (page does not exist)">asettakkoot</a></span>
+</td>
+<td><span class="Latn" lang="izh">elkööt <a href="/w/index.php?title=asettako&amp;action=edit&amp;redlink=1" class="new" title="asettako (page does not exist)">asettako</a></span>, <span class="Latn" lang="izh">elköö <a href="/w/index.php?title=asetettako&amp;action=edit&amp;redlink=1" class="new" title="asetettako (page does not exist)">asetettako</a></span>
+</td>
+<th class="izh-conj-header-person">3rd plural
+</th>
+<td><span class="Latn" lang="izh">olkoot <a href="/w/index.php?title=asettanneet&amp;action=edit&amp;redlink=1" class="new" title="asettanneet (page does not exist)">asettanneet</a></span>
+</td>
+<td><span class="Latn" lang="izh">elkööt olko <a href="/w/index.php?title=asettanneet&amp;action=edit&amp;redlink=1" class="new" title="asettanneet (page does not exist)">asettanneet</a></span>, <span class="Latn" lang="izh">elköö olko <a href="/wiki/asetettu#Ingrian" title="asetettu">asetettu</a></span>
+</td></tr>
+<tr class="vsHide">
+<th class="izh-conj-header-person">impersonal
+</th>
+<td><span class="Latn" lang="izh"><a href="/w/index.php?title=asetettakoo&amp;action=edit&amp;redlink=1" class="new" title="asetettakoo (page does not exist)">asetettakoo</a></span>
+</td>
+<td><span class="Latn" lang="izh">elköö <a href="/w/index.php?title=asetettako&amp;action=edit&amp;redlink=1" class="new" title="asetettako (page does not exist)">asetettako</a></span>
+</td>
+<th class="izh-conj-header-person">impersonal
+</th>
+<td><span class="Latn" lang="izh">olkoo <a href="/wiki/asetettu#Ingrian" title="asetettu">asetettu</a></span>
+</td>
+<td><span class="Latn" lang="izh">elköö olko <a href="/wiki/asetettu#Ingrian" title="asetettu">asetettu</a></span>
+</td></tr>
+<tr class="vsHide">
+<th colspan="6" class="izh-conj-header-person"><a href="/wiki/potential_mood" title="potential mood">Potentsiala</a>
+</th></tr>
+<tr class="vsHide">
+<th colspan="3" class="izh-conj-header-person"><a href="/wiki/present_tense" title="present tense">Preesens</a>
+</th>
+<th rowspan="9" colspan="3" class="izh-conj-header-person">
+</th></tr>
+<tr class="vsHide">
+<th class="izh-conj-header-person">
+</th>
+<th class="izh-conj-header-person thsub">positive
+</th>
+<th class="izh-conj-header-person thsub">negative
+</th></tr>
+<tr class="vsHide">
+<th class="izh-conj-header-person">1st singular
+</th>
+<td><span class="Latn" lang="izh"><a href="/w/index.php?title=asettanen&amp;action=edit&amp;redlink=1" class="new" title="asettanen (page does not exist)">asettanen</a></span>
+</td>
+<td><span class="Latn" lang="izh">en <a href="/w/index.php?title=asettane&amp;action=edit&amp;redlink=1" class="new" title="asettane (page does not exist)">asettane</a></span>
+</td></tr>
+<tr class="vsHide">
+<th class="izh-conj-header-person">2nd singular
+</th>
+<td><span class="Latn" lang="izh"><a href="/w/index.php?title=asettanet&amp;action=edit&amp;redlink=1" class="new" title="asettanet (page does not exist)">asettanet</a></span>
+</td>
+<td><span class="Latn" lang="izh">et <a href="/w/index.php?title=asettane&amp;action=edit&amp;redlink=1" class="new" title="asettane (page does not exist)">asettane</a></span>
+</td></tr>
+<tr class="vsHide">
+<th class="izh-conj-header-person">3rd singular
+</th>
+<td><span class="Latn" lang="izh"><a href="/w/index.php?title=asettannoo&amp;action=edit&amp;redlink=1" class="new" title="asettannoo (page does not exist)">asettannoo</a></span>
+</td>
+<td><span class="Latn" lang="izh">ei <a href="/w/index.php?title=asettane&amp;action=edit&amp;redlink=1" class="new" title="asettane (page does not exist)">asettane</a></span>
+</td></tr>
+<tr class="vsHide">
+<th class="izh-conj-header-person">1st plural
+</th>
+<td><span class="Latn" lang="izh"><a href="/w/index.php?title=asettanemma&amp;action=edit&amp;redlink=1" class="new" title="asettanemma (page does not exist)">asettanemma</a></span>
+</td>
+<td><span class="Latn" lang="izh">emmä <a href="/w/index.php?title=asettane&amp;action=edit&amp;redlink=1" class="new" title="asettane (page does not exist)">asettane</a></span>
+</td></tr>
+<tr class="vsHide">
+<th class="izh-conj-header-person">2nd plural
+</th>
+<td><span class="Latn" lang="izh"><a href="/w/index.php?title=asettanetta&amp;action=edit&amp;redlink=1" class="new" title="asettanetta (page does not exist)">asettanetta</a></span>
+</td>
+<td><span class="Latn" lang="izh">että <a href="/w/index.php?title=asettane&amp;action=edit&amp;redlink=1" class="new" title="asettane (page does not exist)">asettane</a></span>
+</td></tr>
+<tr class="vsHide">
+<th class="izh-conj-header-person">3rd plural
+</th>
+<td><span class="Latn" lang="izh"><a href="/w/index.php?title=asettannoot&amp;action=edit&amp;redlink=1" class="new" title="asettannoot (page does not exist)">asettannoot</a></span>
+</td>
+<td><span class="Latn" lang="izh">evät <a href="/w/index.php?title=asettane&amp;action=edit&amp;redlink=1" class="new" title="asettane (page does not exist)">asettane</a></span>, <span class="Latn" lang="izh">ei <a href="/w/index.php?title=asetettane&amp;action=edit&amp;redlink=1" class="new" title="asetettane (page does not exist)">asetettane</a></span>
+</td></tr>
+<tr class="vsHide">
+<th class="izh-conj-header-person">impersonal
+</th>
+<td><span class="Latn" lang="izh"><a href="/w/index.php?title=asetettanoo&amp;action=edit&amp;redlink=1" class="new" title="asetettanoo (page does not exist)">asetettanoo</a></span>
+</td>
+<td><span class="Latn" lang="izh">ei <a href="/w/index.php?title=asetettane&amp;action=edit&amp;redlink=1" class="new" title="asetettane (page does not exist)">asetettane</a></span>
+</td></tr>
+<tr class="vsHide">
+<th colspan="6" class="izh-conj-header-person">Nominal forms
+</th></tr>
+<tr class="vsHide">
+<th colspan="3" class="izh-conj-header-person"><a href="/wiki/infinitive" title="infinitive">Infinitivat</a>
+</th>
+<th colspan="3" class="izh-conj-header-person"><a href="/wiki/participle" title="participle">Partisipat</a>
+</th></tr>
+<tr class="vsHide">
+<th colspan="2" class="izh-conj-header-person">
+</th>
+<th class="izh-conj-header-person thsub">
+</th>
+<th class="izh-conj-header-person">
+</th>
+<th class="izh-conj-header-person thsub">active
+</th>
+<th class="izh-conj-header-person thsub">passive
+</th></tr>
+<tr class="vsHide">
+<th colspan="2" class="izh-conj-header-person">1st
+</th>
+<td><span class="Latn" lang="izh"><strong class="selflink">asettaa</strong></span>
+</td>
+<th class="izh-conj-header-person">present
+</th>
+<td><span class="Latn" lang="izh"><a href="/w/index.php?title=asettava&amp;action=edit&amp;redlink=1" class="new" title="asettava (page does not exist)">asettava</a></span>
+</td>
+<td><span class="Latn" lang="izh"><a href="/w/index.php?title=asetettava&amp;action=edit&amp;redlink=1" class="new" title="asetettava (page does not exist)">asetettava</a></span>
+</td></tr>
+<tr class="vsHide">
+<th rowspan="2" class="izh-conj-header-person">2nd
+</th>
+<th class="izh-conj-header-person thsub">inessive
+</th>
+<td><span class="Latn" lang="izh"><a href="/w/index.php?title=asettaes&amp;action=edit&amp;redlink=1" class="new" title="asettaes (page does not exist)">asettaes</a></span>
+</td>
+<th class="izh-conj-header-person">past
+</th>
+<td><span class="Latn" lang="izh"><a href="/w/index.php?title=asettant&amp;action=edit&amp;redlink=1" class="new" title="asettant (page does not exist)">asettant</a></span>, <span class="Latn" lang="izh"><a href="/wiki/asettanut#Ingrian" title="asettanut">asettanut</a></span>
+</td>
+<td><span class="Latn" lang="izh"><a href="/wiki/asetettu#Ingrian" title="asetettu">asetettu</a></span>
+</td></tr>
+<tr class="vsHide">
+<th class="izh-conj-header-person thsub">instructive
+</th>
+<td><span class="Latn" lang="izh"><a href="/w/index.php?title=asettaen&amp;action=edit&amp;redlink=1" class="new" title="asettaen (page does not exist)">asettaen</a></span>
+</td>
+<td colspan="3" rowspan="7" class="izh-conj-notes"><sup>1)</sup> Chiefly in the Soikkola dialect.<br /><sup>2)</sup> Chiefly in the Ala-Laukaa dialect.<br /><sup>*)</sup> For the imperative, the 2nd plural (<i class="Latn mention" lang="izh">asettakkaa</i>) may be used for the 3rd person as well.<br /><sup>**)</sup> The interrogative is formed by adding the suffix <i class="Latn mention" lang="izh"><a href="/wiki/-k#Ingrian" title="-k">-k</a></i> (<i class="Latn mention" lang="izh"><a href="/wiki/-ka#Ingrian" title="-ka">-ka</a></i><sup><span title="in back-vocalic stems, following the consonant -t" style="cursor:help">?</span></sup>/<i class="Latn mention" lang="izh"><a href="/wiki/-k%C3%A4#Ingrian" title="-kä">-kä</a></i><sup><span title="in front-vocalic stems, following the consonant -t" style="cursor:help">?</span></sup>) to the indicative<br /><sup>***)</sup> The deliberative is formed by adding the suffix <i class="Latn mention" lang="izh"><a href="/wiki/-k#Ingrian" title="-k">-k</a></i> (<i class="Latn mention" lang="izh"><a href="/wiki/-ka#Ingrian" title="-ka">-ka</a></i><sup><span title="in back-vocalic stems, following the consonant -t" style="cursor:help">?</span></sup>/<i class="Latn mention" lang="izh"><a href="/wiki/-k%C3%A4#Ingrian" title="-kä">-kä</a></i><sup><span title="in front-vocalic stems, following the consonant -t" style="cursor:help">?</span></sup>) or <i class="Latn mention" lang="izh"><a href="/wiki/-kse#Ingrian" title="-kse">-kse</a></i> to either the indicative or the potential<br /><sup>****)</sup> In folk poetry, a long first infinitive can be formed by adding the suffix <i><a href="/wiki/-ks#Ingrian" title="-ks">-kse-</a></i>, followed by possessive suffixes, to the first infinitive. Note that sometimes gemination may be undone by this addition.
+</td></tr>
+<tr class="vsHide">
+<th rowspan="4" class="izh-conj-header-person">3rd
+</th>
+<th class="izh-conj-header-person thsub">illative
+</th>
+<td><span class="Latn" lang="izh"><a href="/w/index.php?title=asettammaa&amp;action=edit&amp;redlink=1" class="new" title="asettammaa (page does not exist)">asettammaa</a></span>
+</td></tr>
+<tr class="vsHide">
+<th class="izh-conj-header-person thsub">inessive
+</th>
+<td><span class="Latn" lang="izh"><a href="/w/index.php?title=asettamas&amp;action=edit&amp;redlink=1" class="new" title="asettamas (page does not exist)">asettamas</a></span>
+</td></tr>
+<tr class="vsHide">
+<th class="izh-conj-header-person thsub">elative
+</th>
+<td><span class="Latn" lang="izh"><a href="/w/index.php?title=asettamast&amp;action=edit&amp;redlink=1" class="new" title="asettamast (page does not exist)">asettamast</a></span>
+</td></tr>
+<tr class="vsHide">
+<th class="izh-conj-header-person thsub">abessive
+</th>
+<td><span class="Latn" lang="izh"><a href="/w/index.php?title=asettamata&amp;action=edit&amp;redlink=1" class="new" title="asettamata (page does not exist)">asettamata</a></span>
+</td></tr>
+<tr class="vsHide">
+<th rowspan="4" class="izh-conj-header-person">4th
+</th>
+<th class="izh-conj-header-person thsub">nominative
+</th>
+<td><span class="Latn" lang="izh"><a href="/w/index.php?title=asettamiin&amp;action=edit&amp;redlink=1" class="new" title="asettamiin (page does not exist)">asettamiin</a></span>
+</td></tr>
+<tr class="vsHide">
+<th class="izh-conj-header-person thsub">partitive
+</th>
+<td><span class="Latn" lang="izh"><a href="/w/index.php?title=asettamista&amp;action=edit&amp;redlink=1" class="new" title="asettamista (page does not exist)">asettamista</a></span>, <span class="Latn" lang="izh"><a href="/w/index.php?title=asettamist&amp;action=edit&amp;redlink=1" class="new" title="asettamist (page does not exist)">asettamist</a></span>
+</td></tr></tbody></table><style data-mw-deduplicate="TemplateStyles:r82632299">.mw-parser-output table.izh-conj{text-align:left}.mw-parser-output table.izh-conj tr{vertical-align:top}.mw-parser-output table.izh-conj .izh-conj-header-toggle{width:35em}.mw-parser-output table.izh-conj .izh-conj-header-tense{width:10em}.mw-parser-output table.izh-conj .izh-conj-header-person{width:11em}.mw-parser-output table.izh-conj .izh-conj-header-posneg{width:13em}.mw-parser-output .izh-conj-type{font-size:90%}.mw-parser-output .izh-conj-notes{font-size:smaller}.mw-parser-output table.izh-conj{border-style:solid;border-width:1px}.mw-parser-output table.izh-conj{border:1px solid var(--wikt-palette-blue-2,#ccccff)}.mw-parser-output table.izh-conj th,.mw-parser-output table.izh-conj th.izh-conj-header-toggle{background-color:var(--wikt-palette-blue-2,#ccccff)}.mw-parser-output table.izh-conj th.thsub{background-color:var(--wikt-palette-blue-1,#e6e6ff)}.mw-parser-output table.izh-conj td{background-color:var(--wikt-palette-blue-0,#f2ffff)}</style>
+<div class="mw-heading mw-heading5"><h5 id="Synonyms">Synonyms</h5><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=asettaa&amp;action=edit&amp;section=14" title="Edit section: Synonyms"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<ul><li><span class="ib-brac qualifier-brac">(</span><span class="ib-content qualifier-content">to put</span><span class="ib-brac qualifier-brac">)</span><span class="ib-colon sense-qualifier-colon">:</span> <span class="Latn" lang="izh"><a href="/wiki/panna#Ingrian" title="panna">panna</a></span>, <span class="Latn" lang="izh"><a href="/wiki/issuttaa#Ingrian" title="issuttaa">issuttaa</a></span>, <span class="Latn" lang="izh"><a href="/wiki/laittaa#Ingrian" title="laittaa">laittaa</a></span></li>
+<li><span class="ib-brac qualifier-brac">(</span><span class="ib-content qualifier-content">to stop</span><span class="ib-brac qualifier-brac">)</span><span class="ib-colon sense-qualifier-colon">:</span> <span class="Latn" lang="izh"><a href="/wiki/pi%C3%A4tt%C3%A4%C3%A4#Ingrian" title="piättää">piättää</a></span>, <span class="Latn" lang="izh"><a href="/wiki/seisottaa#Ingrian" title="seisottaa">seisottaa</a></span></li></ul>
+<div class="mw-heading mw-heading5"><h5 id="Derived_terms_2">Derived terms</h5><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=asettaa&amp;action=edit&amp;section=15" title="Edit section: Derived terms"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<div class="list-switcher-wrapper"><div class="term-list columns-bg"><ul><li><span class="Latn" lang="izh"><a href="/wiki/asettaissa#Ingrian" title="asettaissa">asettaissa</a></span></li><li><span class="Latn" lang="izh"><a href="/wiki/asettua#Ingrian" title="asettua">asettua</a></span></li></ul></div></div>
+<div class="mw-heading mw-heading3"><h3 id="Etymology_2">Etymology 2</h3><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=asettaa&amp;action=edit&amp;section=16" title="Edit section: Etymology 2"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<p>See the etymology of the corresponding <a href="/wiki/Appendix:Glossary#lemma" title="Appendix:Glossary">lemma</a> form.
+</p>
+<div class="mw-heading mw-heading4"><h4 id="Pronunciation_3">Pronunciation</h4><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=asettaa&amp;action=edit&amp;section=17" title="Edit section: Pronunciation"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<ul><li class="mw-empty-elt"></li>
+<li><span class="usage-label-accent"><span class="ib-brac label-brac">(</span><span class="ib-content label-content"><a href="https://en.wikipedia.org/wiki/Ingrian_phonology#Ala-Laukaa_dialect" class="extiw" title="w:Ingrian phonology">Ala-Laukaa</a></span><span class="ib-brac label-brac">)</span></span> <a href="/wiki/Wiktionary:International_Phonetic_Alphabet" title="Wiktionary:International Phonetic Alphabet">IPA</a><sup>(<a href="https://en.wikipedia.org/wiki/Ingrian_phonology" class="extiw" title="wikipedia:Ingrian phonology">key</a>)</sup>:&#32;<span class="IPA">/ˈɑsetːɑː/</span>, <span class="IPA">[ˈɑs̠e̞tːɑ]</span></li>
+<li><span class="usage-label-accent"><span class="ib-brac label-brac">(</span><span class="ib-content label-content"><a href="https://en.wikipedia.org/wiki/Ingrian_phonology#Soikkola_dialect" class="extiw" title="w:Ingrian phonology">Soikkola</a></span><span class="ib-brac label-brac">)</span></span> <a href="/wiki/Wiktionary:International_Phonetic_Alphabet" title="Wiktionary:International Phonetic Alphabet">IPA</a><sup>(<a href="https://en.wikipedia.org/wiki/Ingrian_phonology" class="extiw" title="wikipedia:Ingrian phonology">key</a>)</sup>:&#32;<span class="IPA">/ˈɑsetːɑː/</span>, <span class="IPA">[ˈɑʒ̥e̞tːɑː]</span></li>
+<li>Rhymes: <a href="/w/index.php?title=Rhymes:Ingrian/%C9%91set%CB%90%C9%91%CB%90&amp;action=edit&amp;redlink=1" class="new" title="Rhymes:Ingrian/ɑsetːɑː (page does not exist)"><span class="IPA">-ɑsetːɑː</span></a></li>
+<li>Hyphenation: <span class="Latn" lang="izh">a‧set‧taa</span></li></ul>
+<div class="mw-heading mw-heading4"><h4 id="Verb_3">Verb</h4><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=asettaa&amp;action=edit&amp;section=18" title="Edit section: Verb"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<p><span class="headword-line"><strong class="Latn headword" lang="izh">asettaa</strong></span>
+</p>
+<ol><li><span class="form-of-definition use-with-mention">inflection of <span class="form-of-definition-link"><i class="Latn mention" lang="izh"><a href="/wiki/asettaissa#Ingrian" title="asettaissa">asettaissa</a></i></span>:</span>
+<ol><li><span class="form-of-definition use-with-mention"><a href="/wiki/Appendix:Glossary#present_tense" title="Appendix:Glossary">present</a> <a href="/wiki/Appendix:Glossary#indicative_mood" title="Appendix:Glossary">indicative</a> <a href="/wiki/Appendix:Glossary#connegative" title="Appendix:Glossary">connegative</a></span></li>
+<li><span class="form-of-definition use-with-mention"><a href="/wiki/Appendix:Glossary#second_person" title="Appendix:Glossary">second-person</a> <a href="/wiki/Appendix:Glossary#singular_number" title="Appendix:Glossary">singular</a> <a href="/wiki/Appendix:Glossary#imperative_mood" title="Appendix:Glossary">imperative</a></span></li>
+<li><span class="form-of-definition use-with-mention"><a href="/wiki/Appendix:Glossary#second_person" title="Appendix:Glossary">second-person</a> <a href="/wiki/Appendix:Glossary#singular_number" title="Appendix:Glossary">singular</a> <a href="/wiki/Appendix:Glossary#imperative_mood" title="Appendix:Glossary">imperative</a> <a href="/wiki/Appendix:Glossary#connegative" title="Appendix:Glossary">connegative</a></span></li></ol></li></ol>
+<div class="mw-heading mw-heading3"><h3 id="References">References</h3><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=asettaa&amp;action=edit&amp;section=19" title="Edit section: References"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<ul><li><span class="citation-whole"><span class="cited-source">Ruben E. Nirvi (<span class="None" lang="und">1971</span>) <cite>Inkeroismurteiden Sanakirja</cite>, Helsinki&#58; Suomalais-Ugrilainen Seura, page <span class="None" lang="und">22</span></span></span></li>
+<li><span class="citation-whole"><span class="cited-source">Arvo Laanest (<span class="None" lang="und">1997</span>) <cite>Isuri keele Hevaha murde sõnastik</cite>, Eesti Keele Instituut, page <span class="None" lang="und">22</span></span></span></li></ul>
+<!-- 
+NewPP limit report
+Parsed by mw‐web.eqiad.main‐dd5c8cc7b‐wtmng
+Cached time: 20250318174634
+Cache expiry: 2592000
+Reduced expiry: false
+Complications: [vary‐revision‐sha1, show‐toc]
+CPU time usage: 0.766 seconds
+Real time usage: 1.014 seconds
+Preprocessor visited node count: 1445/1000000
+Post‐expand include size: 138411/2097152 bytes
+Template argument size: 877/2097152 bytes
+Highest expansion depth: 7/100
+Expensive parser function count: 25/500
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 3212/5000000 bytes
+Lua time usage: 0.526/10.000 seconds
+Lua memory usage: 20476464/104857600 bytes
+Number of Wikibase entities loaded: 0/400
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  867.428      1 -total
+ 31.52%  273.378      2 Template:inh
+  9.23%   80.096      1 Template:izh-conj/kirjuttaa
+  6.54%   56.720      1 Template:fi-conj-muistaa
+  6.36%   55.210      7 Template:lb
+  5.34%   46.349      8 Template:coi
+  5.24%   45.467      1 Template:R:KTSK
+  5.08%   44.107      1 Template:+obj
+  4.97%   43.088      1 Template:cite-web
+  4.82%   41.784      2 Template:izh-p
+-->
+
+<!-- Saved in parser cache with key enwiktionary:pcache:289125:|#|:idhash:dateformat=default and timestamp 20250318174634 and revision id 83301689. Rendering was triggered because: page-view
+ -->
+</div><!--esi <esi:include src="/esitest-fa8a495983347898/content" /> --><noscript><img src="https://login.wikimedia.org/wiki/Special:CentralAutoLogin/start?useformat=desktop&amp;type=1x1&amp;usesul3=0" alt="" width="1" height="1" style="border: none; position: absolute;"></noscript>
+<div class="printfooter" data-nosnippet="">Retrieved from "<a dir="ltr" href="https://en.wiktionary.org/w/index.php?title=asettaa&amp;oldid=83301689">https://en.wiktionary.org/w/index.php?title=asettaa&amp;oldid=83301689</a>"</div></div>
+					<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Special:Categories" title="Special:Categories">Categories</a>: <ul><li><a href="/wiki/Category:Finnish_terms_inherited_from_Proto-Finnic" title="Category:Finnish terms inherited from Proto-Finnic">Finnish terms inherited from Proto-Finnic</a></li><li><a href="/wiki/Category:Finnish_terms_derived_from_Proto-Finnic" title="Category:Finnish terms derived from Proto-Finnic">Finnish terms derived from Proto-Finnic</a></li><li><a href="/wiki/Category:Finnish_terms_suffixed_with_-ttaa" title="Category:Finnish terms suffixed with -ttaa">Finnish terms suffixed with -ttaa</a></li><li><a href="/wiki/Category:Finnish_3-syllable_words" title="Category:Finnish 3-syllable words">Finnish 3-syllable words</a></li><li><a href="/wiki/Category:Finnish_terms_with_IPA_pronunciation" title="Category:Finnish terms with IPA pronunciation">Finnish terms with IPA pronunciation</a></li><li><a href="/wiki/Category:Rhymes:Finnish/%C9%91set%CB%90%C9%91%CB%90" title="Category:Rhymes:Finnish/ɑsetːɑː">Rhymes:Finnish/ɑsetːɑː</a></li><li><a href="/wiki/Category:Rhymes:Finnish/%C9%91set%CB%90%C9%91%CB%90/3_syllables" title="Category:Rhymes:Finnish/ɑsetːɑː/3 syllables">Rhymes:Finnish/ɑsetːɑː/3 syllables</a></li><li><a href="/wiki/Category:Finnish_lemmas" title="Category:Finnish lemmas">Finnish lemmas</a></li><li><a href="/wiki/Category:Finnish_verbs" title="Category:Finnish verbs">Finnish verbs</a></li><li><a href="/wiki/Category:Finnish_transitive_verbs" title="Category:Finnish transitive verbs">Finnish transitive verbs</a></li><li><a href="/wiki/Category:Finnish_terms_with_collocations" title="Category:Finnish terms with collocations">Finnish terms with collocations</a></li><li><a href="/wiki/Category:Finnish_muistaa-type_verbs" title="Category:Finnish muistaa-type verbs">Finnish muistaa-type verbs</a></li><li><a href="/wiki/Category:Ingrian_terms_inherited_from_Proto-Finnic" title="Category:Ingrian terms inherited from Proto-Finnic">Ingrian terms inherited from Proto-Finnic</a></li><li><a href="/wiki/Category:Ingrian_terms_derived_from_Proto-Finnic" title="Category:Ingrian terms derived from Proto-Finnic">Ingrian terms derived from Proto-Finnic</a></li><li><a href="/wiki/Category:Ingrian_terms_with_IPA_pronunciation" title="Category:Ingrian terms with IPA pronunciation">Ingrian terms with IPA pronunciation</a></li><li><a href="/wiki/Category:Rhymes:Ingrian/%C9%91set%CB%90%C9%91%CB%90" title="Category:Rhymes:Ingrian/ɑsetːɑː">Rhymes:Ingrian/ɑsetːɑː</a></li><li><a href="/wiki/Category:Rhymes:Ingrian/%C9%91set%CB%90%C9%91%CB%90/3_syllables" title="Category:Rhymes:Ingrian/ɑsetːɑː/3 syllables">Rhymes:Ingrian/ɑsetːɑː/3 syllables</a></li><li><a href="/wiki/Category:Ingrian_lemmas" title="Category:Ingrian lemmas">Ingrian lemmas</a></li><li><a href="/wiki/Category:Ingrian_verbs" title="Category:Ingrian verbs">Ingrian verbs</a></li><li><a href="/wiki/Category:Ingrian_transitive_verbs" title="Category:Ingrian transitive verbs">Ingrian transitive verbs</a></li><li><a href="/wiki/Category:izh:Agriculture" title="Category:izh:Agriculture">izh:Agriculture</a></li><li><a href="/wiki/Category:Ingrian_non-lemma_forms" title="Category:Ingrian non-lemma forms">Ingrian non-lemma forms</a></li><li><a href="/wiki/Category:Ingrian_verb_forms" title="Category:Ingrian verb forms">Ingrian verb forms</a></li></ul></div><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">Hidden categories: <ul><li><a href="/wiki/Category:Pages_with_entries" title="Category:Pages with entries">Pages with entries</a></li><li><a href="/wiki/Category:Pages_with_2_entries" title="Category:Pages with 2 entries">Pages with 2 entries</a></li></ul></div></div>
+				</div>
+			</main>
+			
+		</div>
+		<div class="mw-footer-container">
+			
+<footer id="footer" class="mw-footer" >
+	<ul id="footer-info">
+	<li id="footer-info-lastmod"> This page was last edited on 2 January 2025, at 02:51.</li>
+	<li id="footer-info-copyright">Definitions and other text are available under the <a rel="nofollow" class="external text" href="//creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike License</a>; additional terms may apply. By using this site, you agree to the <a class="external text" href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Terms_of_Use">Terms of Use</a> and <a class="external text" href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Privacy_policy">Privacy Policy.</a></li>
+</ul>
+
+	<ul id="footer-places">
+	<li id="footer-places-privacy"><a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Privacy_policy">Privacy policy</a></li>
+	<li id="footer-places-about"><a href="/wiki/Wiktionary:About">About Wiktionary</a></li>
+	<li id="footer-places-disclaimers"><a href="/wiki/Wiktionary:General_disclaimer">Disclaimers</a></li>
+	<li id="footer-places-wm-codeofconduct"><a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Universal_Code_of_Conduct">Code of Conduct</a></li>
+	<li id="footer-places-developers"><a href="https://developer.wikimedia.org">Developers</a></li>
+	<li id="footer-places-statslink"><a href="https://stats.wikimedia.org/#/en.wiktionary.org">Statistics</a></li>
+	<li id="footer-places-cookiestatement"><a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Cookie_statement">Cookie statement</a></li>
+	<li id="footer-places-mobileview"><a href="//en.m.wiktionary.org/w/index.php?title=asettaa&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+</ul>
+
+	<ul id="footer-icons" class="noprint">
+	<li id="footer-copyrightico"><a href="https://wikimediafoundation.org/" class="cdx-button cdx-button--fake-button cdx-button--size-large cdx-button--fake-button--enabled"><picture><source media="(min-width: 500px)" srcset="/static/images/footer/wikimedia-button.svg" width="84" height="29"><img src="/static/images/footer/wikimedia.svg" width="25" height="25" alt="Wikimedia Foundation" lang="en" loading="lazy"></picture></a></li>
+	<li id="footer-poweredbyico"><a href="https://www.mediawiki.org/" class="cdx-button cdx-button--fake-button cdx-button--size-large cdx-button--fake-button--enabled"><picture><source media="(min-width: 500px)" srcset="/w/resources/assets/poweredby_mediawiki.svg" width="88" height="31"><img src="/w/resources/assets/mediawiki_compact.svg" alt="Powered by MediaWiki" lang="en" width="25" height="25" loading="lazy"></picture></a></li>
+</ul>
+
+</footer>
+
+		</div>
+	</div> 
+</div> 
+<div class="vector-header-container vector-sticky-header-container">
+	<div id="vector-sticky-header" class="vector-sticky-header">
+		<div class="vector-sticky-header-start">
+			<div class="vector-sticky-header-icon-start vector-button-flush-left vector-button-flush-right" aria-hidden="true">
+				<button class="cdx-button cdx-button--weight-quiet cdx-button--icon-only vector-sticky-header-search-toggle" tabindex="-1" data-event-name="ui.vector-sticky-search-form.icon"><span class="vector-icon mw-ui-icon-search mw-ui-icon-wikimedia-search"></span>
+
+<span>Search</span>
+			</button>
+		</div>
+			
+		<div role="search" class="vector-search-box-vue  vector-search-box-show-thumbnail vector-search-box">
+			<div class="vector-typeahead-search-container">
+				<div class="cdx-typeahead-search cdx-typeahead-search--show-thumbnail">
+					<form action="/w/index.php" id="vector-sticky-search-form" class="cdx-search-input cdx-search-input--has-end-button">
+						<div  class="cdx-search-input__input-wrapper"  data-search-loc="header-moved">
+							<div class="cdx-text-input cdx-text-input--has-start-icon">
+								<input
+									class="cdx-text-input__input"
+									
+									type="search" name="search" placeholder="Search Wiktionary">
+								<span class="cdx-text-input__icon cdx-text-input__start-icon"></span>
+							</div>
+							<input type="hidden" name="title" value="Special:Search">
+						</div>
+						<button class="cdx-button cdx-search-input__end-button">Search</button>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="vector-sticky-header-context-bar">
+				<nav aria-label="Contents" class="vector-toc-landmark">
+						
+					<div id="vector-sticky-header-toc" class="vector-dropdown mw-portlet mw-portlet-sticky-header-toc vector-sticky-header-toc vector-button-flush-left"  >
+						<input type="checkbox" id="vector-sticky-header-toc-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-sticky-header-toc" class="vector-dropdown-checkbox "  aria-label="Toggle the table of contents"  >
+						<label id="vector-sticky-header-toc-label" for="vector-sticky-header-toc-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only " aria-hidden="true"  ><span class="vector-icon mw-ui-icon-listBullet mw-ui-icon-wikimedia-listBullet"></span>
+
+<span class="vector-dropdown-label-text">Toggle the table of contents</span>
+						</label>
+						<div class="vector-dropdown-content">
+					
+						<div id="vector-sticky-header-toc-unpinned-container" class="vector-unpinned-container">
+						</div>
+					
+						</div>
+					</div>
+			</nav>
+				<div class="vector-sticky-header-context-bar-primary" aria-hidden="true" ><span class="mw-page-title-main">asettaa</span></div>
+			</div>
+		</div>
+		<div class="vector-sticky-header-end" aria-hidden="true">
+			<div class="vector-sticky-header-icons">
+				<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" id="ca-talk-sticky-header" tabindex="-1" data-event-name="talk-sticky-header"><span class="vector-icon mw-ui-icon-speechBubbles mw-ui-icon-wikimedia-speechBubbles"></span>
+
+<span></span>
+			</a>
+			<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" id="ca-subject-sticky-header" tabindex="-1" data-event-name="subject-sticky-header"><span class="vector-icon mw-ui-icon-article mw-ui-icon-wikimedia-article"></span>
+
+<span></span>
+			</a>
+			<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" id="ca-history-sticky-header" tabindex="-1" data-event-name="history-sticky-header"><span class="vector-icon mw-ui-icon-wikimedia-history mw-ui-icon-wikimedia-wikimedia-history"></span>
+
+<span></span>
+			</a>
+			<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only mw-watchlink" id="ca-watchstar-sticky-header" tabindex="-1" data-event-name="watch-sticky-header"><span class="vector-icon mw-ui-icon-wikimedia-star mw-ui-icon-wikimedia-wikimedia-star"></span>
+
+<span></span>
+			</a>
+			<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" id="ca-edit-sticky-header" tabindex="-1" data-event-name="wikitext-edit-sticky-header"><span class="vector-icon mw-ui-icon-wikimedia-wikiText mw-ui-icon-wikimedia-wikimedia-wikiText"></span>
+
+<span></span>
+			</a>
+			<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" id="ca-ve-edit-sticky-header" tabindex="-1" data-event-name="ve-edit-sticky-header"><span class="vector-icon mw-ui-icon-wikimedia-edit mw-ui-icon-wikimedia-wikimedia-edit"></span>
+
+<span></span>
+			</a>
+			<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" id="ca-viewsource-sticky-header" tabindex="-1" data-event-name="ve-edit-protected-sticky-header"><span class="vector-icon mw-ui-icon-wikimedia-editLock mw-ui-icon-wikimedia-wikimedia-editLock"></span>
+
+<span></span>
+			</a>
+		</div>
+			<div class="vector-sticky-header-buttons">
+				<button class="cdx-button cdx-button--weight-quiet mw-interlanguage-selector" id="p-lang-btn-sticky-header" tabindex="-1" data-event-name="ui.dropdown-p-lang-btn-sticky-header"><span class="vector-icon mw-ui-icon-wikimedia-language mw-ui-icon-wikimedia-wikimedia-language"></span>
+
+<span>10 languages</span>
+			</button>
+			<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--action-progressive" id="ca-addsection-sticky-header" tabindex="-1" data-event-name="addsection-sticky-header"><span class="vector-icon mw-ui-icon-speechBubbleAdd-progressive mw-ui-icon-wikimedia-speechBubbleAdd-progressive"></span>
+
+<span>Add topic</span>
+			</a>
+		</div>
+			<div class="vector-sticky-header-icon-end">
+				<div class="vector-user-links">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="mw-portlet mw-portlet-dock-bottom emptyPortlet" id="p-dock-bottom">
+	<ul>
+		
+	</ul>
+</div>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgHostname":"mw-web.eqiad.main-dd5c8cc7b-hqzcz","wgBackendResponseTime":163,"wgPageParseReport":{"limitreport":{"cputime":"0.766","walltime":"1.014","ppvisitednodes":{"value":1445,"limit":1000000},"postexpandincludesize":{"value":138411,"limit":2097152},"templateargumentsize":{"value":877,"limit":2097152},"expansiondepth":{"value":7,"limit":100},"expensivefunctioncount":{"value":25,"limit":500},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":3212,"limit":5000000},"entityaccesscount":{"value":0,"limit":400},"timingprofile":["100.00%  867.428      1 -total"," 31.52%  273.378      2 Template:inh","  9.23%   80.096      1 Template:izh-conj/kirjuttaa","  6.54%   56.720      1 Template:fi-conj-muistaa","  6.36%   55.210      7 Template:lb","  5.34%   46.349      8 Template:coi","  5.24%   45.467      1 Template:R:KTSK","  5.08%   44.107      1 Template:+obj","  4.97%   43.088      1 Template:cite-web","  4.82%   41.784      2 Template:izh-p"]},"scribunto":{"limitreport-timeusage":{"value":"0.526","limit":"10.000"},"limitreport-memusage":{"value":20476464,"limit":104857600}},"cachereport":{"origin":"mw-web.eqiad.main-dd5c8cc7b-wtmng","timestamp":"20250318174634","ttl":2592000,"transientcontent":false}}});});</script>
+</body>
+</html>
