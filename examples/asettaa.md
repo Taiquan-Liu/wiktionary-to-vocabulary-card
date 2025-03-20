@@ -2,7 +2,9 @@
 #verb #muistaa
 https://en.wiktionary.org/wiki/asettaa
 {custom text}
-<details><summary>Conjugation Table</summary>
+```ad-note
+title: Conjugation Table
+collapse: collapse
 | Inflection of asettaa (Kotus type 53*C/muistaa, tt-t gradation) |  |  |  |  |  |  |
 | --- | --- | --- | --- | --- | --- | --- |
 | indicative mood |  |  |  |  |  |  |
@@ -69,8 +71,11 @@ https://en.wiktionary.org/wiki/asettaa
 | abessive | asettamatta | — |  |  |  |  |
 | instructive | asettaman | asetettaman |  |  |  |  |
 | 4th3 | verbal noun | asettaminen |  |  |  |  |
-| 5th1 |  |  |  |  |  |  |</details>
-```spoiler-block
+| 5th1 |  |  |  |  |  |  |
+```
+```ad-note
+title: Definition
+collapse: collapse
 1. (transitive) to put, place, set, (move into) position, locate [with illative or allative ‘in/on’]
 Synonyms: panna, laittaa
 asettaa ehdoksi ― to stipulate, make it a condition (that)

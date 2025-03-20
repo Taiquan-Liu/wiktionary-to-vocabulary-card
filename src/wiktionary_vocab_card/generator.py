@@ -20,7 +20,12 @@ class MarkdownGenerator:
 
         if self.config['table_folding']:
             # Create folding section without extra newlines
-            return "<details><summary>Conjugation Table</summary>" + self.content['conjugation'] + "</details>"
+            return self.generate_ad_note(
+                title="Conjugation Table",
+                collapse=self.config['table_folding'],
+                text=self.content['conjugation']
+            )
+
         return self.content['conjugation']
 
     def generate_card(self):
@@ -41,9 +46,18 @@ class MarkdownGenerator:
         if table:
             parts.append(table)
 
-        parts.append(f"```spoiler-block\n{self.content['definition']}\n```")
+        definition = self.generate_ad_note(
+            title="Definition",
+            collapse=self.config['table_folding'],
+            text=self.content['definition']
+        )
+        parts.append(definition)
 
         # Join everything with no extra newlines
         result = "".join([part + "\n" for part in parts]).strip()
         pyperclip.copy(result)
         return result
+
+    def generate_ad_note(self, title: str, collapse: bool, text: str):
+        collapse_str = "collapse" if collapse else "open"
+        return f"```ad-note\ntitle: {title}\ncollapse: {collapse_str}\n{text}\n```"

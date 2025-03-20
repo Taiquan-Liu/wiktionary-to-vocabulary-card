@@ -2,22 +2,24 @@
 #noun #vieras
 https://en.wiktionary.org/wiki/ehdokas
 {custom text}
-<details><summary>Conjugation Table</summary>
-| Inflectionofehdokas(Kotustype 41*A/vieras,kk-kgradation) |  |  |  |
+```ad-note
+title: Conjugation Table
+collapse: collapse
+| Inflection of ehdokas (Kotus type 41*A/vieras, kk-k gradation) |  |  |  |
 | --- | --- | --- | --- |
 | nominative |  | ehdokas | ehdokkaat |
-| genitive |  | ehdokkaan | ehdokkaiden ehdokkaitten |
+| genitive |  | ehdokkaan | ehdokkaidenehdokkaitten |
 | partitive |  | ehdokasta | ehdokkaita |
 | illative |  | ehdokkaaseen | ehdokkaisiin |
 |  |  | singular | plural |
 | nominative |  | ehdokas | ehdokkaat |
 | accusative | nom. | ehdokas | ehdokkaat |
 | gen. | ehdokkaan |  |  |
-| genitive |  | ehdokkaan | ehdokkaiden ehdokkaitten ehdokastenrare |
+| genitive |  | ehdokkaan | ehdokkaidenehdokkaittenehdokasten rare |
 | partitive |  | ehdokasta | ehdokkaita |
 | inessive |  | ehdokkaassa | ehdokkaissa |
 | elative |  | ehdokkaasta | ehdokkaista |
-| illative |  | ehdokkaaseen | ehdokkaisiin ehdokkaihinrare |
+| illative |  | ehdokkaaseen | ehdokkaisiinehdokkaihin rare |
 | adessive |  | ehdokkaalla | ehdokkailla |
 | ablative |  | ehdokkaalta | ehdokkailta |
 | allative |  | ehdokkaalle | ehdokkaille |
@@ -25,8 +27,11 @@ https://en.wiktionary.org/wiki/ehdokas
 | translative |  | ehdokkaaksi | ehdokkaiksi |
 | abessive |  | ehdokkaatta | ehdokkaitta |
 | instructive |  | — | ehdokkain |
-| comitative |  | See the possessive forms below. |  |</details>
-```spoiler-block
+| comitative |  | See the possessive forms below. |  |
+```
+```ad-note
+title: Definition
+collapse: collapse
 1. candidate (person applying for a position or running in an election)
 Ketkä ovat ehdokkaana presindentinvaaleissa?Who are the candidates at the presidential election?
 2. nominee (one nominated, or proposed, by others for office or for election to office)
