@@ -1,4 +1,5 @@
 from pathlib import Path
+
 import yaml
 from appdirs import user_config_dir
 
@@ -8,8 +9,9 @@ CONFIG_FILE = CONFIG_DIR / "config.yaml"
 DEFAULT_CONFIG = {
     "custom_text": "{custom text}",
     "default_output": "vocabulary_cards",
-    "table_folding": True
+    "table_folding": True,
 }
+
 
 def load_config():
     CONFIG_DIR.mkdir(parents=True, exist_ok=True)
@@ -19,6 +21,7 @@ def load_config():
 
     with open(CONFIG_FILE) as f:
         return yaml.safe_load(f)
+
 
 def update_config(new_settings):
     config = load_config()

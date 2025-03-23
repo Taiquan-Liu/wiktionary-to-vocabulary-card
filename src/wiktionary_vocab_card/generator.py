@@ -1,5 +1,6 @@
 import pyperclip
 
+
 class MarkdownGenerator:
     def __init__(self, parser, content, config):
         self.parser = parser
@@ -8,25 +9,25 @@ class MarkdownGenerator:
 
     def generate_tags(self):
         tags = []
-        if self.content['pos']:
+        if self.content["pos"]:
             tags.append(f"#{self.content['pos']}")
-        if self.content['kotus']:
+        if self.content["kotus"]:
             tags.append(f"#{self.content['kotus']}")
-        return ' '.join(tags)
+        return " ".join(tags)
 
     def generate_table(self):
-        if not self.content['conjugation']:
+        if not self.content["conjugation"]:
             return ""
 
-        if self.config['table_folding']:
+        if self.config["table_folding"]:
             # Create folding section without extra newlines
             return self.generate_ad_note(
                 title="Conjugation Table",
-                collapse=self.config['table_folding'],
-                text=self.content['conjugation']
+                collapse=self.config["table_folding"],
+                text=self.content["conjugation"],
             )
 
-        return self.content['conjugation']
+        return self.content["conjugation"]
 
     def generate_card(self):
         # Build the card with parts that exist
@@ -39,7 +40,7 @@ class MarkdownGenerator:
 
         parts.append(f"{self.parser.url}")
 
-        if self.config['custom_text']:
+        if self.config["custom_text"]:
             parts.append(f"{self.config['custom_text']}")
 
         table = self.generate_table()
@@ -48,8 +49,8 @@ class MarkdownGenerator:
 
         definition = self.generate_ad_note(
             title="Definition",
-            collapse=self.config['table_folding'],
-            text=self.content['definition']
+            collapse=self.config["table_folding"],
+            text=self.content["definition"],
         )
         parts.append(definition)
 

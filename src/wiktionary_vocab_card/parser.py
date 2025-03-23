@@ -1,7 +1,8 @@
-from bs4 import BeautifulSoup
 import re
 from urllib.parse import unquote
+
 import requests
+from bs4 import BeautifulSoup
 
 
 def html_table_to_markdown(table):
@@ -10,26 +11,28 @@ def html_table_to_markdown(table):
         return ""
 
     # First, remove all nested tables completely
-    nested_tables = table.find_all('table', recursive=True)
+    nested_tables = table.find_all("table", recursive=True)
     for nested in nested_tables:
         if nested != table:  # Don't remove the main table
             nested.decompose()
 
     # Now parse the simplified table
-    rows = table.find_all('tr')
+    rows = table.find_all("tr")
     if not rows:
         return ""
 
     # Analyze table structure
     max_cols = 0
     for row in rows:
-        cells = row.find_all(['th', 'td'])
-        cols_in_row = sum(int(cell.get('colspan', 1)) for cell in cells if cell is not None)
+        cells = row.find_all(["th", "td"])
+        cols_in_row = sum(
+            int(cell.get("colspan", 1)) for cell in cells if cell is not None
+        )
         max_cols = max(max_cols, cols_in_row)
 
     markdown_rows = []
     for row in rows:
-        cells = row.find_all(['th', 'td'])
+        cells = row.find_all(["th", "td"])
         markdown_cells = []
 
         for cell in cells:
@@ -38,28 +41,28 @@ def html_table_to_markdown(table):
 
             # Extract text, handling line breaks
             text = cell.get_text().strip()
-            text = re.sub(r'\s+', ' ', text)
+            text = re.sub(r"\s+", " ", text)
 
             # Handle colspan
-            colspan = int(cell.get('colspan', 1))
+            colspan = int(cell.get("colspan", 1))
             markdown_cells.append(text)
 
             # Add empty cells for spanning columns
             for _ in range(1, colspan):
-                markdown_cells.append('')
+                markdown_cells.append("")
 
         # Pad with empty cells if needed
         while len(markdown_cells) < max_cols:
-            markdown_cells.append('')
+            markdown_cells.append("")
 
         markdown_rows.append(markdown_cells)
 
     # Find the maximum non-empty column
     max_used_cols = 0
     for row in markdown_rows:
-        for i in range(len(row)-1, -1, -1):
+        for i in range(len(row) - 1, -1, -1):
             if row[i].strip():
-                max_used_cols = max(max_used_cols, i+1)
+                max_used_cols = max(max_used_cols, i + 1)
                 break
 
     # Trim rows to only include used columns
@@ -68,7 +71,7 @@ def html_table_to_markdown(table):
     # Convert to markdown
     result = []
     for i, row in enumerate(trimmed_rows):
-        if all(cell == '' for cell in row):
+        if all(cell == "" for cell in row):
             continue
 
         line = "| " + " | ".join(row) + " |"
@@ -83,7 +86,7 @@ def html_table_to_markdown(table):
 class WiktionaryParser:
     def __init__(self, url):
         self.url = url
-        self.word = unquote(url.split('/wiki/')[-1]).replace('_', ' ')
+        self.word = unquote(url.split("/wiki/")[-1]).replace("_", " ")
         self.soup = None
         self.finnish_section = None
         self.part_of_speech = None
@@ -94,10 +97,10 @@ class WiktionaryParser:
     def fetch_page(self):
         response = requests.get(self.url)
         response.raise_for_status()
-        self.soup = BeautifulSoup(response.content, 'html.parser')
+        self.soup = BeautifulSoup(response.content, "html.parser")
 
     def find_finnish_section(self):
-        finnish_header = self.soup.find('h2', {'id': 'Finnish'})
+        finnish_header = self.soup.find("h2", {"id": "Finnish"})
         if not finnish_header:
             raise ValueError("Finnish section not found")
         self.finnish_section = finnish_header
@@ -111,9 +114,15 @@ class WiktionaryParser:
             if not current:
                 break
             # Check for h3 within a div
-            if current.name == 'div' and 'mw-heading' in current.get('class', []):
-                h3 = current.find('h3')
-                if h3 and h3.get('id') in ['Noun', 'Verb', 'Adjective', 'Adverb', 'Pronoun']:
+            if current.name == "div" and "mw-heading" in current.get("class", []):
+                h3 = current.find("h3")
+                if h3 and h3.get("id") in [
+                    "Noun",
+                    "Verb",
+                    "Adjective",
+                    "Adverb",
+                    "Pronoun",
+                ]:
                     self.part_of_speech = h3.get_text().strip().lower()
                     break
 
@@ -128,9 +137,9 @@ class WiktionaryParser:
                 break
 
             # Check for h4 within a div
-            if current.name == 'div' and 'mw-heading' in current.get('class', []):
-                h4 = current.find('h4')
-                if h4 and 'Declension' in h4.get_text():
+            if current.name == "div" and "mw-heading" in current.get("class", []):
+                h4 = current.find("h4")
+                if h4 and "Declension" in h4.get_text():
                     declension_header = h4
                     break
 
@@ -144,19 +153,21 @@ class WiktionaryParser:
                 if not current:
                     break
 
-                if current.name == 'table' and 'inflection-table' in current.get('class', []):
+                if current.name == "table" and "inflection-table" in current.get(
+                    "class", []
+                ):
                     inflection_table = current
                     break
 
             if inflection_table:
                 # Extract Kotus type from the table header text
-                th = inflection_table.find('th', {'colspan': '4'})
+                th = inflection_table.find("th", {"colspan": "4"})
                 if th:
                     th_text = th.get_text()
-                    match = re.search(r'Kotus type ([^,\s)]+)', th_text)
+                    match = re.search(r"Kotus type ([^,\s)]+)", th_text)
                     if match:
                         kotus_full = match.group(1)
-                        kotus_parts = kotus_full.split('/')
+                        kotus_parts = kotus_full.split("/")
                         self.kotus_type = kotus_parts[-1]  # Take the last part after /
 
                 # Convert table to markdown for conjugation_table
@@ -173,9 +184,9 @@ class WiktionaryParser:
                 break
 
             # Look for Conjugation header within a div
-            if current.name == 'div' and 'mw-heading' in current.get('class', []):
-                h4 = current.find('h4')
-                if h4 and 'Conjugation' in h4.get_text():
+            if current.name == "div" and "mw-heading" in current.get("class", []):
+                h4 = current.find("h4")
+                if h4 and "Conjugation" in h4.get_text():
                     conjugation_header = h4
                     break
 
@@ -184,18 +195,26 @@ class WiktionaryParser:
             current = conjugation_header
             while current:
                 current = current.find_next()
-                if not current and current.name == 'div' and 'mw-heading' in current.get('class', []):
+                if (
+                    not current
+                    and current.name == "div"
+                    and "mw-heading" in current.get("class", [])
+                ):
                     break  # Stop at next header
 
-                if current and current.name == 'table' and 'inflection-table' in current.get('class', []):
+                if (
+                    current
+                    and current.name == "table"
+                    and "inflection-table" in current.get("class", [])
+                ):
                     # Extract Kotus type from table header text if present
-                    th = current.find('th')
+                    th = current.find("th")
                     if th:
                         th_text = th.get_text()
-                        match = re.search(r'Kotus type ([^,\s)]+)', th_text)
+                        match = re.search(r"Kotus type ([^,\s)]+)", th_text)
                         if match:
                             kotus_full = match.group(1)
-                            kotus_parts = kotus_full.split('/')
+                            kotus_parts = kotus_full.split("/")
                             self.kotus_type = kotus_parts[-1]
 
                     # Convert table to markdown
@@ -216,14 +235,16 @@ class WiktionaryParser:
             if not current:
                 break
 
-            if current.name == 'div' and 'mw-heading' in current.get('class', []):
-                h3 = current.find('h3')
+            if current.name == "div" and "mw-heading" in current.get("class", []):
+                h3 = current.find("h3")
                 if h3 and h3.get_text().strip().lower() == self.part_of_speech:
                     found_pos = True
 
-            if found_pos and current.name == 'ol':
-                items = current.find_all('li', recursive=False)
-                self.definition = '\n'.join([f"{i+1}. {li.get_text().strip()}" for i, li in enumerate(items)])
+            if found_pos and current.name == "ol":
+                items = current.find_all("li", recursive=False)
+                self.definition = "\n".join(
+                    [f"{i+1}. {li.get_text().strip()}" for i, li in enumerate(items)]
+                )
                 break
 
     def parse(self):
@@ -233,7 +254,7 @@ class WiktionaryParser:
         self.parse_part_of_speech()
         self.parse_definitions()
 
-        if self.part_of_speech == 'verb':
+        if self.part_of_speech == "verb":
             self.parse_verb_conjugation()
         else:
             self.parse_kotus_info()  # For nouns, adjectives, etc.

@@ -4,6 +4,7 @@ class TableProcessor:
         # Table conversion implementation
         pass
 
+
 class ContentProcessor:
     def __init__(self, parser, config):
         self.parser = parser
@@ -16,5 +17,5 @@ class ContentProcessor:
             "pos": self.parser.part_of_speech,
             "kotus": self.parser.kotus_type,
             "definition": self.parser.definition,
-            "conjugation": self.parser.conjugation_table
+            "conjugation": self.parser.conjugation_table,
         }
