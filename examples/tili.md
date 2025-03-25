@@ -1,5 +1,5 @@
 ## tili
-#risti
+#noun #risti
 https://en.wiktionary.org/wiki/tili
 article - #spotify-premium ([[Edullisin tilaus yli kolmelle saman talouden jäsenelle|local]])
 ```ad-note
@@ -32,5 +32,7 @@ collapse: collapse
 ```ad-note
 title: Definition
 collapse: collapse
-None
+1. account (in a bank, a registry of pecuniary transactions; on a service, an authorization to use a service)
+pankkitili ― bank account
+käyttäjätili ― user account
 ```

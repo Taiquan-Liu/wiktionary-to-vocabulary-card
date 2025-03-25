@@ -116,7 +116,7 @@ class WiktionaryParser:
             # Check for h3 within a div
             if current.name == "div" and "mw-heading" in current.get("class", []):
                 h3 = current.find("h3")
-                if h3 and h3.get("id") in [
+                if h3 and h3.get("id").split("_", 1)[0] in [
                     "Noun",
                     "Verb",
                     "Adjective",
