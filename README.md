@@ -5,7 +5,7 @@ Usage:
 Install the package:
 
 ```bash
-pip install .
+poetry install
 ```
 
 Command-line usage:
