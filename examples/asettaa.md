@@ -1,7 +1,7 @@
 ## asettaa
 #verb #muistaa
 https://en.wiktionary.org/wiki/asettaa
-{custom text}
+article - #spotify-premium ([[Edullisin tilaus yli kolmelle saman talouden jäsenelle|local]])
 ```ad-note
 title: Conjugation Table
 collapse: collapse

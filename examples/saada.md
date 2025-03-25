@@ -1,5 +1,5 @@
-## yskiä
-https://en.wiktionary.org/wiki/yski%C3%A4
+## saada
+https://en.wiktionary.org/wiki/saada
 article - #spotify-premium ([[Edullisin tilaus yli kolmelle saman talouden jäsenelle|local]])
 ```ad-note
 title: Definition

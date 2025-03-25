@@ -1,7 +1,7 @@
 ## ehdokas
 #noun #vieras
 https://en.wiktionary.org/wiki/ehdokas
-{custom text}
+article - #spotify-premium ([[Edullisin tilaus yli kolmelle saman talouden jäsenelle|local]])
 ```ad-note
 title: Conjugation Table
 collapse: collapse
