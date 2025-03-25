@@ -19,6 +19,12 @@ wikt-vocab configure --custom-text "My custom text"
 ```
 
 Debug:
+Run `debug.py` to debug the app. You can select the word to debug by:
+- Passing the word as an argument
+- Set `WIKT_DEBUG_WORD` environment variable
+- Use the selection prompt
+
+New examples can be added by running the following commands:
 
 ```bash
 # Generate example
