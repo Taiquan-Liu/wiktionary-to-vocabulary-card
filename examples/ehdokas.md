@@ -2,6 +2,7 @@
 #noun #vieras
 https://en.wiktionary.org/wiki/ehdokas
 article - #spotify-premium ([[Edullisin tilaus yli kolmelle saman talouden jäsenelle|local]])
+### noun
 ```ad-note
 title: Conjugation Table
 collapse: collapse

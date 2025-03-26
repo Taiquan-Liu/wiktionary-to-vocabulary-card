@@ -2,6 +2,7 @@
 #verb #saada
 https://en.wiktionary.org/wiki/saada
 article - #spotify-premium ([[Edullisin tilaus yli kolmelle saman talouden jäsenelle|local]])
+### verb
 ```ad-note
 title: Conjugation Table
 collapse: collapse

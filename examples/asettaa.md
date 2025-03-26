@@ -2,6 +2,7 @@
 #verb #muistaa
 https://en.wiktionary.org/wiki/asettaa
 article - #spotify-premium ([[Edullisin tilaus yli kolmelle saman talouden jäsenelle|local]])
+### verb
 ```ad-note
 title: Conjugation Table
 collapse: collapse

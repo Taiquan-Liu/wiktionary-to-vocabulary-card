@@ -1,3 +1,5 @@
+from itertools import zip_longest
+
 import pyperclip
 
 
@@ -9,14 +11,16 @@ class MarkdownGenerator:
 
     def generate_tags(self):
         tags = []
-        if self.content["pos"]:
-            tags.append(f"#{self.content['pos']}")
-        if self.content["kotus"]:
-            tags.append(f"#{self.content['kotus']}")
+        if self.content["word_types"]:
+            for word_type in self.content["word_types"]:
+                tags.append(f"#{word_type}")
+        if self.content["kotus_types"]:
+            for kotus_type in self.content["kotus_types"]:
+                tags.append(f"#{kotus_type}")
         return " ".join(tags)
 
-    def generate_table(self):
-        if not self.content["conjugation"]:
+    def generate_table(self, conjugation):
+        if not conjugation:
             return ""
 
         if self.config["table_folding"]:
@@ -24,10 +28,10 @@ class MarkdownGenerator:
             return self.generate_ad_note(
                 title="Conjugation Table",
                 collapse=self.config["table_folding"],
-                text=self.content["conjugation"],
+                text=conjugation,
             )
 
-        return self.content["conjugation"]
+        return conjugation
 
     def generate_card(self):
         # Build the card with parts that exist
@@ -43,16 +47,22 @@ class MarkdownGenerator:
         if self.config["custom_text"]:
             parts.append(f"{self.config['custom_text']}")
 
-        table = self.generate_table()
-        if table:
-            parts.append(table)
+        for word_type, conjugation, definition in zip_longest(
+            self.content["word_types"],
+            self.content["conjugation_tables"],
+            self.content["definitions"],
+        ):
+            parts.append(f"### {word_type}")
+            table = self.generate_table(conjugation)
+            if table:
+                parts.append(table)
 
-        definition = self.generate_ad_note(
-            title="Definition",
-            collapse=self.config["table_folding"],
-            text=self.content["definition"],
-        )
-        parts.append(definition)
+            definition = self.generate_ad_note(
+                title="Definition",
+                collapse=self.config["table_folding"],
+                text=definition,
+            )
+            parts.append(definition)
 
         # Join everything with no extra newlines
         result = "".join([part + "\n" for part in parts]).strip()

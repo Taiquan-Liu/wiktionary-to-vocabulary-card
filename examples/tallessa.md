@@ -2,6 +2,7 @@
 #adverb
 https://en.wiktionary.org/wiki/tallessa
 article - #spotify-premium ([[Edullisin tilaus yli kolmelle saman talouden jäsenelle|local]])
+### adverb
 ```ad-note
 title: Definition
 collapse: collapse
