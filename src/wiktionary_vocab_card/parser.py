@@ -93,8 +93,8 @@ def html_table_to_markdown(table):
 
 class WiktionaryParser:
     def __init__(self, url):
-        self.url = url
-        self.word = unquote(url.split("/wiki/")[-1]).replace("_", " ")
+        self.url = self._clean_url(url)
+        self.word = unquote(self.url.split("/wiki/")[-1]).replace("_", " ")
         self.soup = None
         self.finnish_section = None
         self.word_types = {}
@@ -107,6 +107,10 @@ class WiktionaryParser:
     @property
     def header_level_str(self):
         return f"h{self.header_level}"
+
+    @staticmethod
+    def _clean_url(url):
+        return url.split("#")[0]
 
     def fetch_page(self):
         response = requests.get(self.url)
