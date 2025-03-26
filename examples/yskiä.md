@@ -1,7 +1,7 @@
 ## yskiä
 #verb #noun #sallia
 https://en.wiktionary.org/wiki/yski%C3%A4
-article - #spotify-premium ([[Edullisin tilaus yli kolmelle saman talouden jäsenelle|local]])
+article - #message-scandal ([web](https://www.hs.fi/maailma/art-2000011125948.html), [[Yhdysvallat  Viestiketjusta paljastuu kolme pääkohtaa Trumpin turvallisuusjohdon toiminnasta|local]])
 ### verb
 ```ad-note
 title: Conjugation Table
