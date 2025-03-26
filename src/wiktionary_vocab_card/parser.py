@@ -139,7 +139,7 @@ class WiktionaryParser:
     def _parse_form_table_header(self, form_table_name, word_type):
         """Parse either the declension or conjugation table based on the type of the
         word"""
-        current = self.word_types.get(word_type)
+        current = self.finnish_section
 
         while current:
             current = current.find_next()
