@@ -89,10 +89,11 @@ class WiktionaryParser:
         self.word = unquote(url.split("/wiki/")[-1]).replace("_", " ")
         self.soup = None
         self.finnish_section = None
-        self.part_of_speech = None
+        self.word_type = None
         self.kotus_type = None
         self.definition = None
-        self.conjugation_table = None  # Add this property
+        self.conjugation_table = None
+        self.form_table_header = None
 
     def fetch_page(self):
         response = requests.get(self.url)
@@ -105,7 +106,7 @@ class WiktionaryParser:
             raise ValueError("Finnish section not found")
         self.finnish_section = finnish_header
 
-    def parse_part_of_speech(self):
+    def parse_word_type(self):
         # Find the h3 tag with "Noun", "Verb", etc.
         # Search through all elements after Finnish section, not just siblings
         current = self.finnish_section
@@ -123,30 +124,35 @@ class WiktionaryParser:
                     "Adverb",
                     "Pronoun",
                 ]:
-                    self.part_of_speech = h3.get_text().strip().lower()
+                    self.word_type = h3.get_text().strip().lower()
                     break
 
-    def parse_kotus_info(self):
-        # Find the declension heading first
+    def parse_form_table(self, form_table_name):
+        """Parse either the declension or conjugation table based on the type of the
+        word"""
+        self.form_table_header = None
+
         current = self.finnish_section
-        declension_header = None
 
         while current:
             current = current.find_next()
             if not current:
                 break
 
-            # Check for h4 within a div
             if current.name == "div" and "mw-heading" in current.get("class", []):
                 h4 = current.find("h4")
-                if h4 and "Declension" in h4.get_text():
-                    declension_header = h4
+                if h4 and form_table_name in h4.get_text():
+                    self.form_table_header = h4
                     break
 
-        if declension_header:
+    def parse_non_verb_declension(self):
+        # Find the declension heading first
+        self.parse_form_table("Declension")
+
+        if self.form_table_header:
             # Find the inflection table after the declension header
             inflection_table = None
-            current = declension_header
+            current = self.form_table_header
 
             while current:
                 current = current.find_next()
@@ -175,24 +181,11 @@ class WiktionaryParser:
 
     def parse_verb_conjugation(self):
         # Find conjugation header for verbs
-        current = self.finnish_section
-        conjugation_header = None
+        self.parse_form_table("Conjugation")
 
-        while current:
-            current = current.find_next()
-            if not current:
-                break
-
-            # Look for Conjugation header within a div
-            if current.name == "div" and "mw-heading" in current.get("class", []):
-                h4 = current.find("h4")
-                if h4 and "Conjugation" in h4.get_text():
-                    conjugation_header = h4
-                    break
-
-        if conjugation_header:
+        if self.form_table_header:
             # Find the inflection table after the conjugation header
-            current = conjugation_header
+            current = self.form_table_header
             while current:
                 current = current.find_next()
                 if (
@@ -223,7 +216,7 @@ class WiktionaryParser:
 
     def parse_definitions(self):
         # Wait until we've found the part of speech
-        if not self.part_of_speech:
+        if not self.word_type:
             return
 
         # Find the list element containing definitions
@@ -237,7 +230,7 @@ class WiktionaryParser:
 
             if current.name == "div" and "mw-heading" in current.get("class", []):
                 h3 = current.find("h3")
-                if h3 and h3.get_text().strip().lower() == self.part_of_speech:
+                if h3 and h3.get_text().strip().lower() == self.word_type:
                     found_pos = True
 
             if found_pos and current.name == "ol":
@@ -251,12 +244,12 @@ class WiktionaryParser:
         """Process everything in the right order"""
         self.fetch_page()
         self.find_finnish_section()
-        self.parse_part_of_speech()
+        self.parse_word_type()
         self.parse_definitions()
 
-        if self.part_of_speech == "verb":
+        if self.word_type == "verb":
             self.parse_verb_conjugation()
         else:
-            self.parse_kotus_info()  # For nouns, adjectives, etc.
+            self.parse_non_verb_declension()  # For nouns, adjectives, etc.
 
         return self
