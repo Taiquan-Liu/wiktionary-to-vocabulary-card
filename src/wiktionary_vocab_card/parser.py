@@ -10,6 +10,10 @@ SUPPORTED_WORD_TYPES = [
     "Adjective",
     "Adverb",
     "Pronoun",
+    "Participle",
+    "Preposition",
+    "Postposition",
+    "Conjunction",
 ]
 
 
