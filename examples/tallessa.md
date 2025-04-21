@@ -1,7 +1,7 @@
 ## tallessa
 #adverb
 https://en.wiktionary.org/wiki/tallessa
-article - #message-scandal ([web](https://www.hs.fi/maailma/art-2000011125948.html), [[Yhdysvallat  Viestiketjusta paljastuu kolme pääkohtaa Trumpin turvallisuusjohdon toiminnasta|local]])
+examples
 ### adverb
 ```ad-note
 title: Definition

@@ -1,7 +1,7 @@
 ## asettaa
 #verb #muistaa
 https://en.wiktionary.org/wiki/asettaa
-article - #message-scandal ([web](https://www.hs.fi/maailma/art-2000011125948.html), [[Yhdysvallat  Viestiketjusta paljastuu kolme pääkohtaa Trumpin turvallisuusjohdon toiminnasta|local]])
+examples
 ### verb
 ```ad-note
 title: Conjugation Table

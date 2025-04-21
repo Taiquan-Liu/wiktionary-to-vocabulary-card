@@ -14,9 +14,15 @@ def cli():
 @cli.command()
 @click.argument("url")
 @click.option("-o", "--output", help="Output file path")
-def generate(url, output):
+@click.option(
+    "-t", "--custom-text", help="Set custom text for cards. Overrides config."
+)
+def generate(url, output, custom_text):
     """Generate vocabulary card from Wiktionary URL"""
     config = load_config()
+    if custom_text:
+        config["custom_text"] = custom_text
+
     parser = WiktionaryParser(url)
     parser.parse()
 

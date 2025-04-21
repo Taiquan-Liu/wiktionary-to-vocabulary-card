@@ -1,7 +1,7 @@
 ## ase
 #noun #verb #adjective #adverb #hame #hame #hame
 https://en.wiktionary.org/wiki/ase
-article - #message-scandal ([web](https://www.hs.fi/maailma/art-2000011125948.html), [[Yhdysvallat  Viestiketjusta paljastuu kolme pääkohtaa Trumpin turvallisuusjohdon toiminnasta|local]])
+examples
 ### noun
 ```ad-note
 title: Conjugation Table

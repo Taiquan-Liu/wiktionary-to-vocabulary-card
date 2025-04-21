@@ -16,6 +16,14 @@ def generate_all_examples():
         data = json.load(f)
     for word, url in data.items():
         print(f"Regenerating {word}...")
-        cmd = ["wikt-vocab", "generate", url, "-o", f"examples/{word}.md"]
+        cmd = [
+            "wikt-vocab",
+            "generate",
+            url,
+            "-o",
+            f"examples/{word}.md",
+            "-t",
+            "examples",
+        ]
         subprocess.run(cmd, check=True)
         print(f"✓ examples/{word}.md")

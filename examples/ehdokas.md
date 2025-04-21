@@ -1,7 +1,7 @@
 ## ehdokas
 #noun #vieras
 https://en.wiktionary.org/wiki/ehdokas
-article - #message-scandal ([web](https://www.hs.fi/maailma/art-2000011125948.html), [[Yhdysvallat  Viestiketjusta paljastuu kolme pääkohtaa Trumpin turvallisuusjohdon toiminnasta|local]])
+examples
 ### noun
 ```ad-note
 title: Conjugation Table
