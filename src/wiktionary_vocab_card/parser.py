@@ -14,6 +14,8 @@ SUPPORTED_WORD_TYPES = [
     "Preposition",
     "Postposition",
     "Conjunction",
+    "Phrase",
+    "Prefix",
 ]
 
 
