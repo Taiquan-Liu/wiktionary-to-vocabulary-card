@@ -1,5 +1,5 @@
 ## edes
-#adverb #postposition
+#adverb
 https://en.wiktionary.org/wiki/edes
 examples
 ### adverb
@@ -28,10 +28,4 @@ edesvastuu ― legal liability (liability in front of the law)
 6. (as headword) on, onward (in some time-related expressions)
 tästedes ― from now on
 7. (dialectal, dated) forward, forwards
-```
-### postposition
-```ad-note
-title: Definition
-collapse: collapse
-1. in front of, at the front of (stationary location)
 ```

@@ -129,6 +129,17 @@ class WiktionaryParser:
             raise ValueError("Finnish section not found")
         self.finnish_section = finnish_header
 
+    def find_next_non_finnish_section(self):
+        self.next_non_finnish_section = None
+        current = self.finnish_section
+        while current:
+            current = current.find_next()
+            if not current:
+                break
+            if current.name == "h2":
+                self.next_non_finnish_section = current
+                break
+
     def _parse_word_type_headers(self, current, header_level):
         header = current.find(header_level)
         if header and header.get("id").split("_", 1)[0] in SUPPORTED_WORD_TYPES:
@@ -141,6 +152,9 @@ class WiktionaryParser:
         while current:
             current = current.find_next()
             if not current:
+                break
+            # Check if it already in the next non-finnish section
+            if current == self.next_non_finnish_section:
                 break
             # Check for h3 within a div
             if current.name == "div" and "mw-heading" in current.get("class", []):
@@ -261,6 +275,7 @@ class WiktionaryParser:
         """Process everything in the right order"""
         self.fetch_page()
         self.find_finnish_section()
+        self.find_next_non_finnish_section()
         # For words with one word type, the header is an h3
         self.parse_word_type()
         if not self.word_types:
