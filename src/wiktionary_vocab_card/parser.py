@@ -16,6 +16,7 @@ SUPPORTED_WORD_TYPES = [
     "Conjunction",
     "Phrase",
     "Prefix",
+    "Numeral",
 ]
 
 
