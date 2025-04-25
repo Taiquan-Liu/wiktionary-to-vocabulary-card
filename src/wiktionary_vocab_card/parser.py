@@ -17,6 +17,7 @@ SUPPORTED_WORD_TYPES = [
     "Phrase",
     "Prefix",
     "Numeral",
+    "Particle",
 ]
 
 

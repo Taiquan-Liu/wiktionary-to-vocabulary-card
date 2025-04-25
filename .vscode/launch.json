@@ -1,0 +1,20 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug wikt-vocab",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/src/wiktionary_vocab_card/debug.py",
+            "python": "/home/taiquan/.virtualenvs/voc-card/bin/python",
+            "cwd": "${workspaceFolder}",
+            "env": {
+                "PYTHONPATH": "${workspaceFolder}",
+                "WIKT_DEBUG_WORD": "tili",
+                // "WIKT_DEBUG_WORD": "yskiä",
+            },
+            "justMyCode": true,
+            "console": "integratedTerminal"
+        }
+    ]
+}
