@@ -6,8 +6,7 @@ AUTOFLAKE_CMD = autoflake . \
 	  --remove-unused-variables
 
 lint:
-	python setup_utils.py --lint
-	$(AUTOFLAKE_CMD) --check
+	$(AUTOFLAKE_CMD)
 	black . --check --diff
 	isort . --check --diff
 
