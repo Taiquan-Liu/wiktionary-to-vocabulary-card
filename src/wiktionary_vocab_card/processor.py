@@ -14,7 +14,7 @@ class ContentProcessor:
         # Process all components and return structured data
         return {
             "word": self.parser.word,
-            "word_types": self.parser.word_types,
+            "word_types": list(self.parser.word_types.keys()),
             "kotus_types": self.parser.kotus_types,
             "definitions": self.parser.definitions,
             "conjugation_tables": self.parser.conjugation_tables,
