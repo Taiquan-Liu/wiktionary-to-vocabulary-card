@@ -4,8 +4,9 @@ Test script to verify CLI integration with enhanced systems
 """
 
 from click.testing import CliRunner
+
 from src.wiktionary_vocab_card.cli import cli
-from src.wiktionary_vocab_card.config import load_config, is_vault_configured
+from src.wiktionary_vocab_card.config import is_vault_configured, load_config
 
 
 def test_cli_integration():

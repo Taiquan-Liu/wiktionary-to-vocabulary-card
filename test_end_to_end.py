@@ -18,14 +18,16 @@ Tests use the actual vault path and real existing wordcard files.
 import sys
 import unittest
 from pathlib import Path
-from unittest.mock import patch, MagicMock
+from unittest.mock import MagicMock, patch
+
 from click.testing import CliRunner
 
 # Add src to path for imports
 sys.path.insert(0, str(Path(__file__).parent / "src"))
 
 from wiktionary_vocab_card.cli import cli
-from wiktionary_vocab_card.config import load_config, update_config, is_vault_configured
+from wiktionary_vocab_card.config import (is_vault_configured, load_config,
+                                          update_config)
 from wiktionary_vocab_card.file_manager import FileManager
 from wiktionary_vocab_card.generator import MarkdownGenerator
 from wiktionary_vocab_card.processor import ContentProcessor

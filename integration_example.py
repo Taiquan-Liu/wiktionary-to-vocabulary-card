@@ -11,8 +11,8 @@ from pathlib import Path
 # Add src to path for imports
 sys.path.insert(0, str(Path(__file__).parent / "src"))
 
-from wiktionary_vocab_card.file_manager import FileManager
 from wiktionary_vocab_card.config import load_config
+from wiktionary_vocab_card.file_manager import FileManager
 
 
 def create_sample_content():

@@ -12,8 +12,9 @@ from pathlib import Path
 # Add src to path for imports
 sys.path.insert(0, str(Path(__file__).parent / "src"))
 
-from wiktionary_vocab_card.file_manager import FileManager, find_existing_wordcard
-from wiktionary_vocab_card.config import load_config, is_vault_configured
+from wiktionary_vocab_card.config import is_vault_configured, load_config
+from wiktionary_vocab_card.file_manager import (FileManager,
+                                                find_existing_wordcard)
 
 
 def test_file_manager():
