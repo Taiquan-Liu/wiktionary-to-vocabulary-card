@@ -16,6 +16,7 @@ DEFAULT_CONFIG = {
     # New vault and file management settings
     "vault": {
         "path": "/Users/taiquanliu/Documents/1st remote/Suomi",
+        "name": "1st remote",  # Actual Obsidian vault name
         "learning_stages": {
             "new": "New",
             "memorizing": "Memorizing",
@@ -26,6 +27,7 @@ DEFAULT_CONFIG = {
         "mode": "filesystem",  # or "clipboard" or "both"
         "create_directories": True,
         "backup_existing": False,
+        "open_in_obsidian": True,  # Open generated files in Obsidian by default
     },
     "file_management": {
         "check_existing": True,
@@ -82,6 +84,36 @@ def get_vault_path() -> Optional[Path]:
     vault_path = config.get("vault", {}).get("path")
     if vault_path:
         return Path(vault_path)
+    return None
+
+
+def get_vault_name() -> Optional[str]:
+    """Get the configured Obsidian vault name.
+
+    Returns the explicitly configured vault name, or falls back to
+    extracting from the vault path if no name is configured.
+    """
+    config = load_config()
+    vault_config = config.get("vault", {})
+
+    # First try explicit vault name
+    vault_name = vault_config.get("name")
+    if vault_name:
+        return vault_name
+
+    # Fallback to extracting from path (for backward compatibility)
+    vault_path = vault_config.get("path")
+    if vault_path:
+        # Try to find the actual vault directory by looking for .obsidian folder
+        path = Path(vault_path)
+        while path.parent != path:  # While not at root
+            if (path / ".obsidian").exists():
+                return path.name
+            path = path.parent
+
+        # If no .obsidian folder found, use the configured path's name
+        return Path(vault_path).name
+
     return None
 
 
@@ -174,6 +206,7 @@ def _validate_config(config: Dict[str, Any]) -> Dict[str, Any]:
         ("table_folding",),
         ("output", "create_directories"),
         ("output", "backup_existing"),
+        ("output", "open_in_obsidian"),
         ("file_management", "check_existing"),
         ("file_management", "append_articles"),
         ("file_management", "move_from_remembered"),

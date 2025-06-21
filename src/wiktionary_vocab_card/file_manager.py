@@ -238,7 +238,9 @@ class FileManager:
             # Any existing wordcard -> Move to New folder (restart learning process)
             target_stage = "new"
             if existing_location != "new":
-                logger.info(f"Moving wordcard '{word}' from '{existing_location}' to New")
+                logger.info(
+                    f"Moving wordcard '{word}' from '{existing_location}' to New"
+                )
 
         target_dir = self.stage_directories.get(target_stage)
         if not target_dir:

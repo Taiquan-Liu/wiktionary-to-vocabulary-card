@@ -1,10 +1,17 @@
 import click
 from pathlib import Path
 
-from .config import load_config, update_config, is_vault_configured
+from .config import (
+    load_config,
+    update_config,
+    is_vault_configured,
+    get_vault_path,
+    get_vault_name,
+)
 from .generator import MarkdownGenerator
 from .parser import WiktionaryParser
 from .processor import ContentProcessor
+from .utils import open_in_obsidian
 
 
 @click.group()
@@ -20,7 +27,12 @@ def cli():
     "--custom-text",
     help="Article content for the wordcard. Replaces custom_text functionality.",
 )
-def generate(url, output, custom_text):
+@click.option(
+    "--no-open",
+    is_flag=True,
+    help="Don't open the generated file in Obsidian (opening is enabled by default)",
+)
+def generate(url, output, custom_text, no_open):
     """Generate vocabulary card from Wiktionary URL
 
     Uses intelligent file management when vault is configured, otherwise falls back
@@ -40,6 +52,9 @@ def generate(url, output, custom_text):
     # Handle article content (custom_text becomes article content)
     article_content = custom_text or ""
 
+    # Determine if we should open in Obsidian
+    should_open = not no_open and config.get("output", {}).get("open_in_obsidian", True)
+
     # Handle output based on CLI options and configuration
     if output:
         # CLI output option overrides configuration
@@ -50,6 +65,22 @@ def generate(url, output, custom_text):
             with open(output_path, "w", encoding="utf-8") as f:
                 f.write(card)
             click.echo(f"Wordcard saved to: {output_path}")
+
+            # Open in Obsidian if requested and vault is configured
+            if should_open and is_vault_configured():
+                vault_path = get_vault_path()
+                vault_name = get_vault_name()
+                if vault_path:  # Additional check to satisfy type checker
+                    try:
+                        if open_in_obsidian(
+                            output_path.resolve(), vault_path, vault_name
+                        ):
+                            click.echo("File opened in Obsidian")
+                    except Exception as obsidian_error:
+                        click.echo(
+                            f"Warning: Could not open in Obsidian: {obsidian_error}"
+                        )
+
         except Exception as e:
             click.echo(f"Error saving to {output}: {e}", err=True)
             click.echo("Falling back to console output:")
@@ -64,6 +95,19 @@ def generate(url, output, custom_text):
 
             if file_path:
                 click.echo(f"Wordcard processed and saved to: {file_path}")
+
+                # Open in Obsidian if requested
+                if should_open:
+                    vault_path = get_vault_path()
+                    vault_name = get_vault_name()
+                    if vault_path:  # Additional check to satisfy type checker
+                        try:
+                            if open_in_obsidian(file_path, vault_path, vault_name):
+                                click.echo("File opened in Obsidian")
+                        except Exception as obsidian_error:
+                            click.echo(
+                                f"Warning: Could not open in Obsidian: {obsidian_error}"
+                            )
 
                 # Also handle clipboard/console based on output mode
                 output_mode = config.get("output", {}).get("mode", "filesystem")
@@ -103,6 +147,21 @@ def generate(url, output, custom_text):
                     f.write(card)
                 click.echo(f"Wordcard saved to: {output_path}")
 
+                # Open in Obsidian if requested and a basic vault is configured
+                if should_open and is_vault_configured():
+                    vault_path = get_vault_path()
+                    vault_name = get_vault_name()
+                    if vault_path:  # Additional check to satisfy type checker
+                        try:
+                            if open_in_obsidian(
+                                output_path.resolve(), vault_path, vault_name
+                            ):
+                                click.echo("File opened in Obsidian")
+                        except Exception as obsidian_error:
+                            click.echo(
+                                f"Warning: Could not open in Obsidian: {obsidian_error}"
+                            )
+
                 if output_mode == "clipboard":
                     click.echo("Content also copied to clipboard.")
 
@@ -123,13 +182,19 @@ def generate(url, output, custom_text):
     help="Set custom text for cards (deprecated, use article content instead)",
 )
 @click.option("--vault-path", help="Set Obsidian vault path")
+@click.option("--vault-name", help="Set Obsidian vault name (if different from path)")
 @click.option(
     "--output-mode",
     type=click.Choice(["filesystem", "clipboard", "both"]),
     help="Set output mode",
 )
 @click.option("--table-folding", type=bool, help="Enable/disable table folding")
-def configure(custom_text, vault_path, output_mode, table_folding):
+@click.option(
+    "--open-obsidian", type=bool, help="Enable/disable opening files in Obsidian"
+)
+def configure(
+    custom_text, vault_path, vault_name, output_mode, table_folding, open_obsidian
+):
     """Update configuration settings
 
     Configure vault path, output modes, and other settings for intelligent
@@ -147,13 +212,19 @@ def configure(custom_text, vault_path, output_mode, table_folding):
         vault_path_obj = Path(vault_path)
         if not vault_path_obj.exists():
             click.echo(f"Warning: Vault path does not exist: {vault_path}", err=True)
-        updates["vault"] = {"path": str(vault_path_obj)}
+        updates.setdefault("vault", {})["path"] = str(vault_path_obj)
+
+    if vault_name:
+        updates.setdefault("vault", {})["name"] = vault_name
 
     if output_mode:
         updates["output"] = {"mode": output_mode}
 
     if table_folding is not None:
         updates["table_folding"] = table_folding
+
+    if open_obsidian is not None:
+        updates.setdefault("output", {})["open_in_obsidian"] = open_obsidian
 
     if updates:
         try:
@@ -182,8 +253,11 @@ def status():
 
     # Vault configuration
     vault_path = config.get("vault", {}).get("path")
+    vault_name = config.get("vault", {}).get("name")
     if vault_path:
         click.echo(f"Vault Path: {vault_path}")
+        if vault_name:
+            click.echo(f"Vault Name: {vault_name}")
         if is_vault_configured():
             click.echo("Vault Status: ✓ Configured and accessible")
         else:
@@ -196,6 +270,9 @@ def status():
     # Output configuration
     output_mode = config.get("output", {}).get("mode", "clipboard")
     click.echo(f"Output Mode: {output_mode}")
+
+    open_obsidian = config.get("output", {}).get("open_in_obsidian", True)
+    click.echo(f"Open in Obsidian: {open_obsidian}")
 
     # File management settings
     file_mgmt = config.get("file_management", {})
