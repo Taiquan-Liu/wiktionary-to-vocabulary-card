@@ -1,13 +1,9 @@
-import click
 from pathlib import Path
 
-from .config import (
-    load_config,
-    update_config,
-    is_vault_configured,
-    get_vault_path,
-    get_vault_name,
-)
+import click
+
+from .config import (get_vault_name, get_vault_path, is_vault_configured,
+                     load_config, update_config)
 from .generator import MarkdownGenerator
 from .parser import WiktionaryParser
 from .processor import ContentProcessor
@@ -50,7 +46,11 @@ def generate(url, output, custom_text, no_open):
     generator = MarkdownGenerator(parser, content, config)
 
     # Handle article content (custom_text becomes article content)
-    article_content = custom_text or ""
+    # If no -t option provided, use configured custom_text as article content
+    configured_custom_text = config.get("custom_text", "")
+    if configured_custom_text == "{custom text}":
+        configured_custom_text = ""  # Ignore placeholder
+    article_content = custom_text or configured_custom_text
 
     # Determine if we should open in Obsidian
     should_open = not no_open and config.get("output", {}).get("open_in_obsidian", True)
@@ -204,9 +204,6 @@ def configure(
 
     if custom_text:
         updates["custom_text"] = custom_text
-        click.echo(
-            "Note: custom_text is deprecated. Use -t/--custom-text with generate command for article content."
-        )
 
     if vault_path:
         vault_path_obj = Path(vault_path)

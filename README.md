@@ -35,7 +35,7 @@ wikt-vocab generate https://en.wiktionary.org/wiki/ehdokas --no-open
 
 **Options:**
 - `-o, --output TEXT`: Output file path (overrides configuration)
-- `-t, --custom-text TEXT`: Article content for the wordcard
+- `-t, --custom-text TEXT`: Article content to add to the wordcard's articles section
 - `--no-open`: Don't open the generated file in Obsidian (opening is enabled by default)
 
 **Behavior:**
@@ -68,8 +68,8 @@ wikt-vocab configure --table-folding false
 wikt-vocab configure --open-obsidian true
 wikt-vocab configure --open-obsidian false
 
-# Set deprecated custom text (use -t with generate instead)
-wikt-vocab configure --custom-text "My custom text"
+# Set default custom text (used when no -t option is provided)
+wikt-vocab configure --custom-text "My default custom text"
 ```
 
 **Options:**
@@ -78,7 +78,7 @@ wikt-vocab configure --custom-text "My custom text"
 - `--output-mode [filesystem|clipboard|both]`: Set output mode
 - `--table-folding BOOLEAN`: Enable/disable table folding
 - `--open-obsidian BOOLEAN`: Enable/disable opening files in Obsidian
-- `--custom-text TEXT`: Set custom text for cards (deprecated)
+- `--custom-text TEXT`: Set default custom text for cards (used when no -t option is provided)
 
 ### Status Command
 

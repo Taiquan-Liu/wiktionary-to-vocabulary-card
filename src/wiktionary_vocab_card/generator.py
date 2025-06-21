@@ -1,6 +1,6 @@
 from itertools import zip_longest
-from typing import Dict, Any, Optional, Tuple
 from pathlib import Path
+from typing import Any, Dict, Optional, Tuple
 
 import pyperclip
 
@@ -89,9 +89,6 @@ class MarkdownGenerator:
 
         # Join everything with no extra newlines
         result = "".join([part + "\n" for part in parts]).strip()
-
-        # Handle output based on configuration
-        self._handle_output(result, article)
 
         return result
 

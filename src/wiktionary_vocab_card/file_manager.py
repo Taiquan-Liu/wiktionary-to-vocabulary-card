@@ -6,12 +6,12 @@ including file discovery, content analysis, stage management, and article
 field transformation.
 """
 
+import logging
 import re
 from pathlib import Path
-from typing import Dict, Optional, Tuple, Any
-import logging
+from typing import Any, Dict, Optional, Tuple
 
-from .config import load_config, get_all_stage_directories, is_vault_configured
+from .config import get_all_stage_directories, is_vault_configured, load_config
 
 logger = logging.getLogger(__name__)
 
@@ -206,7 +206,10 @@ class FileManager:
         if new_article and new_article.strip():
             if not new_article.startswith("- "):
                 new_article = f"- article - {new_article}"
-            existing_content["articles"].append(new_article)
+
+            # Check for duplicates before adding
+            if new_article not in existing_content["articles"]:
+                existing_content["articles"].append(new_article)
 
         logger.info(
             f"Appended article content to wordcard for '{existing_content['word']}'"
