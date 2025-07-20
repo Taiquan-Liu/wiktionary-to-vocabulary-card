@@ -104,6 +104,10 @@ class FileManager:
             for line in lines:
                 line = line.strip()
 
+                # Skip standalone ?? and +++ lines - these are formatting markers
+                if line in ["??", "+++"]:
+                    continue
+
                 # Extract hashtags
                 if (
                     line.startswith("#")
@@ -156,10 +160,16 @@ class FileManager:
 
                 elif current_section == "articles" and line.startswith("- "):
                     parsed["articles"].append(line)
+                    # Extract tags from article lines and add to main tags
+                    article_tags = re.findall(r"#([a-zA-Z0-9_-]+)", line)
+                    parsed["tags"].extend(article_tags)
 
             # Don't forget the last word section
             if current_word_section:
                 parsed["word_sections"].append(current_word_section)
+
+            # Remove duplicate tags
+            parsed["tags"] = list(set(parsed["tags"]))
 
             logger.info(f"Successfully parsed wordcard: {filepath}")
             return parsed
@@ -210,6 +220,12 @@ class FileManager:
             # Check for duplicates before adding
             if new_article not in existing_content["articles"]:
                 existing_content["articles"].append(new_article)
+
+                # Extract tags from new article and add to main tags
+                article_tags = re.findall(r"#([a-zA-Z0-9_-]+)", new_article)
+                existing_content["tags"].extend(article_tags)
+                # Remove duplicates
+                existing_content["tags"] = list(set(existing_content["tags"]))
 
         logger.info(
             f"Appended article content to wordcard for '{existing_content['word']}'"
@@ -418,31 +434,49 @@ class FileManager:
         """
         parts = []
 
-        # Empty line at start (matching existing format)
-        parts.append("")
+        # Word header
+        if content.get("word"):
+            parts.append(f"# {content['word']}")
 
-        # Tags
+        # Tags (always include #flashcards)
         if content.get("tags"):
-            tag_line = " ".join(f"#{tag}" for tag in content["tags"])
+            tags = list(content["tags"])
+            if "#flashcards" not in tags and "flashcards" not in tags:
+                tags.append("flashcards")
+            tag_line = " ".join(
+                f"#{tag}" if not tag.startswith("#") else tag for tag in tags
+            )
             parts.append(tag_line)
 
         # URL
         if content.get("url"):
             parts.append(content["url"])
 
+        # Articles section (right after URL)
+        if content.get("articles"):
+            parts.append("# Articles")
+            parts.extend(content["articles"])
+
         # Custom text (if any)
         if content.get("custom_text") and content["custom_text"] != "{custom text}":
             parts.append(content["custom_text"])
 
         # Word sections
-        for section in content.get("word_sections", []):
+        word_sections = content.get("word_sections", [])
+
+        # Add ?? before first word type if we have word sections
+        if word_sections:
+            parts.append("??")
+
+        for section in word_sections:
             parts.append(f"# {section['type']}")
             parts.extend(section["content"])
 
-        # Articles section
-        if content.get("articles"):
-            parts.append("# Articles")
-            parts.extend(content["articles"])
+        # Add +++ at the end if we have word sections (but only if not already there)
+        if word_sections:
+            # Check if the last part is already +++
+            if not parts or parts[-1] != "+++":
+                parts.append("+++")
 
         return "\n".join(parts)
 

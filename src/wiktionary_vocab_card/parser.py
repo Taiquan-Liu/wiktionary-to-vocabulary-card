@@ -222,8 +222,8 @@ class WiktionaryParser:
                 current = current.find_next()
                 if (
                     not current
-                    and current.name == "div"
-                    and "mw-heading" in current.get("class", [])
+                    or current.name == "div"
+                    or "mw-heading" in current.get("class", [])
                 ):
                     break  # Stop at next header
 

@@ -1,3 +1,4 @@
+import re
 from itertools import zip_longest
 from pathlib import Path
 from typing import Any, Dict, Optional, Tuple
@@ -18,7 +19,7 @@ class MarkdownGenerator:
         if self.config.get("file_management", {}).get("check_existing", True):
             self.file_manager = FileManager(config)
 
-    def generate_tags(self):
+    def generate_tags(self, article_content=None):
         tags = []
         if self.content["word_types"]:
             for word_type in self.content["word_types"]:
@@ -26,6 +27,17 @@ class MarkdownGenerator:
         if self.content["kotus_types"]:
             for kotus_type in self.content["kotus_types"]:
                 tags.append(f"#{kotus_type}")
+
+        # Always add #flashcards tag
+        tags.append("#flashcards")
+
+        # Extract tags from article content
+        if article_content:
+            article_tags = re.findall(r"#([a-zA-Z0-9_-]+)", article_content)
+            for tag in article_tags:
+                if f"#{tag}" not in tags:
+                    tags.append(f"#{tag}")
+
         return " ".join(tags)
 
     def generate_table(self, conjugation):
@@ -53,29 +65,41 @@ class MarkdownGenerator:
         """
         # Build the card with parts that exist
         parts = []
-        parts.append(f"## {self.content['word']}")
+        parts.append(f"# {self.content['word']}")
 
-        tags = self.generate_tags()
+        # Add Articles section after wiktionary URL if article content exists
+        article_content = None
+        if article:
+            article_content = article
+        elif (
+            self.config.get("custom_text")
+            and self.config["custom_text"] != "{custom text}"
+        ):
+            article_content = self.config["custom_text"]
+
+        # Generate tags with article content for tag extraction
+        tags = self.generate_tags(article_content)
         if tags:
             parts.append(tags)
 
         parts.append(f"{self.parser.url}")
 
-        # Support both article field (new) and custom_text (backward compatibility)
-        if article:
-            parts.append(f"{article}")
-        elif (
-            self.config.get("custom_text")
-            and self.config["custom_text"] != "{custom text}"
-        ):
-            parts.append(f"{self.config['custom_text']}")
+        if article_content:
+            parts.append("# Articles")
+            parts.append(f"- {article_content}")
 
-        for word_type, conjugation, definition in zip_longest(
-            self.content["word_types"],
-            self.content["conjugation_tables"],
-            self.content["definitions"],
+        # Add ?? before first word type if we have word types
+        if self.content["word_types"]:
+            parts.append("??")
+
+        for i, (word_type, conjugation, definition) in enumerate(
+            zip_longest(
+                self.content["word_types"],
+                self.content["conjugation_tables"],
+                self.content["definitions"],
+            )
         ):
-            parts.append(f"### {word_type}")
+            parts.append(f"# {word_type}")
             table = self.generate_table(conjugation)
             if table:
                 parts.append(table)
@@ -86,6 +110,12 @@ class MarkdownGenerator:
                 text=definition,
             )
             parts.append(definition)
+
+        # Add +++ at the end if we have word types (but only if not already there)
+        if self.content["word_types"]:
+            # Check if the last part is already +++
+            if not parts or parts[-1] != "+++":
+                parts.append("+++")
 
         # Join everything with no extra newlines
         result = "".join([part + "\n" for part in parts]).strip()
@@ -177,12 +207,27 @@ class MarkdownGenerator:
 
             word_sections.append({"type": word_type, "content": section_content})
 
+        # Start with basic tags
+        tags = (
+            self.content.get("word_types", [])
+            + self.content.get("kotus_types", [])
+            + ["flashcards"]
+        )
+
+        # Extract tags from custom_text if it contains article content
+        custom_text = self.config.get("custom_text", "")
+        if custom_text and custom_text != "{custom text}":
+            article_tags = re.findall(r"#([a-zA-Z0-9_-]+)", custom_text)
+            tags.extend(article_tags)
+
+        # Remove duplicates
+        tags = list(set(tags))
+
         return {
             "word": self.content["word"],
-            "tags": self.content.get("word_types", [])
-            + self.content.get("kotus_types", []),
+            "tags": tags,
             "url": self.parser.url,
-            "custom_text": self.config.get("custom_text", ""),
+            "custom_text": custom_text,
             "word_sections": word_sections,
             "articles": [],
         }
@@ -212,4 +257,6 @@ class MarkdownGenerator:
 
     def generate_ad_note(self, title: str, collapse: bool, text: str):
         collapse_str = "collapse" if collapse else "open"
-        return f"```ad-note\ntitle: {title}\ncollapse: {collapse_str}\n{text}\n```"
+        ad_note = f"```ad-note\ntitle: {title}\ncollapse: {collapse_str}\n{text}\n```"
+
+        return ad_note
