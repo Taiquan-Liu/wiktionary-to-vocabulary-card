@@ -121,7 +121,10 @@ class WiktionaryParser:
         return url.split("#")[0]
 
     def fetch_page(self):
-        response = requests.get(self.url)
+        headers = {
+            'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
+        }
+        response = requests.get(self.url, headers=headers)
         response.raise_for_status()
         self.soup = BeautifulSoup(response.content, "html.parser")
 
