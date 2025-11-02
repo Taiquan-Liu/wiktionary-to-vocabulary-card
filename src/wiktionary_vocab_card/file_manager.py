@@ -404,12 +404,13 @@ class FileManager:
     ) -> Dict[str, Any]:
         """Merge new wordcard content with existing content.
 
-        Priority: existing content is preserved, new content is added only if missing.
+        Priority: new content replaces existing content for word sections,
+        but preserves articles and other metadata.
         """
         merged = existing.copy()
 
-        # Update URL if missing
-        if not merged.get("url") and new.get("url"):
+        # Update URL if missing or if new URL is provided
+        if new.get("url"):
             merged["url"] = new["url"]
 
         # Merge tags (avoid duplicates)
@@ -417,13 +418,10 @@ class FileManager:
         new_tags = set(new.get("tags", []))
         merged["tags"] = list(existing_tags | new_tags)
 
-        # Merge word sections (avoid duplicates by type)
-        existing_types = {
-            section["type"] for section in merged.get("word_sections", [])
-        }
-        for new_section in new.get("word_sections", []):
-            if new_section["type"] not in existing_types:
-                merged["word_sections"].append(new_section)
+        # Replace word sections completely with new content
+        # This ensures we get the latest conjugation tables and definitions from Wiktionary
+        if new.get("word_sections"):
+            merged["word_sections"] = new["word_sections"]
 
         return merged
 

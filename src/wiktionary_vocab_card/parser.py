@@ -223,11 +223,11 @@ class WiktionaryParser:
             # Find the inflection table after the conjugation header
             while current:
                 current = current.find_next()
-                if (
-                    not current
-                    or current.name == "div"
-                    or "mw-heading" in current.get("class", [])
-                ):
+                if not current:
+                    break  # Stop if no more elements
+                
+                # Stop at next heading (but not just any div)
+                if current.name == "div" and "mw-heading" in current.get("class", []):
                     break  # Stop at next header
 
                 if (
