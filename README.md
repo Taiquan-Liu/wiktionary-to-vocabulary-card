@@ -138,3 +138,8 @@ make add-word URL=https://en.wiktionary.org/wiki/saada
 # Regenerate all examples
 make regenerate-examples
 ```
+
+## Use the vocabulary cards
+There are a couple of Obsidian community plugins needed for the Vocabulary card to work:
+- Spaced Repetition: This is the main interface to the cards. You need to choose the difficulty level everytime a card is shown, and the level will be used to calculate the repetition intervals of the card.
+- Spoiler Block: This is the syntax we use to "fold" the conjugation and description of a word.
