@@ -46,12 +46,23 @@ def open_in_obsidian(
         True if the command was executed successfully, False otherwise
     """
     try:
+        # vault_path may be a vocabulary subfolder inside the actual vault.
+        vault_path = vault_path.expanduser().resolve()
+        file_path = file_path.expanduser().resolve()
+        vault_root = next(
+            (
+                parent
+                for parent in [vault_path, *vault_path.parents]
+                if (parent / ".obsidian").is_dir()
+            ),
+            vault_path,
+        )
         # Get vault name from path if not provided
         if vault_name is None:
-            vault_name = vault_path.name
+            vault_name = vault_root.name
 
         # Get relative path from vault to file
-        relative_path = file_path.relative_to(vault_path)
+        relative_path = file_path.relative_to(vault_root)
 
         # URL encode the vault name and file path
         vault_encoded = urllib.parse.quote(vault_name)

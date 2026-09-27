@@ -10,7 +10,67 @@ poetry install
 
 ## Usage
 
-The `wikt-vocab` CLI provides three main commands: `generate`, `configure`, and `status`.
+The `wikt-vocab` CLI provides `generate`, `configure`, `status`, `classify`, and `reorganize`.
+
+## Finnish frequency decks
+
+Frequency decks help you spend more review time on words you are likely to meet again. The tool uses the free, offline Finnish data bundled with [wordfreq](https://github.com/rspeer/wordfreq). Spaced Repetition still controls review intervals.
+
+| Folder | Zipf score | Approximate occurrences per million words |
+| --- | --- | --- |
+| `01 Very common` | 5 and above | 100 and above |
+| `02 Common` | 4 to below 5 | 10 to below 100 |
+| `03 Less common` | 3 to below 4 | 1 to below 10 |
+| `04 Rare` | Below 3, when listed | Below 1 |
+| `05 Unscored` | No score | Missing words, phrases, affixes and unsupported spellings |
+
+These are observed word-form frequencies, not A1 through C2 levels. Finnish inflections spread a word's usage across spellings. Phrases and hyphenated compounds are not assigned estimated scores from their component words. An unscored word can still be useful. See [docs/finnish-frequency-sources.md](docs/finnish-frequency-sources.md) for source comparisons, licenses and limitations.
+
+```bash
+poetry run wikt-vocab classify olla ehdokas arvonlisävero helleraja "saada aikaan"
+poetry run wikt-vocab classify --json ehdokas
+```
+
+### Try a sorted copy
+
+Create a separate test vault so the original and copied cards do not share review queues. The destination vocabulary folder must not exist. `reorganize` never modifies the source or the CLI configuration.
+
+```bash
+poetry run wikt-vocab reorganize "/path/to/live-vault/Suomi" "/path/to/test-vault/Suomi" --dry-run
+poetry run wikt-vocab reorganize "/path/to/live-vault/Suomi" "/path/to/test-vault/Suomi"
+
+# A separate configuration keeps test imports in the test vault.
+poetry run wikt-vocab --config .scratch/preview.yaml configure \
+  --vault-path "/path/to/test-vault/Suomi" \
+  --vault-name "test-vault" --organization frequency --open-obsidian false
+poetry run wikt-vocab --config .scratch/preview.yaml generate \
+  https://en.wiktionary.org/wiki/ehdokas -t "My article reference" --no-open
+```
+
+Open the test vault in Obsidian. Enable Spaced Repetition's **Convert folders to decks** option and retain your existing card separators. This project's cards use `??` for a reversed multiline card and `+++` for its end. Copy the relevant plugin settings or set these options in the test vault.
+
+The copy includes every source file. Vocabulary cards are identified by their standalone Wiktionary URL or a `#flashcards` tag; other files retain their relative paths. Cards keep their exact bytes, including scheduling comments, frontmatter, tags, definitions, article links and filenames. Duplicate filenames keep both versions under `Duplicates/<original path>` in the destination deck. The CLI refuses a later import when multiple notes represent the same word.
+
+The generated `Suomi/Frequency report.md` lists scores, unscored reasons and duplicates. `Suomi/.frequency-manifest.json` records all source/destination paths, SHA-256 hashes, thresholds, overrides and the package version. Both paths are relative to the test vault root. Relative or folder-specific links may need updating after a move; the copy preserves their text. Article notes outside the copied tree need to be copied separately if you want those links to open in the test vault.
+
+### Use the decks
+
+Start reviews in `01 Very common` and `02 Common` when time is limited. Study the lower-frequency decks for vocabulary relevant to your reading or work, and inspect `05 Unscored` manually.
+
+With `vault.organization: frequency`, new imports enter the matching frequency folder. Importing an existing word appends its new article reference and preserves the note, schedule and current folder. It does not refresh definitions from Wiktionary. You can move a card to another priority folder in Obsidian, and repeat imports will keep that choice.
+
+To retain a priority choice across future reorganizations or new imports, add an override to the selected configuration:
+
+```yaml
+frequency:
+  overrides:
+    helleraja: common
+    saada aikaan: very-common
+```
+
+Allowed override values are `very-common`, `common`, `less-common`, `rare`, and `unscored`. They choose the deck without changing the measured score. `--config PATH` selects a configuration for one command; `WIKT_VOCAB_CONFIG` can select it for a shell session. The original `stages` organization remains the default until explicitly changed.
+
+Run the isolated regression tests with `poetry run pytest tests -q`. These tests use temporary vaults and saved Wiktionary HTML. The older root-level demonstration scripts can access a configured vault; do not run them against your live learning data.
 
 ### Generate Command
 

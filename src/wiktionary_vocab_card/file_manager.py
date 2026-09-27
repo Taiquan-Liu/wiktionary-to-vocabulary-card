@@ -11,7 +11,9 @@ import re
 from pathlib import Path
 from typing import Any, Dict, Optional, Tuple
 
-from .config import get_all_stage_directories, is_vault_configured, load_config
+from .cards import append_article, card_word, write_card
+from .config import load_config
+from .frequency import FrequencyClassifier, normalize_word
 
 logger = logging.getLogger(__name__)
 
@@ -25,8 +27,25 @@ class FileManager:
         Args:
             config: Optional configuration dictionary. If None, loads from config file.
         """
-        self.config = config or load_config()
-        self.stage_directories = get_all_stage_directories()
+        self.config = config if config is not None else load_config()
+        vault = self.config.get("vault", {})
+        self.vault_path = (
+            Path(vault["path"]).expanduser() if vault.get("path") else None
+        )
+        self.frequency_mode = vault.get("organization", "stages") == "frequency"
+        self.stage_directories = (
+            {
+                key: self.vault_path / name
+                for key, name in vault.get("learning_stages", {}).items()
+            }
+            if self.vault_path
+            else {}
+        )
+        self.classifier = (
+            FrequencyClassifier(self.config.get("frequency", {}).get("overrides", {}))
+            if self.frequency_mode
+            else None
+        )
 
     def find_existing_wordcard(self, word: str) -> Optional[Tuple[Path, str]]:
         """Search for existing wordcard across all stage directories.
@@ -37,8 +56,35 @@ class FileManager:
         Returns:
             Tuple of (filepath, stage) if found, None otherwise
         """
-        if not is_vault_configured():
+        if not self.vault_path or not self.vault_path.is_dir():
             logger.warning("Vault not configured, cannot search for existing wordcards")
+            return None
+
+        if self.frequency_mode:
+            matches = []
+            for path in sorted(self.vault_path.rglob("*.md")):
+                if any(
+                    part.startswith(".")
+                    for part in path.relative_to(self.vault_path).parts
+                ):
+                    continue
+                if path.is_symlink() or not path.resolve().is_relative_to(
+                    self.vault_path.resolve()
+                ):
+                    continue
+                existing_word = card_word(path, path.read_bytes().decode("utf-8"))
+                if existing_word and normalize_word(existing_word) == normalize_word(
+                    word
+                ):
+                    matches.append(path)
+            if len(matches) > 1:
+                locations = ", ".join(str(path) for path in matches)
+                raise ValueError(
+                    f"Multiple cards for {word!r}; resolve the duplicates first: {locations}"
+                )
+            if matches:
+                path = matches[0]
+                return path, str(path.parent.relative_to(self.vault_path))
             return None
 
         # Normalize word for filename matching
@@ -250,6 +296,13 @@ class FileManager:
         """
         normalized_word = self._normalize_filename(word)
 
+        if self.frequency_mode:
+            result = self.classifier.classify(word)
+            return (
+                self.vault_path / result.folder / f"{normalized_word}.md",
+                result.band,
+            )
+
         if existing_location is None:
             # New wordcard -> Create in New folder
             target_stage = "new"
@@ -328,8 +381,11 @@ class FileManager:
         Returns:
             Tuple of (final_path, was_moved) where was_moved indicates if file was moved between stages
         """
-        if not is_vault_configured():
+        if not self.vault_path or not self.vault_path.is_dir():
             raise ValueError("Vault not configured. Cannot process wordcard.")
+
+        if self.frequency_mode:
+            return self._process_frequency_card(word, new_content, new_article)
 
         # Check if file management is enabled
         if not self.config.get("file_management", {}).get("check_existing", True):
@@ -365,16 +421,14 @@ class FileManager:
             # Merge new content with existing (preserve existing structure, add new sections)
             merged_content = self._merge_wordcard_content(existing_content, new_content)
 
-            # Remove old file if moving
-            if was_moved and target_path != existing_path:
+            # Save before removing the old copy.
+            success = self.save_wordcard(merged_content, target_path)
+            if success and was_moved and target_path != existing_path:
                 try:
                     existing_path.unlink()
                     logger.info(f"Removed old file: {existing_path}")
                 except Exception as e:
                     logger.warning(f"Could not remove old file {existing_path}: {e}")
-
-            # Save merged content
-            success = self.save_wordcard(merged_content, target_path)
 
         else:
             # New wordcard
@@ -393,11 +447,42 @@ class FileManager:
 
         return target_path, was_moved
 
+    def _process_frequency_card(self, word, new_content, new_article):
+        existing = self.find_existing_wordcard(word)
+        if existing:
+            path, _ = existing
+            # A manually moved card keeps its deck and existing review schedule.
+            original = path.read_bytes().decode("utf-8")
+            updated = original
+            if self.config.get("file_management", {}).get("append_articles", True):
+                updated = append_article(original, new_article)
+            if updated != original:
+                write_card(path, updated)
+            return path, False
+
+        path, _ = self.determine_target_location(word)
+        if path.exists():
+            raise ValueError(f"Refusing to overwrite a different note: {path}")
+        if not path.parent.resolve().is_relative_to(self.vault_path.resolve()):
+            raise ValueError(f"Card destination leaves the configured folder: {path}")
+        content = dict(new_content)
+        content["articles"] = list(content.get("articles", []))
+        content["tags"] = list(content.get("tags", []))
+        if new_article and self.config.get("file_management", {}).get(
+            "append_articles", True
+        ):
+            content = self.append_article_content(content, new_article)
+        write_card(path, self._generate_markdown_content(content))
+        return path, False
+
     def _normalize_filename(self, word: str) -> str:
         """Normalize word for use as filename."""
         # Remove or replace characters that are problematic in filenames
         normalized = re.sub(r'[<>:"/\\|?*]', "_", word)
-        return normalized.strip()
+        normalized = normalized.strip()
+        if not normalized or normalized in {".", ".."}:
+            raise ValueError("A vocabulary word must have a filename")
+        return normalized
 
     def _merge_wordcard_content(
         self, existing: Dict[str, Any], new: Dict[str, Any]

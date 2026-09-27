@@ -1,18 +1,37 @@
+import json
+from collections import Counter
 from pathlib import Path
 
 import click
 
-from .config import (get_vault_name, get_vault_path, is_vault_configured,
-                     load_config, update_config)
+from .config import (
+    get_vault_name,
+    get_vault_path,
+    is_vault_configured,
+    load_config,
+    update_config,
+    use_config,
+)
+from .frequency import BANDS, FrequencyClassifier
 from .generator import MarkdownGenerator
 from .parser import WiktionaryParser
 from .processor import ContentProcessor
+from .reorganize import copy_plan, plan_copy
 from .utils import open_in_obsidian
 
 
 @click.group()
-def cli():
+@click.option(
+    "--config",
+    "config_path",
+    type=click.Path(path_type=Path, dir_okay=False),
+    help="Use a separate configuration, leaving the default configuration unchanged.",
+)
+@click.pass_context
+def cli(ctx, config_path):
     """Wiktionary Vocabulary Card Generator"""
+    if config_path:
+        ctx.with_resource(use_config(config_path))
 
 
 @cli.command()
@@ -35,6 +54,14 @@ def generate(url, output, custom_text, no_open):
     to file output or clipboard based on configuration.
     """
     config = load_config()
+
+    if (
+        config.get("vault", {}).get("organization") == "frequency"
+        and not is_vault_configured()
+    ):
+        raise click.ClickException(
+            "Frequency organization requires an existing vocabulary folder; check vault.path in the selected configuration."
+        )
 
     # Parse the Wiktionary page
     parser = WiktionaryParser(url)
@@ -120,6 +147,8 @@ def generate(url, output, custom_text, no_open):
                 click.echo(card)
 
         except Exception as e:
+            if config.get("vault", {}).get("organization") == "frequency":
+                raise click.ClickException(str(e)) from e
             click.echo(f"Error with file management: {e}", err=True)
             click.echo("Falling back to simple generation:")
             card = generator.generate_card(article_content)
@@ -184,6 +213,11 @@ def generate(url, output, custom_text, no_open):
 @click.option("--vault-path", help="Set Obsidian vault path")
 @click.option("--vault-name", help="Set Obsidian vault name (if different from path)")
 @click.option(
+    "--organization",
+    type=click.Choice(["stages", "frequency"]),
+    help="Use legacy learning stages or Finnish frequency decks.",
+)
+@click.option(
     "--output-mode",
     type=click.Choice(["filesystem", "clipboard", "both"]),
     help="Set output mode",
@@ -193,7 +227,13 @@ def generate(url, output, custom_text, no_open):
     "--open-obsidian", type=bool, help="Enable/disable opening files in Obsidian"
 )
 def configure(
-    custom_text, vault_path, vault_name, output_mode, table_folding, open_obsidian
+    custom_text,
+    vault_path,
+    vault_name,
+    organization,
+    output_mode,
+    table_folding,
+    open_obsidian,
 ):
     """Update configuration settings
 
@@ -213,6 +253,9 @@ def configure(
 
     if vault_name:
         updates.setdefault("vault", {})["name"] = vault_name
+
+    if organization:
+        updates.setdefault("vault", {})["organization"] = organization
 
     if output_mode:
         updates["output"] = {"mode": output_mode}
@@ -275,7 +318,13 @@ def status():
     file_mgmt = config.get("file_management", {})
     click.echo(f"Check Existing Files: {file_mgmt.get('check_existing', True)}")
     click.echo(f"Append Articles: {file_mgmt.get('append_articles', True)}")
-    click.echo(f"Move from Remembered: {file_mgmt.get('move_from_remembered', True)}")
+    if config.get("vault", {}).get("organization") == "frequency":
+        click.echo("Existing cards: keep current deck, contents and review schedules")
+    else:
+        click.echo(
+            f"Move from Remembered: {file_mgmt.get('move_from_remembered', True)}"
+        )
+    click.echo(f"Organization: {config.get('vault', {}).get('organization', 'stages')}")
 
     click.echo()
 
@@ -285,3 +334,73 @@ def status():
 
     if config.get("custom_text") and config["custom_text"] != "{custom text}":
         click.echo(f"Custom Text: {config['custom_text']}")
+
+
+@cli.command()
+@click.argument("words", nargs=-1, required=True)
+@click.option(
+    "--json", "as_json", is_flag=True, help="Print scores and source metadata as JSON."
+)
+def classify(words, as_json):
+    """Show offline Finnish frequency bands for WORDS. Quote phrases."""
+    try:
+        config = load_config()
+        classifier = FrequencyClassifier(
+            config.get("frequency", {}).get("overrides", {})
+        )
+        results = [classifier.classify(word) for word in words]
+    except ValueError as error:
+        raise click.ClickException(str(error)) from error
+    if as_json:
+        click.echo(
+            json.dumps(
+                {
+                    "source": classifier.source,
+                    "words": [result.to_dict() for result in results],
+                },
+                ensure_ascii=False,
+                indent=2,
+            )
+        )
+    else:
+        for result in results:
+            score = "unscored" if result.zipf is None else f"Zipf {result.zipf:.2f}"
+            click.echo(f"{result.word}: {result.folder} ({score}; {result.reason})")
+        click.echo("Word-form frequency estimates, not CEFR levels.")
+
+
+@cli.command()
+@click.argument("source", type=click.Path(exists=True, file_okay=False, path_type=Path))
+@click.argument("destination", type=click.Path(file_okay=False, path_type=Path))
+@click.option("--dry-run", is_flag=True, help="Show counts without creating any files.")
+def reorganize(source, destination, dry_run):
+    """Copy SOURCE cards into frequency decks in a new DESTINATION folder.
+
+    Source files are read only. DESTINATION must not exist. Card contents and
+    schedules are copied byte for byte; duplicate filenames keep both versions.
+    """
+    try:
+        config = load_config()
+        classifier = FrequencyClassifier(
+            config.get("frequency", {}).get("overrides", {})
+        )
+        plan = plan_copy(source, destination, classifier)
+        counts = Counter(
+            entry["classification"]["folder"]
+            for entry in plan["entries"]
+            if entry["classification"]
+        )
+        for band in BANDS:
+            click.echo(f"{band.folder}: {counts[band.folder]}")
+        duplicates = sum(bool(entry.get("duplicate")) for entry in plan["entries"])
+        click.echo(
+            f"Files: {len(plan['entries'])}; duplicate-name files preserved: {duplicates}"
+        )
+        if dry_run:
+            click.echo("Dry run: no files written.")
+        else:
+            report = copy_plan(plan)
+            click.echo(f"Sorted copy created: {destination}")
+            click.echo(f"Report: {report}")
+    except (OSError, ValueError) as error:
+        raise click.ClickException(str(error)) from error

@@ -1,3 +1,7 @@
+import os
+from contextlib import contextmanager
+from contextvars import ContextVar
+from copy import deepcopy
 from pathlib import Path
 from typing import Any, Dict, Optional
 
@@ -6,6 +10,25 @@ from appdirs import user_config_dir
 
 CONFIG_DIR = Path(user_config_dir("wiktionary_vocab_card"))
 CONFIG_FILE = CONFIG_DIR / "config.yaml"
+_config_override = ContextVar("config_override", default=None)
+
+
+@contextmanager
+def use_config(path: Path):
+    """Select a configuration for this command without changing the user's default."""
+    token = _config_override.set(path.expanduser().resolve())
+    try:
+        yield
+    finally:
+        _config_override.reset(token)
+
+
+def config_file() -> Path:
+    return (
+        _config_override.get()
+        or Path(os.environ.get("WIKT_VOCAB_CONFIG", str(CONFIG_FILE))).expanduser()
+    )
+
 
 # Enhanced default configuration with new schema
 DEFAULT_CONFIG = {
@@ -17,6 +40,7 @@ DEFAULT_CONFIG = {
     "vault": {
         "path": "/Users/taiquanliu/Documents/1st remote/Suomi",
         "name": "1st remote",  # Actual Obsidian vault name
+        "organization": "stages",
         "learning_stages": {
             "new": "New",
             "memorizing": "Memorizing",
@@ -34,23 +58,23 @@ DEFAULT_CONFIG = {
         "append_articles": True,
         "move_from_remembered": True,
     },
+    "frequency": {"overrides": {}},
 }
 
 
 def load_config() -> Dict[str, Any]:
-    """Load configuration from file, creating default if it doesn't exist.
+    """Read configuration, using defaults without writing when it is missing.
 
     Ensures backward compatibility by merging with default config.
     """
-    CONFIG_DIR.mkdir(parents=True, exist_ok=True)
+    path = config_file()
+    if not path.exists():
+        return deepcopy(DEFAULT_CONFIG)
 
-    if not CONFIG_FILE.exists():
-        with open(CONFIG_FILE, "w") as f:
-            yaml.safe_dump(DEFAULT_CONFIG, f)
-        return DEFAULT_CONFIG.copy()
-
-    with open(CONFIG_FILE) as f:
+    with path.open(encoding="utf-8") as f:
         user_config = yaml.safe_load(f) or {}
+    if not isinstance(user_config, dict):
+        raise ValueError(f"Configuration must be a mapping: {path}")
 
     # Merge with defaults to ensure all keys exist (backward compatibility)
     config = _merge_configs(DEFAULT_CONFIG, user_config)
@@ -74,7 +98,9 @@ def update_config(new_settings: Dict[str, Any]) -> None:
     # Validate the updated config
     config = _validate_config(config)
 
-    with open(CONFIG_FILE, "w") as f:
+    path = config_file()
+    path.parent.mkdir(parents=True, exist_ok=True)
+    with path.open("w", encoding="utf-8") as f:
         yaml.safe_dump(config, f, default_flow_style=False, sort_keys=False)
 
 
@@ -83,7 +109,7 @@ def get_vault_path() -> Optional[Path]:
     config = load_config()
     vault_path = config.get("vault", {}).get("path")
     if vault_path:
-        return Path(vault_path)
+        return Path(vault_path).expanduser()
     return None
 
 
@@ -163,7 +189,7 @@ def is_vault_configured() -> bool:
 
 def _merge_configs(default: Dict[str, Any], user: Dict[str, Any]) -> Dict[str, Any]:
     """Recursively merge user config with default config."""
-    result = default.copy()
+    result = deepcopy(default)
 
     for key, value in user.items():
         if key in result and isinstance(result[key], dict) and isinstance(value, dict):
@@ -190,11 +216,17 @@ def _deep_update(config: Dict[str, Any], updates: Dict[str, Any]) -> Dict[str, A
 def _validate_config(config: Dict[str, Any]) -> Dict[str, Any]:
     """Validate and fix configuration values."""
     # Ensure vault path exists if specified
-    if "vault" in config and "path" in config["vault"]:
+    if config.get("vault", {}).get("path"):
         vault_path = Path(config["vault"]["path"])
         if not vault_path.exists():
             # Don't create the vault path automatically, just warn
             pass
+
+    if config.get("vault", {}).get("organization", "stages") not in {
+        "stages",
+        "frequency",
+    }:
+        raise ValueError("vault.organization must be 'stages' or 'frequency'")
 
     # Ensure output mode is valid
     valid_modes = {"filesystem", "clipboard", "both"}

@@ -16,7 +16,10 @@ class MarkdownGenerator:
         self.file_manager = None
 
         # Initialize FileManager if file management is enabled
-        if self.config.get("file_management", {}).get("check_existing", True):
+        if (
+            self.config.get("file_management", {}).get("check_existing", True)
+            or self.config.get("vault", {}).get("organization") == "frequency"
+        ):
             self.file_manager = FileManager(config)
 
     def generate_tags(self, article_content=None):
@@ -166,11 +169,13 @@ class MarkdownGenerator:
             )
 
             # Generate the final markdown content
-            markdown_content = self.generate_card(article)
+            markdown_content = final_path.read_bytes().decode("utf-8")
 
             return markdown_content, final_path
 
         except Exception:
+            if self.config.get("vault", {}).get("organization") == "frequency":
+                raise
             # Fallback to simple generation if file management fails
             content = self.generate_card(article)
             return content, None
