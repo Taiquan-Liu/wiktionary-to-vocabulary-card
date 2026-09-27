@@ -14,7 +14,7 @@ The `wikt-vocab` CLI provides `generate`, `configure`, `status`, `classify`, and
 
 ## Finnish frequency decks
 
-Frequency decks help you spend more review time on words you are likely to meet again. The tool uses the free, offline Finnish data bundled with [wordfreq](https://github.com/rspeer/wordfreq). Spaced Repetition still controls review intervals.
+Frequency decks are the default organization. They help you spend more review time on words you are likely to meet again. The tool uses the free, offline Finnish data bundled with [wordfreq](https://github.com/rspeer/wordfreq). Spaced Repetition still controls review intervals.
 
 | Folder | Zipf score | Approximate occurrences per million words |
 | --- | --- | --- |
@@ -57,7 +57,16 @@ The generated `Suomi/Frequency report.md` lists scores, unscored reasons and dup
 
 Start reviews in `01 Very common` and `02 Common` when time is limited. Study the lower-frequency decks for vocabulary relevant to your reading or work, and inspect `05 Unscored` manually.
 
-With `vault.organization: frequency`, new imports enter the matching frequency folder. Importing an existing word appends its new article reference and preserves the note, schedule and current folder. It does not refresh definitions from Wiktionary. You can move a card to another priority folder in Obsidian, and repeat imports will keep that choice.
+New imports enter the matching frequency folder. Importing an existing word appends its new article reference and preserves the note, schedule and current folder. It does not refresh definitions from Wiktionary. You can move a card to another priority folder in Obsidian, and repeat imports will keep that choice.
+
+Set the vocabulary folder inside your synced vault once, then use the usual command without a preview configuration:
+
+```bash
+poetry run wikt-vocab configure --vault-path "/path/to/1st remote/Suomi" --vault-name "1st remote"
+poetry run wikt-vocab generate https://en.wiktionary.org/wiki/ehdokas
+```
+
+The vocabulary folders and the plugin's scheduling comments live in the same vault, so they can sync with your other notes. Use **Convert folders to decks** on each device. Changing the default does not automatically reorganize existing files; `reorganize` still creates a separate copy for inspection before replacement.
 
 To retain a priority choice across future reorganizations or new imports, add an override to the selected configuration:
 
@@ -68,7 +77,7 @@ frequency:
     saada aikaan: very-common
 ```
 
-Allowed override values are `very-common`, `common`, `less-common`, `rare`, and `unscored`. They choose the deck without changing the measured score. `--config PATH` selects a configuration for one command; `WIKT_VOCAB_CONFIG` can select it for a shell session. The original `stages` organization remains the default until explicitly changed.
+Allowed override values are `very-common`, `common`, `less-common`, `rare`, and `unscored`. They choose the deck without changing the measured score. `--config PATH` selects a configuration for one command; `WIKT_VOCAB_CONFIG` can select it for a shell session. Configurations without an organization setting use frequency decks. The legacy layout remains available through `configure --organization stages`.
 
 Run the isolated regression tests with `poetry run pytest tests -q`. These tests use temporary vaults and saved Wiktionary HTML. The older root-level demonstration scripts can access a configured vault; do not run them against your live learning data.
 
@@ -135,6 +144,7 @@ wikt-vocab configure --custom-text "My default custom text"
 **Options:**
 - `--vault-path TEXT`: Set Obsidian vault path
 - `--vault-name TEXT`: Set Obsidian vault name (if different from folder name)
+- `--organization [frequency|stages]`: Choose frequency decks or the legacy learning-stage layout
 - `--output-mode [filesystem|clipboard|both]`: Set output mode
 - `--table-folding BOOLEAN`: Enable/disable table folding
 - `--open-obsidian BOOLEAN`: Enable/disable opening files in Obsidian
@@ -175,7 +185,7 @@ When an Obsidian vault is configured, the tool integrates seamlessly:
 When an Obsidian vault is configured, the tool provides intelligent file management:
 - Checks for existing files
 - Appends articles to existing cards
-- Moves files from "remembered" locations
+- Preserves existing cards' folders, handwritten edits, and review schedules in the default frequency organization
 - Handles duplicate content intelligently
 
 ## Debug

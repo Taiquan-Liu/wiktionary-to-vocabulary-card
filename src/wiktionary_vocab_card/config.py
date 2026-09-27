@@ -10,6 +10,7 @@ from appdirs import user_config_dir
 
 CONFIG_DIR = Path(user_config_dir("wiktionary_vocab_card"))
 CONFIG_FILE = CONFIG_DIR / "config.yaml"
+DEFAULT_ORGANIZATION = "frequency"
 _config_override = ContextVar("config_override", default=None)
 
 
@@ -38,9 +39,9 @@ DEFAULT_CONFIG = {
     "table_folding": True,
     # New vault and file management settings
     "vault": {
-        "path": "/Users/taiquanliu/Documents/1st remote/Suomi",
+        "path": str(Path.home() / "Documents" / "1st remote" / "Suomi"),
         "name": "1st remote",  # Actual Obsidian vault name
-        "organization": "stages",
+        "organization": DEFAULT_ORGANIZATION,
         "learning_stages": {
             "new": "New",
             "memorizing": "Memorizing",
@@ -222,7 +223,7 @@ def _validate_config(config: Dict[str, Any]) -> Dict[str, Any]:
             # Don't create the vault path automatically, just warn
             pass
 
-    if config.get("vault", {}).get("organization", "stages") not in {
+    if config.get("vault", {}).get("organization", DEFAULT_ORGANIZATION) not in {
         "stages",
         "frequency",
     }:

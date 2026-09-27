@@ -5,6 +5,7 @@ from pathlib import Path
 import click
 
 from .config import (
+    DEFAULT_ORGANIZATION,
     get_vault_name,
     get_vault_path,
     is_vault_configured,
@@ -56,7 +57,8 @@ def generate(url, output, custom_text, no_open):
     config = load_config()
 
     if (
-        config.get("vault", {}).get("organization") == "frequency"
+        config.get("vault", {}).get("organization", DEFAULT_ORGANIZATION) == "frequency"
+        and not output
         and not is_vault_configured()
     ):
         raise click.ClickException(
@@ -147,7 +149,10 @@ def generate(url, output, custom_text, no_open):
                 click.echo(card)
 
         except Exception as e:
-            if config.get("vault", {}).get("organization") == "frequency":
+            if (
+                config.get("vault", {}).get("organization", DEFAULT_ORGANIZATION)
+                == "frequency"
+            ):
                 raise click.ClickException(str(e)) from e
             click.echo(f"Error with file management: {e}", err=True)
             click.echo("Falling back to simple generation:")
@@ -318,13 +323,15 @@ def status():
     file_mgmt = config.get("file_management", {})
     click.echo(f"Check Existing Files: {file_mgmt.get('check_existing', True)}")
     click.echo(f"Append Articles: {file_mgmt.get('append_articles', True)}")
-    if config.get("vault", {}).get("organization") == "frequency":
+    if config.get("vault", {}).get("organization", DEFAULT_ORGANIZATION) == "frequency":
         click.echo("Existing cards: keep current deck, contents and review schedules")
     else:
         click.echo(
             f"Move from Remembered: {file_mgmt.get('move_from_remembered', True)}"
         )
-    click.echo(f"Organization: {config.get('vault', {}).get('organization', 'stages')}")
+    click.echo(
+        f"Organization: {config.get('vault', {}).get('organization', DEFAULT_ORGANIZATION)}"
+    )
 
     click.echo()
 

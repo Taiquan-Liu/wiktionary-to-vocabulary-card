@@ -12,7 +12,7 @@ from pathlib import Path
 from typing import Any, Dict, Optional, Tuple
 
 from .cards import append_article, card_word, write_card
-from .config import load_config
+from .config import DEFAULT_ORGANIZATION, load_config
 from .frequency import FrequencyClassifier, normalize_word
 
 logger = logging.getLogger(__name__)
@@ -32,7 +32,9 @@ class FileManager:
         self.vault_path = (
             Path(vault["path"]).expanduser() if vault.get("path") else None
         )
-        self.frequency_mode = vault.get("organization", "stages") == "frequency"
+        self.frequency_mode = (
+            vault.get("organization", DEFAULT_ORGANIZATION) == "frequency"
+        )
         self.stage_directories = (
             {
                 key: self.vault_path / name

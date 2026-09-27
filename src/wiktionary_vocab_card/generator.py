@@ -5,6 +5,7 @@ from typing import Any, Dict, Optional, Tuple
 
 import pyperclip
 
+from .config import DEFAULT_ORGANIZATION
 from .file_manager import FileManager
 
 
@@ -18,7 +19,8 @@ class MarkdownGenerator:
         # Initialize FileManager if file management is enabled
         if (
             self.config.get("file_management", {}).get("check_existing", True)
-            or self.config.get("vault", {}).get("organization") == "frequency"
+            or self.config.get("vault", {}).get("organization", DEFAULT_ORGANIZATION)
+            == "frequency"
         ):
             self.file_manager = FileManager(config)
 
@@ -174,7 +176,10 @@ class MarkdownGenerator:
             return markdown_content, final_path
 
         except Exception:
-            if self.config.get("vault", {}).get("organization") == "frequency":
+            if (
+                self.config.get("vault", {}).get("organization", DEFAULT_ORGANIZATION)
+                == "frequency"
+            ):
                 raise
             # Fallback to simple generation if file management fails
             content = self.generate_card(article)

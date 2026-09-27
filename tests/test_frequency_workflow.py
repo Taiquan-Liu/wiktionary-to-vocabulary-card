@@ -74,13 +74,19 @@ def test_missing_config_read_is_non_mutating(tmp_path, monkeypatch):
     path = tmp_path / "does-not-exist/config.yaml"
     monkeypatch.setenv("WIKT_VOCAB_CONFIG", str(path))
     first = load_config()
+    assert first["vault"]["organization"] == "frequency"
+    assert first["vault"]["path"] == str(Path.home() / "Documents/1st remote/Suomi")
     first["vault"]["name"] = "changed"
     assert load_config()["vault"]["name"] != "changed"
     assert not path.parent.exists()
 
 
-def test_actual_html_to_frequency_deck_then_second_import(isolated_config, monkeypatch):
+def test_default_html_to_frequency_deck_then_second_import(
+    isolated_config, monkeypatch
+):
     config_path, config = isolated_config
+    del config["vault"]["organization"]
+    config_path.write_text(yaml.safe_dump(config))
     example = Path(__file__).resolve().parents[1] / "examples/ehdokas.html"
 
     def fetch_fixture(parser):
@@ -89,8 +95,6 @@ def test_actual_html_to_frequency_deck_then_second_import(isolated_config, monke
     monkeypatch.setattr(WiktionaryParser, "fetch_page", fetch_fixture)
     runner = CliRunner()
     args = [
-        "--config",
-        str(config_path),
         "generate",
         "https://en.wiktionary.org/wiki/ehdokas",
         "--no-open",
@@ -108,6 +112,49 @@ def test_actual_html_to_frequency_deck_then_second_import(isolated_config, monke
     updated = path.read_text(encoding="utf-8")
     assert updated.replace("- article - Second article\n", "") == original
     assert len(list(Path(config["vault"]["path"]).rglob("ehdokas.md"))) == 1
+
+
+def test_file_manager_defaults_to_frequency_and_accepts_explicit_stages(
+    isolated_config,
+):
+    _, config = isolated_config
+    del config["vault"]["organization"]
+    assert (
+        FileManager(config).determine_target_location("ehdokas")[0].parent.name
+        == "02 Common"
+    )
+    config["vault"]["organization"] = "stages"
+    assert (
+        FileManager(config).determine_target_location("ehdokas")[0].parent.name == "New"
+    )
+
+
+def test_explicit_output_does_not_require_a_vault(
+    isolated_config, tmp_path, monkeypatch
+):
+    config_path, config = isolated_config
+    config["vault"]["path"] = str(tmp_path / "missing-vault")
+    config_path.write_text(yaml.safe_dump(config))
+    example = Path(__file__).resolve().parents[1] / "examples/ehdokas.html"
+
+    def fetch_fixture(parser):
+        parser.soup = BeautifulSoup(example.read_bytes(), "html.parser")
+
+    monkeypatch.setattr(WiktionaryParser, "fetch_page", fetch_fixture)
+    output = tmp_path / "card.md"
+    result = CliRunner().invoke(
+        cli,
+        [
+            "generate",
+            "https://en.wiktionary.org/wiki/ehdokas",
+            "--no-open",
+            "-o",
+            str(output),
+        ],
+    )
+    assert result.exit_code == 0, result.output
+    assert output.read_text().startswith("# ehdokas")
+    assert not (tmp_path / "missing-vault").exists()
 
 
 def test_duplicate_import_is_an_error_and_cannot_overwrite(
