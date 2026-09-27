@@ -1,4 +1,5 @@
 import json
+import re
 from collections import Counter
 from pathlib import Path
 
@@ -170,8 +171,8 @@ def generate(url, output, custom_text, no_open):
             try:
                 default_output = config.get("default_output", "vocabulary_cards")
                 if not default_output.endswith(".md"):
-                    # Extract word from URL for filename
-                    word = url.split("/")[-1].replace("#", "_")
+                    # Use the resolved entry title for every output mode.
+                    word = re.sub(r'[<>:"/\\|?*#]', "_", parser.word)
                     output_path = Path(f"{default_output}_{word}.md")
                 else:
                     output_path = Path(default_output)

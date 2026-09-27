@@ -102,6 +102,17 @@ wikt-vocab generate https://en.wiktionary.org/wiki/ehdokas -o /path/to/card.md -
 wikt-vocab generate https://en.wiktionary.org/wiki/ehdokas --no-open
 ```
 
+Both `/wiki/word` and `/w/index.php?title=word&rdfrom=Word` URLs are supported.
+Quote URLs containing `&` so the shell passes the whole URL:
+
+```bash
+wikt-vocab generate 'https://en.wiktionary.org/w/index.php?title=valtio&rdfrom=Valtio' --no-open
+```
+
+Cards use the destination word and a clean `/wiki/word` source link. When a missing
+entry such as `/wiki/Valtio` offers a "Did you mean" link, the parser follows that
+suggestion once. Existing titles keep their capitalization.
+
 **Options:**
 - `-o, --output TEXT`: Output file path (overrides configuration)
 - `-t, --custom-text TEXT`: Article content to add to the wordcard's articles section

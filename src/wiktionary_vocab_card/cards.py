@@ -4,19 +4,23 @@ import os
 import re
 import tempfile
 from pathlib import Path
-from urllib.parse import unquote, urlsplit
+
+from .urls import parse_entry_url
 
 WIKTIONARY_LINE = re.compile(
-    r"^https?://en\.wiktionary\.org/wiki/[^\s]+[ \t\r]*$", re.MULTILINE
+    r"^https?://en\.wiktionary\.org/(?:wiki/[^\s]+|w/index\.php\?[^\s]+)[ \t\r]*$",
+    re.MULTILINE,
 )
 
 
 def card_word(path: Path, text: str):
     """Use the original entry URL, or a tagged hand-written card's filename."""
-    match = WIKTIONARY_LINE.search(text)
-    if match:
-        path_part = urlsplit(match.group().strip()).path
-        return unquote(path_part.removeprefix("/wiki/")).replace("_", " ")
+    for match in WIKTIONARY_LINE.finditer(text):
+        try:
+            _, word = parse_entry_url(match.group().strip())
+            return word
+        except ValueError:
+            continue
     if re.search(r"(?<!\S)#flashcards(?=[/\s]|$)", text):
         return path.stem
     return None

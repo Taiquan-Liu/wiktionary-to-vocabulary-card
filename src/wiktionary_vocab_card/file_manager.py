@@ -11,7 +11,7 @@ import re
 from pathlib import Path
 from typing import Any, Dict, Optional, Tuple
 
-from .cards import append_article, card_word, write_card
+from .cards import WIKTIONARY_LINE, append_article, card_word, write_card
 from .config import DEFAULT_ORGANIZATION, load_config
 from .frequency import FrequencyClassifier, normalize_word
 
@@ -166,7 +166,7 @@ class FileManager:
                     parsed["tags"].extend(tags)
 
                 # Extract URL
-                elif line.startswith("https://en.wiktionary.org/wiki/"):
+                elif WIKTIONARY_LINE.fullmatch(line):
                     parsed["url"] = line
 
                 # Extract custom text (lines that contain {custom text} or similar)

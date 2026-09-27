@@ -1,8 +1,10 @@
 import re
-from urllib.parse import unquote
+from urllib.parse import urljoin
 
 import requests
 from bs4 import BeautifulSoup
+
+from .urls import parse_entry_url
 
 SUPPORTED_WORD_TYPES = [
     "Noun",
@@ -101,8 +103,7 @@ def html_table_to_markdown(table):
 
 class WiktionaryParser:
     def __init__(self, url):
-        self.url = self._clean_url(url)
-        self.word = unquote(self.url.split("/wiki/")[-1]).replace("_", " ")
+        self.url, self.word = parse_entry_url(url)
         self.soup = None
         self.finnish_section = None
         self.word_types = {}
@@ -116,17 +117,32 @@ class WiktionaryParser:
     def header_level_str(self):
         return f"h{self.header_level}"
 
-    @staticmethod
-    def _clean_url(url):
-        return url.split("#")[0]
-
     def fetch_page(self):
         headers = {
-            'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
+            "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36"
         }
         response = requests.get(self.url, headers=headers)
+        if response.status_code == 404:
+            # Wiktionary's JavaScript follows this link for missing capitalized
+            # entries. requests cannot execute it, so follow the suggestion once.
+            missing_page = BeautifulSoup(response.content, "html.parser")
+            suggestion = missing_page.select_one("#did-you-mean a[href]")
+            if suggestion:
+                try:
+                    target, _ = parse_entry_url(
+                        urljoin(response.url, suggestion["href"])
+                    )
+                except ValueError:
+                    target = None
+                if target and target != self.url:
+                    response = requests.get(target, headers=headers)
         response.raise_for_status()
         self.soup = BeautifulSoup(response.content, "html.parser")
+        canonical = self.soup.find("link", rel="canonical", href=True)
+        resolved_url = (
+            urljoin(response.url, canonical["href"]) if canonical else response.url
+        )
+        self.url, self.word = parse_entry_url(resolved_url)
 
     def find_finnish_section(self):
         finnish_header = self.soup.find("h2", {"id": "Finnish"})
@@ -225,7 +241,7 @@ class WiktionaryParser:
                 current = current.find_next()
                 if not current:
                     break  # Stop if no more elements
-                
+
                 # Stop at next heading (but not just any div)
                 if current.name == "div" and "mw-heading" in current.get("class", []):
                     break  # Stop at next header
